@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp,noydir"/>
+    <meta name="description" content="Create your Plezen profile and update profile settings.">
+    <!--[if lt IE 9]>
+    <script src="../scripts/extend/html5shiv.js"></script><![endif]-->
+    <title>
+        Settings | Plezen
+    </title>
+    <link rel="stylesheet" href="../styles/extend/main3.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/extend/main2.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/extend/settings.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/extend/responsive.css" type="text/css"/>
+</head>
+<body class="lazy settings">
+<div class="header header-fixed">
+    <div class="container"><a class="branding" href="/your/">Plezen</a>
+        <ul class="nav-main container" id="navigation">
+            <li class="nav-create">
+                <a href="/your/" data-i18n="commonlang.create">
+                    <span class="pointer"></span>
+                </a>
+            </li>
+            <li class="nav-explore">
+                <a href="/explore/staff-picks/" data-i18n="commonlang.explore">
+                    <span class="pointer"></span>
+                </a>
+            </li>
+        </ul>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <a class="btn btn-discreet dropdown-toggle username" data-toggle="dropdown" href="#"
+                   title="<%= user.username %>">
+                    <%= user.username %>
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/settings" data-i18n="settinglang.settings"></a></li>
+                    <li><a href="/logout" data-i18n="commonlang.logout"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content -->
+<div class="content">
+<div class="container"><h1 data-i18n="settinglang.settings">
+</h1>
+
+<div class="container span8 settings-panel"><h2 data-i18n="settinglang.license"></h2>
+
+    <div class="well span8">
+        <div class="banner">
+            <div class="subscription-text"><p>
+
+                    1 Plezen <span class="license-long"><span
+                                class="license-type">Free</span> subscription</span></p></div>
+            <div class="subscription-price"><span class="license-price pull-right"><span
+                            class="license-currency">$</span>0</span></div>
+            <hr class="subscription-divider">
+            <div><p><br><span class="quota-usage"><span class="license-space-used"> 0 </span> of your <span
+                                class="quota">100 MB</span> is used</span></p></div>
+        </div>
+        <div class="form-actions call-action"><a href="/profile/upgrade/?click_source=license_block"
+                                                 class="btn btn-primary pull-right bttn blue mid">Upgrade</a>
+        </div>
+    </div>
+</div>
+<div class="container span8 settings-panel" id="panel-profile"><h2 data-i18n="settinglang.personal"></h2>
+
+    <div class="well span8 tab-name"><h3 data-i18n="settinglang.username"></h3>
+
+        <div class="row">
+            <div class="control-group span8">
+                <div class="controls">
+                    <input name="first_name" value="<%= user.username %>"
+                           class="input-large span8" type="text" placeholder="First name">
+                </div>
+            </div>
+        </div>
+        <div class="form-actions call-action with-buttons">
+            <button class="btn pull-right" data-i18n="settinglang.cancel"></button>
+            <button class="btn btn-primary pull-right change-name" id="changename"
+                    data-i18n="settinglang.save"></button>
+        </div>
+
+    </div>
+    <div id="panel-about" class="well span8 tab-about" style="margin-top: 15px"><h3
+                data-i18n="settinglang.profile"></h3>
+
+
+        <textarea name="about_text" rows="6" class="span8"
+                  data-i18n="[placeholder]settinglang.placeholderprofile"><%= user.profile %></textarea>
+
+        <div class="form-actions call-action with-buttons">
+            <button class="btn pull-right" data-i18n="settinglang.cancel"></button>
+            <button class="btn btn-primary pull-right change-name" id="changeprofile"
+                    data-i18n="settinglang.save"></button>
+        </div>
+
+    </div>
+</div>
+<div class="container span8 settings-panel"><h2 data-i18n="settinglang.language"></h2>
+
+    <div class="well span8 tab-lang">
+
+        <select name="lang_preference" id="dp_lang_preference">
+            <option value="en" selected="selected">English</option>
+            <option value="ja">日本語</option>
+        </select>
+
+        <div class="form-actions call-action with-buttons"><b>Language: </b><span
+                    class="long">English</span>
+            <button class="btn pull-right" data-i18n="settinglang.cancel"></button>
+            <button class="btn btn-primary pull-right change-name" id="changelanguage"
+                    data-i18n="settinglang.save"></button>
+        </div>
+
+    </div>
+</div>
+<hr class="separator span8">
+<div class="container span8 settings-panel license"></div>
+<div class="container span8 settings-panel" id="settings-tab-email"><h2>Email</h2>
+
+    <p data-i18n="settinglang.currentemail"></p><span class="current-email"><%= user.email %></span>
+
+    <p data-i18n="settinglang.changeemail"></p>
+
+    <div class="well span8">
+
+        <input name="new_email" type="email" class="span8 input-large" placeholder="New email">
+
+        <div class="form-actions call-action with-buttons">
+            <button class="btn pull-right" data-i18n="settinglang.cancel"></button>
+            <button class="btn btn-primary pull-right change-name" id="changeemail"
+                    data-i18n="settinglang.save"></button>
+        </div>
+
+    </div>
+</div>
+<div class="container span8 settings-panel password-change"><h2 data-i18n="settinglang.password"></h2>
+
+    <div class="well span8">
+
+        <div class="control-group">
+            <div class="controls"><input class="input-large span8" type="password" name="new_password1"
+                                         placeholder="New password"></div>
+        </div>
+        <div class="control-group">
+            <div class="controls"><input class="input-large span8" type="password" name="new_password2"
+                                         placeholder="New password again please"></div>
+        </div>
+        <div class="form-actions call-action with-buttons">
+            <button class="btn pull-right" data-i18n="settinglang.cancel"></button>
+            <button class="btn btn-primary pull-right change-name" id="changepassword"
+                    data-i18n="settinglang.save"></button>
+        </div>
+
+    </div>
+</div>
+<!--<hr class="separator span8">-->
+<!--<div class="container span8 settings-panel tab-delete">-->
+<!--<div class="form-actions call-action"><a href="/profile/delete_user_account/"-->
+<!--class="btn pull-left delete-account" id="btn-delete-account"><i-->
+<!--class="icon icon-delete"></i>-->
+<!--Delete your account-->
+<!--</a>-->
+
+<!--<p class="message">-->
+<!--Your prezis can not be recovered if you delete your account.-->
+<!--</p></div>-->
+<!--</div>-->
+<!-- general overlay --><textarea style="display:none" id="overlay-tpl">
+    <div id="overlay" class="${type}">
+        <div id="overlay-wrapper">
+            <div class="overlay-content">
+                <div class="overlay-head"><h2 class="overlay-title"><span
+                                class="overlay-title-text">${title}</span><a onclick="return false;" href="#"
+                                                                             class="close overlay-close">&times;</a>
+                    </h2></div>
+                <div class="overlay-body">
+                    ${body}
+                </div>
+            </div>
+        </div>
+    </div>
+</textarea><!-- password overlay --><textarea style="display:none" id="password-tpl">
+    <div id="overlay" class="${type}">
+        <div id="overlay-wrapper">
+            <div class="overlay-content">
+                <div class="overlay-head"><h2 class="overlay-title"><span
+                                class="overlay-title-text">Confirm change</span><a
+                                onclick="return false;" href="#" class="close overlay-close">&times;</a></h2>
+                </div>
+                <div class="overlay-body">
+                    <div id="password-overlay"><p>Please confirm the change you requested by providing your
+                            existing password.</p><span class="error"></span>
+
+                        <p class="set"><input class="input-large span7" type="password" id="overlay-password"
+                                              name="password" maxlength="255"/></p>
+                    </div>
+                    <br style="clear:both"/></div>
+            </div>
+        </div>
+    </div>
+</textarea><!-- email/password overlay -->
+<script id="create_password" type="text/template">
+    <div
+            class="modal hide ">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body span6"><h2>You need to set a password</h2>
+
+            <p>
+                Since you've signed up with Social, you need to set a password in order to be able to access your
+                account in the future.
+            </p>
+
+            <p>
+                Please make sure your email address is valid as well.
+            </p>
+
+
+            <div class="alert alert-error hide" id="new_prezi_modal_alert_message"></div>
+            <div class="row">
+                <div class="span3"><input type="email" placeholder="Email" value="olympic2000@hotmail.com"/>
+                </div>
+                <div class="span3"><input type="password" placeholder="Password"/></div>
+            </div>
+
+        </div>
+        <div class="modal-footer"><a href="#" class="btn btn-primary" id="">Set password</a><a href="#" class="btn"
+                                                                                               data-dismiss="modal">Cancel</a>
+        </div>
+    </div></script>
+<!-- account delete overlay -->
+<script id="delete_account" type="text/template">
+    <div
+            class="modal hide ">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body span6"><h2>Is it really time to say goodbye?</h2>
+
+            <p>
+                There's no turning back from here. All your profile information, including all your prezis, will be
+                deleted.
+            </p>
+
+            <p class="small"><label><input type="checkbox" class="delete-confirm"/>
+                    I understand that by deleting my account all of my prezis will be lost.
+                </label></p></div>
+        <div class="modal-footer"><a href="#" class="btn btn-primary" data-dismiss="modal">Wait! I want to keep my
+                account</a><a href="#" class="btn btn-account-delete" disabled="true">Delete my account</a>
+        </div>
+    </div></script>
+<!-- send verification email before account delete overlay -->
+<script id="verify_email" type="text/template">
+    <div
+            class="modal hide ">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body span6"><h2>Is it really time to say goodbye?</h2>
+
+            <p>
+                All your profile information, including all your prezis, will be lost.
+            </p>
+
+            <p>
+                You will have to confirm this action by clicking a link in an email that will be sent to:
+                <strong>olympic2000@hotmail.com</strong></p></div>
+        <div class="modal-footer"><a href="#" class="btn btn-primary btn-send-email">Send confirmation email</a><a
+                    href="#" class="btn" data-dismiss="modal">Cancel</a></div>
+    </div></script>
+</div>
+</div>
+<!-- /content --><!-- footer -->
+<div class="footer">
+    <div class="container">
+        <!--<ul class="nav-sub row">-->
+        <!--<li class="span2">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<h4 data-i18n="commonlang.company"></h4>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/about/" data-i18n="commonlang.about"></a> / <a href="/about-team/">Team</a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/contact/" data-i18n="commonlang.contact"></a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/privacy-policy/">Privacy</a> &amp; <a href="/terms-of-use/">Terms</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="span2">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<h4 data-i18n="commonlang.product"></h4>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/pricing/" data-i18n="commonlang.pricing"></a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/create/" data-i18n="commonlang.create"></a>-->
+        <!--</li>-->
+        <!--<li><a href="/collaborate/">Collaborate</a></li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="span2">-->
+        <!--<ul>-->
+        <!--<li><h4 data-i18n="commonlang.customer"></h4></li>-->
+        <!--<li><a href="/plezen-for-free/">Plezen for Free</a></li>-->
+        <!--<li><a href="/plezen-for-individual/">Plezen for Individual</a></li>-->
+        <!--<li><a href="/plezen-for-business/">Plezen for Business</a></li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="span2">-->
+        <!--<ul>-->
+        <!--<li><h4 data-i18n="commonlang.support"></h4></li>-->
+        <!--<li><a href="/support/">All Support</a></li>-->
+        <!--<li><a href="/support/article/steps/">Get Started</a></li>-->
+        <!--<li><a href="/support/article/">Manual/FAQ</a></li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--<hr class="separator">-->
+        <p class="copyright" data-i18n="commonlang.footer"></p>
+    </div>
+</div>
+<!-- /footer -->
+<script type="text/javascript" src="../scripts/extend/jquery.js"></script>
+<script type="text/javascript" src="../scripts/plezen/dropdown.js"></script>
+<script type="text/javascript" src="../scripts/extend/layer/layer.min.js"></script>
+<script type="text/javascript" src="../scripts/plezen/settings.js"></script>
+<script src="../scripts/extend/i18next-1.7.4.min.js"></script>
+<script src="../scripts/extend/language.js"></script>
+</body>
+</html>

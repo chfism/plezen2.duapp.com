@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/store
+END
+pending.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/store/pending.js
+END
+syncTransaction.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/store/syncTransaction.js
+END
+memory.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/store/memory.js
+END
+localStorage.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/store/localStorage.js
+END
+indexedDb.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/store/indexedDb.js
+END
+remoteCache.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/store/remoteCache.js
+END
+common.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/store/common.js
+END

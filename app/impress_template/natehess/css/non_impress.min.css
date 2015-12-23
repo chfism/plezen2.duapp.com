@@ -1,0 +1,499 @@
+@media only screen and (min-width: 1280px) {
+    .play {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    .pause {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+        position: relative;
+        top: -1.2em
+    }
+
+    .bigpause {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+        position: absolute;
+        left: 7px;
+        bottom: 50px;
+        font-size: 16px;
+        opacity: .5;
+        pointer-events: auto;
+        cursor: pointer;
+        z-index: 100;
+        border-radius: 2px;
+        overflow: hidden
+    }
+
+    .bigpause:hover {
+        opacity: 1
+    }
+
+    .hiding {
+        opacity: 0;
+        pointer-events: none;
+        z-index: 0
+    }
+
+    .text {
+        cursor: default
+    }
+
+    .pink {
+        color: #d92731;
+        display: inline
+    }
+
+    .green {
+        color: #98b858;
+        display: inline
+    }
+
+    .yellow {
+        color: #e6db74;
+        display: inline
+    }
+
+    .blinder-left {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        background-color: #282828;
+        z-index: 99;
+        box-shadow: 50px 50px 50px 50px rgba(83, 83, 83, 1)
+    }
+
+    .blinder-right {
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        background-color: #282828;
+        z-index: 99;
+        box-shadow: 50px 50px 50px 50px rgba(83, 83, 83, 1)
+    }
+
+    .navi {
+        pointer-events: auto;
+        color: rgba(40, 40, 40, 1);
+        z-index: 100;
+        line-height: 1.2em
+    }
+
+    .logotype {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 16px;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+        background-color: rgba(205, 205, 205, 1);
+        opacity: 1;
+        pointer-events: auto;
+        cursor: default;
+        padding: 3px 6px 3px 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+        z-index: 100;
+        border-radius: 2px;
+        height: 1em;
+        overflow: hidden
+    }
+
+    .nextBtn {
+        left: 12px
+    }
+
+    .homeBtn {
+        left: 12px
+    }
+
+    .menuBtn {
+        left: 12px
+    }
+
+    .realtext {
+        position: relative;
+        margin-left: 6.5em;
+        width: 10em;
+        display: inline-block;
+        top: 3em
+    }
+
+    .bizcard {
+        margin: 150px 170px 150px 170px;
+        width: 583px;
+        height: 332px;
+        background: rgba(205, 205, 205, 1);
+        border-radius: 15px;
+        color: rgba(40, 40, 40, 1);
+        cursor: default;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .1)
+    }
+
+    .bizcard hr {
+        margin-left: 24px;
+        margin-right: 24px
+    }
+
+    .biztext {
+        margin: 4px 24px 4px 24px;
+        font-size: 18px;
+        line-height: 3.2em
+    }
+
+    .recycle {
+        position: absolute;
+        bottom: 225px;
+        right: 190px
+    }
+
+    .infolist {
+        position: relative;
+        display: inline-block;
+        width: 33.5em;
+        top: 3em;
+        left: .6em;
+        word-wrap: normal;
+        line-height: 1.2em;
+        vertical-align: text-top
+    }
+
+    .intro {
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        margin-top: -35px
+    }
+
+    .page {
+        background: rgba(20, 20, 20, 1);
+        display: block;
+        width: 933px;
+        height: 700px;
+        line-height: 3em;
+        text-align: left;
+        cursor: default
+    }
+
+    .spinnerx {
+        display: block;
+        background-color: red;
+        width: 50px;
+        height: 600px;
+        border-radius: 50px;
+        opacity: .2;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    .spinnery {
+        display: block;
+        background-color: green;
+        width: 600px;
+        height: 50px;
+        border-radius: 50px;
+        opacity: .2;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    .spinnerz {
+        display: block;
+        background-color: blue;
+        width: 600px;
+        height: 50px;
+        border-radius: 50px;
+        opacity: .2;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    .spinnerx:hover, .spinnery:hover, .spinnerz:hover {
+        opacity: 1;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    background *
+
+/.bg {
+     display: block;
+     width: 1920px;
+     height: 1080px;
+     padding: 0;
+     pointer-events: none
+ }
+
+    .video {
+        background: rgba(0, 0, 0, 1)
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .play {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    .pause {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+        position: relative;
+        top: -1.2em
+    }
+
+    .bigpause {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+        position: absolute;
+        left: 7px;
+        bottom: 50px;
+        font-size: 16px;
+        opacity: .5;
+        pointer-events: auto;
+        cursor: pointer;
+        z-index: 100;
+        border-radius: 2px;
+        overflow: hidden
+    }
+
+    .bigpause:hover {
+        opacity: 1
+    }
+
+    .hiding {
+        opacity: 0;
+        pointer-events: none;
+        z-index: 0
+    }
+
+    .text {
+        cursor: default
+    }
+
+    .pink {
+        color: #d92731;
+        display: inline
+    }
+
+    .green {
+        color: #98b858;
+        display: inline
+    }
+
+    .yellow {
+        color: #e6db74;
+        display: inline
+    }
+
+    .blinder-left {
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        background-color: #282828;
+        z-index: 99;
+        box-shadow: 50px 50px 50px 50px rgba(83, 83, 83, 1)
+    }
+
+    .blinder-right {
+        position: absolute;
+        width: 100px;
+        height: 100%;
+        background-color: #282828;
+        z-index: 99;
+        box-shadow: 50px 50px 50px 50px rgba(83, 83, 83, 1)
+    }
+
+    .navi {
+        pointer-events: auto;
+        color: rgba(40, 40, 40, 1);
+        z-index: 100;
+        line-height: 1.2em
+    }
+
+    .logotype {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        font-size: 16px;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+        background-color: rgba(205, 205, 205, 1);
+        opacity: 1;
+        pointer-events: auto;
+        cursor: default;
+        padding: 3px 6px 3px 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
+        z-index: 100;
+        border-radius: 2px;
+        height: 1em;
+        overflow: hidden
+    }
+
+    .nextBtn {
+        left: 12px
+    }
+
+    .homeBtn {
+        left: 12px
+    }
+
+    .menuBtn {
+        left: 12px
+    }
+
+    .realtext {
+        position: relative;
+        margin-left: 6.5em;
+        width: 10em;
+        display: inline-block;
+        top: 3em
+    }
+
+    .bizcard {
+        margin: 150px 170px 150px 170px;
+        width: 583px;
+        height: 332px;
+        background: rgba(205, 205, 205, 1);
+        border-radius: 15px;
+        color: rgba(40, 40, 40, 1);
+        cursor: default;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .1)
+    }
+
+    .bizcard hr {
+        margin-left: 24px;
+        margin-right: 24px
+    }
+
+    .biztext {
+        margin: 4px 24px 4px 24px;
+        font-size: 18px;
+        line-height: 3.2em
+    }
+
+    .recycle {
+        position: absolute;
+        bottom: 225px;
+        right: 190px
+    }
+
+    .infolist {
+        position: relative;
+        display: inline-block;
+        width: 33.5em;
+        top: 3em;
+        left: .6em;
+        word-wrap: normal;
+        line-height: 1.2em;
+        vertical-align: text-top
+    }
+
+    .intro {
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        margin-top: -35px
+    }
+
+    .page {
+        background: rgba(20, 20, 20, 1);
+        display: block;
+        width: 933px;
+        height: 700px;
+        line-height: 3em;
+        text-align: left;
+        cursor: default
+    }
+
+    .spinnerx {
+        display: block;
+        background-color: red;
+        width: 50px;
+        height: 600px;
+        border-radius: 50px;
+        opacity: .2;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    .spinnery {
+        display: block;
+        background-color: green;
+        width: 600px;
+        height: 50px;
+        border-radius: 50px;
+        opacity: .2;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    .spinnerz {
+        display: block;
+        background-color: blue;
+        width: 600px;
+        height: 50px;
+        border-radius: 50px;
+        opacity: .2;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    .spinnerx:hover, .spinnery:hover, .spinnerz:hover {
+        opacity: 1;
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s
+    }
+
+    background *
+
+/.bg {
+     display: block;
+     width: 1920px;
+     height: 1080px;
+     padding: 0;
+     pointer-events: none
+ }
+}

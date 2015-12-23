@@ -1,0 +1,234 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>微前端-浅谈HTML5</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.useso.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <!--<link rel="shortcut icon" href="favicon.png" />-->
+    <!--<link rel="apple-touch-icon" href="apple-touch-icon.png" />-->
+
+    <!-- Chang URLs to wherever Video.js files will be hosted -->
+    <link href="css/video-js.css" rel="stylesheet" type="text/css">
+    <!-- video.js must be in the <head> for older IEs to work. -->
+    <script src="js/video.js"></script>
+
+    <!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+    <script>
+        _V_.options.flash.swf = "video/video-js.swf";
+    </script>
+
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message"
+<p>请使用PC端的chrome，firefox或ie 10+浏览器访问，才能表现出完整的效果。</p>
+</div>
+
+<div id="impress">
+
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q><br/>常常有人说 : <br/><b>HTML5</b>的时代来临了！现在都不用HTML了吧？</q>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q><br/><br/>有人认为HTML5是一套框架。</q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q><br/><br/>有些人把页面上新奇有趣的交互效果，都跟HTML5联系在一起。<br/><a href="http://www.vqianduan.com/" target="_blank">比如这个</a></q>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+        <q>
+            <br/><br/>HTML5不能取代HTML。<br/>
+            只是HTML技术的改进和提升。
+        </q>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">浅谈：</span>
+        <h1 style="height:240px">HTML5<sup>*</sup></h1>
+        <span class="footnote" style="margin-left:400px;">旨在进化而非革命！</span>
+    </div>
+
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <table width="100%" style="font-size:38px;">
+            <thead>
+            <tr>
+                <td colspan="2">今天主要讲这几点：</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr><td><br/></td><td></td></tr>
+            <tr>
+                <td>第1部分 ：布局；</td>
+            </tr>
+            <tr>
+                <td>第2部分 ：绘图；</td>
+            </tr>
+            <tr>
+                <td>第3部分 ：杂项；</td>
+            </tr>
+            <tr>
+                <td>第4部分 ：本地存储；</td>
+            </tr>
+            <tr>
+                <td>第5部分 ：高级应用；</td>
+            </tr>
+            <tr>
+                <td>第6部分 ：应用场景。</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--新结构-->
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>HTML5新页面标签<b style="font-size:170px;">惊喜？</b><span class="thoughts" style="text-align:left">新表单类型</span><br/><span style="text-align:right;text-indent:400px;font-size:50px;">高权限*</span></p>
+    </div>
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p style="text-align:left;">新标签</p>
+        <p style="text-align:left;">&lt;header&gt;,footer,aside,section,<br/>article,nav...</p>
+        <p style="text-align:left;font-size:30px;">加强语义化&nbsp;<b>和</b>&nbsp;文档结构清晰</p>
+    </div>
+    <div id="tiny2" class="step" data-x="3825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <img src="img/1.jpg" style="float:left;margin-right:10px;" />
+        <img src="img/2.jpg" style="float:left;" />
+    </div>
+    <div id="tiny3" class="step" data-x="4825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p style="text-align:left;font-size:100px;">FormAPI</p>
+        <p style="text-align:left;">新表单，新类型，新功能，新体验!</p>
+    </div>
+    <!--表单演示 iframe-->
+    <div id="tiny4" class="step" data-x="5825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <h3>表单演示：</h3>
+        <iframe src="img/example.html" style="background:#fff;border-radius:6px;" width="100%" height="400"></iframe>
+    </div>
+
+    <div id="tiny5" class="step" data-x="6825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p style="text-align:center;"><a href="http://www.vqianduan.com/" target="_blank"><b>fileAPI</b></a></p>
+        <p style="text-align:center;">更高权限地控制file控件</p>
+        <p style="text-align:center;font-size:30px;">提供更多样化的上传体验。</p>
+        <p style="text-align:center;font-size:30px;"><a href="http://www.vqianduan.com/" targer="_blank">例子1</a>&nbsp;<a href="http://www.vqianduan.com/" targer="_blank">例子2</a></p>
+    </div>
+
+    <!--canvas-->
+    <div id="tiny6" class="step" data-x="7325" data-y="2325" data-z="-6000" data-rotate="300" data-scale="1">
+        <p style="text-align:center;">CanvasAPI</p>
+        <p style="text-align:center;">关于这一块的内容完全可以写一本书，在动画 和 游戏方面都有很多的应用。</p>
+        <p style="text-align:center;">
+            <a href="http://www.vqianduan.com/" target="_blank">例子1</a>&nbsp;
+            <a href="http://www.vqianduan.com/" target="_blank">例子2</a>&nbsp;
+            <a href="http://www.vqianduan.com/" target="_blank">例子3</a>
+        </p>
+    </div>
+    <div id="tiny7" class="step" data-x="6325" data-y="2325" data-z="-6000" data-rotate="300" data-scale="1">
+        <p style="text-align:center;">WebGL</p>
+        <iframe src="http://www.vqianduan.com/" style="background:#fff;border-radius:6px;" width="100%" height="600" scrolling="no"></iframe>
+    </div>
+    <div id="tiny8" class="step" data-x="5325" data-y="2325" data-z="-6000" data-rotate="300" data-scale="1">
+        <p style="text-align:center;"><a href="http://www.vqianduan.com/" target="_blank">图表应用</a></p>
+        <iframe src="http://www.vqianduan.com/" style="background:#fff;border-radius:6px;" width="100%" height="600" scrolling="no"></iframe>
+    </div>
+
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p><b class="positioning">Geolocation API</b> <b class="rotating">latitude</b> 和 <b class="scaling">longitude</b>提供获取当前位置坐标信息</p>
+    </div>
+
+    <!--video讲解-->
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p style="font-size:40px;"><b>Audiao</b>&<b>Video</b></p>
+        <p style="font-size:30px;">
+            <br/>HTML4中已经存在 audio 和 video ？<br/><br/>
+            和传统网页播放器有什么不一样？
+        </p>
+    </div>
+    <!--video演示-->
+    <div id="imagination2" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>HTML5打造的视频播放器</p>
+        <br/>
+        <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+               poster="img/oceans-clip.png"
+               data-setup="{}">
+            <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+            <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+            <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+            <track kind="captions" src="captions.vtt" srclang="en" label="English" />
+        </video>
+    </div>
+
+    <!--web storage API-->
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>Web Storage API</p>
+    </div>
+    <!--localstorage , localsession-->
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="localstorage">localstorage</span>和<span class="localsession">localsession</span></p>
+        <span class="footnote">这和cookie有什么不同？</span>
+    </div>
+    <!--localdatabase-->
+    <div id="its-in-3d2" class="step" data-x="6400" data-y="4800" data-z="-200" data-rotate-x="-80" data-rotate-y="20" data-scale="2">
+        <p><span class="have">localdatabase</span></p>
+        <span class="footnote">浏览器内置的sqllite数据库。</span>
+    </div>
+
+    <div id="big4" class="step" data-x="9500" data-y="7100" data-rotate="80" data-scale="6">
+        <p>WebSocket API</p>
+        <p style="font-size:30px">HTML5中最强大的通信功能，<br/>仅通过Web上的一个Socket即可进行通信！</p>
+    </div>
+    <div id="big3" class="step" data-x="10500" data-y="10100" data-rotate="180" data-scale="6">
+        <p>Communication API</p>
+        <p style="font-size:30px;">跨文档通信 和 XMLHttpRequest Level2</p>
+        <div style="width:300px;border-radius:8px;background:#fff;height:200px;float:left;line-height:30px;font-size:14px;margin-top:20px;margin-right:20px;padding:20px;">
+            <b>模拟表单提交:</b><br/>
+<pre><code>var form = document.getElementById('myform');
+    var formData = new FormData(form);
+    formData.append('secret', '123456');
+    xhr.open('POST', form.action);
+    xhr.send(formData); </code></pre>
+        </div>
+        <div style="width:300px;border-radius:8px;background:#fff;height:200px;line-height:30px;float:left;margin-top:20px;font-size:14px;padding:20px;">
+            <b>跨域资源共享（跨域请求）</b><br/>
+            浏览器必须支持这个功能，而且服务器端必须同意这种"跨域"。如果能够满足上面的条件，则代码的写法与不跨域的请求完全一样。<br/>
+            xhr.open('GET', 'http://other.server/and/path/to/script');
+        </div>
+    </div>
+
+    <div id="big5" class="step" data-x="7500" data-y="10100" data-rotate="270" data-scale="6">
+        <p>多线程</p>
+        <p>使Web应用程序具备后台处理能力，可充分利用多核CPU的优势。</p>
+    </div>
+
+    <div id="big6" class="step" data-x="7500" data-y="15100" data-rotate="180" data-scale="6">
+        <p>给我们带来<b style="text-indent:-100px">HTML5</b><span class="thoughts">了什么？</span></p>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"></div>
+
+</div>
+
+<div class="hint">
+    <p>使用空格键或者方向键浏览</p>
+</div>
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

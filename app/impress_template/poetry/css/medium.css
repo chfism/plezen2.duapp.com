@@ -1,0 +1,130 @@
+.fallback-message {
+    width: 780px;
+}
+
+.impress-not-supported .step {
+	margin: 70px 20%;	
+}
+
+#next-gallery {
+	margin: 70px 20%; 
+	text-align: right;
+}
+
+
+
+
+/* ANTI IPHONE TOP MENUS ------------------------------------------------------------------------------------------------ */
+
+#mobile-hat {
+    display: none;   
+}
+
+#menu {
+	display: block;
+	position: absolute;
+	min-height: 45px;
+	width: 100%;
+	top: -45px;
+	left: 0;
+	display: block;	
+	z-index: 9999;
+	background: #fff;
+	opacity: 0.4;
+}
+
+.impress-not-supported #menu {
+	position: fixed;	
+}
+
+#menu.open,
+#menu:hover {
+	opacity: 0.9;	
+}
+
+#menu-inner {
+	background: #E8E8E8; /* Old browsers */
+	background: -moz-linear-gradient(top, #d1cbbc 0%, #e8e8e8 40%, #e8e8e8 83%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1cbbc), color-stop(40%,#e8e8e8), color-stop(83%,#e8e8e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d1cbbc 0%,#e8e8e8 40%,#e8e8e8 83%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d1cbbc 0%,#e8e8e8 40%,#e8e8e8 83%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d1cbbc 0%,#e8e8e8 40%,#e8e8e8 83%); /* IE10+ */
+	background: linear-gradient(top, #d1cbbc 0%,#e8e8e8 40%,#e8e8e8 83%); /* W3C */
+	position: relative;
+	min-height: 45px;	
+	padding: 0 2%;
+}
+ 
+#menu a {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 10px 2% 10px 2%;
+	color: #222;
+	border-bottom: 1px solid #222;
+	border-bottom: 1px solid rgba(0,0,0,0.0);
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+#menu a:hover,
+#menu a:focus {
+	border-bottom: 1px solid rgba(0,0,0,1);
+}
+
+#menuicon {
+	position: absolute;
+	bottom: -32px;
+	left: 85%;
+	z-index: 1000;
+	height: 32px;
+	text-align: center;
+	-webkit-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;    
+	background: #fff;
+	background: #e8e8e8;
+}
+ 
+#menuicon a {
+	color: #222;
+	font-size: 15px;
+    line-height: 32px;
+	border: 0;		
+	margin: 0;
+	outline: 0;
+	display: block;
+	padding: 0px 23px 0 15px;;
+	background: url(../img/nav_arrow.png) no-repeat 96% -22px;
+}
+
+.open #menuicon a {
+	background-position: 96% 8px;	
+}
+
+#menuicon a:hover,
+#menuicon a:focus {
+	border: 0;	
+}
+
+#menu a.menu-overview {
+	font-family: Entypo;
+	font-size: 45px;
+	line-height: 40px;
+	height: 40px;
+	width: auto;
+	border: 0;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 1px;
+	right: 5%;
+	display: none;
+}
+
+.not-touch #menu a.menu-overview {
+	display: block;	
+}
+
+.impress-not-supported #menu a.menu-overview {
+	display: none;	
+}

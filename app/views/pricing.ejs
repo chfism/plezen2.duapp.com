@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Pricing - Plezen</title><!-- Common Metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Choose the perfect Plezen plan from our Plezen pricing options.">
+    <link rel="stylesheet" href="../styles/extend/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/extend/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/extend/templates.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/extend/font-awesome.css" type="text/css"/>
+    <script src="../scripts/extend/jquery.js"></script>
+    <!--<script src="../scripts/extend/main.js"></script>-->
+    <script src="../scripts/extend/i18next-1.7.4.min.js"></script>
+</head>
+<body class="lazy">
+<header id="header" class="p-grey-background">
+    <div class="p-container container-fluid">
+        <div id="p-header-row" class="row">
+            <div id="p-header-logo"><a href="/"><img
+                            src="../img/extend/plezen-logo-blue.png" height="44"
+                            width="105"/></a></div>
+            <div id="p-header-dropdown">
+                <% if (!user) { %>
+                <a href="/login/" class="btn btn-discreet" data-i18n="commonlang.login"></a>
+                <% } else { %>
+                <a href="/logout/" class="btn btn-discreet" data-i18n="commonlang.logout"></a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Content -->
+<section id="pricing">
+    <div class="fullwidth-section half-padding">
+        <div class="container">
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h2 class="weight-800 kill-top-margin uppercase" data-i18n="pricinglang.title"></h2>
+                    <h4 class="weight-400" data-i18n="pricinglang.subtitle"></h4>
+                </div>
+            </div>
+            <div class="row pricing-table">
+                <div class="col-md-4 text-center ae" data-animation="flipInY" data-offset="70%">
+                    <h4 class="weight-800 uppercase" data-i18n="pricinglang.freeplan"></h4>
+
+                    <h1 class="weight-800 kill-top-margin">$0<span class="decimal" data-i18n="pricinglang.month"></span>
+                    </h1>
+                    <ul>
+                        <li data-i18n="pricinglang.freefeature1"></li>
+                        <li data-i18n="pricinglang.freefeature2"></li>
+                    </ul>
+                    <ul class="left">
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature3"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature4"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature5"></i></li>
+                        <li><i class="fa fa-ban color-primary"></i> <i data-i18n="pricinglang.freefeature6"></i></li>
+                        <li><i class="fa fa-ban color-primary"></i> <i data-i18n="pricinglang.freefeature7"></i></li>
+                        <li><i class="fa fa-ban color-primary"></i> <i data-i18n="pricinglang.freefeature8"></i></li>
+                        <li><i class="fa fa-ban color-primary"></i> <i data-i18n="pricinglang.freefeature9"></i></li>
+                    </ul>
+                    <ul>
+                        <li class="stars"><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i></li>
+                        <li><a class="btn btn-primary" href="/signup/free" data-i18n="pricinglang.jumpin"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center active ae" data-animation="flipInY" data-offset="70%" data-delay="250">
+                    <h4 class="weight-800 uppercase" data-i18n="pricinglang.basicplan"></h4>
+
+                    <h1 class="weight-800 kill-top-margin">$0<span class="decimal" data-i18n="pricinglang.month"></span>
+                    </h1>
+                    <ul>
+                        <li data-i18n="pricinglang.basicfeature1"></li>
+                        <li data-i18n="pricinglang.basicfeature2"></li>
+                    </ul>
+                    <ul class="left">
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature3"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature4"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature5"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature6"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature7"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature8"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature9"></i></li>
+                    </ul>
+                    <ul>
+                        <li class="stars"><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i></li>
+                        <li><a class="btn btn-primary" href="/signup/basic" data-i18n="pricinglang.jumpin"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center ae" data-animation="flipInY" data-offset="70%" data-delay="500">
+                    <h4 class="weight-800 uppercase" data-i18n="pricinglang.advancedplan"></h4>
+
+                    <h1 class="weight-800 kill-top-margin">$0<span class="decimal" data-i18n="pricinglang.month"></span>
+                    </h1>
+                    <ul>
+                        <li data-i18n="pricinglang.advancedfeature1"></li>
+                        <li data-i18n="pricinglang.basicfeature2"></li>
+                    </ul>
+                    <ul class="left">
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature3"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature4"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature5"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature6"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature7"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature8"></i></li>
+                        <li><i class="fa fa-check color-primary"></i> <i data-i18n="pricinglang.freefeature9"></i></li>
+                    </ul>
+                    <ul>
+                        <li class="stars"><i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i></li>
+                        <li><a class="btn btn-primary" href="/signup/advanced" data-i18n="pricinglang.jumpin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer id="footer" class="p-grey-background">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 p-center">
+                <p class="p-center" data-i18n="commonlang.footer"></p></div>
+        </div>
+    </div>
+</footer>
+<script src="../scripts/extend/language.js"></script>
+</body>
+</html>

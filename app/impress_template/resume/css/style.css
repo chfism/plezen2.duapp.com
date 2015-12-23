@@ -1,0 +1,720 @@
+@charset "UTF-8";
+/*   
+Theme Name: Bojan Dragojevic Blog
+Theme URI: http://dragojevich.com/ 
+Description: Bojan Dragojevic personal page
+Version: 1.0 
+Author: Bojan Dragojevic
+Author URI: http://dragojevich.com/ 
+*/
+/*********************************************************************************************************
+***************************************************              HELPER CSS     **************************
+***********************************************************************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+.cf:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden; }
+
+.cf {
+  display: inline-block; }
+
+.hidden {
+  display: none; }
+
+.center {
+  text-align: center;
+  padding: 5px; }
+
+html[xmlns] .cf {
+  display: block; }
+
+* html .cf {
+  height: 1%; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello.eot?25934934");
+  src: url("fonts/fontello.eot?25934934#iefix") format("embedded-opentype"), url("fonts/fontello.woff?25934934") format("woff"), url("fonts/fontello.ttf?25934934") format("truetype"), url("fonts/fontello.svg?25934934#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?25934934#fontello') format('svg');
+  }
+}
+*/
+@font-face {
+  font-family: 'circle-email';
+  src: url("fonts/circle-email.eot?65189757");
+  src: url("fonts/circle-email.eot?65189757#iefix") format("embedded-opentype"), url("fonts/circle-email.woff?65189757") format("woff"), url("fonts/circle-email.ttf?65189757") format("truetype"), url("fonts/circle-email.svg?65189757#circle-email") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-mail:before {
+  content: '\2709'; }
+
+/* '✉' */
+.icon-plus:before {
+  content: '\2b'; }
+
+/* '+' */
+.icon-minus:before {
+  content: '\2d'; }
+
+/* '-' */
+.icon-info:before {
+  content: '\2139'; }
+
+/* 'ℹ' */
+.icon-plus-squared:before {
+  content: '\229e'; }
+
+/* '⊞' */
+.icon-minus-squared:before {
+  content: '\229f'; }
+
+/* '⊟' */
+.icon-home:before {
+  content: '\2302'; }
+
+/* '⌂' */
+.icon-menu:before {
+  content: '\2630'; }
+
+/* '☰' */
+.icon-flag:before {
+  content: '\2691'; }
+
+/* '⚑' */
+.icon-pencil:before {
+  content: '\270e'; }
+
+/* '✎' */
+.icon-check:before {
+  content: '\2713'; }
+
+/* '✓' */
+.icon-cancel:before {
+  content: '\2715'; }
+
+/* '✕' */
+.icon-cancel-circled:before {
+  content: '\2716'; }
+
+/* '✖' */
+.icon-cancel-squared:before {
+  content: '\274e'; }
+
+/* '❎' */
+.icon-help:before {
+  content: '\2753'; }
+
+/* '❓' */
+.icon-plus-circled:before {
+  content: '\2795'; }
+
+/* '➕' */
+.icon-minus-circled:before {
+  content: '\2796'; }
+
+/* '➖' */
+.icon-forward:before {
+  content: '\27a6'; }
+
+/* '➦' */
+.icon-info-circled:before {
+  content: '\e705'; }
+
+/* '' */
+.icon-eye:before {
+  content: '\e70a'; }
+
+/* '' */
+.icon-tag:before {
+  content: '\e70c'; }
+
+/* '' */
+.icon-upload-cloud:before {
+  content: '\e711'; }
+
+/* '' */
+.icon-reply:before {
+  content: '\e712'; }
+
+/* '' */
+.icon-reply-all:before {
+  content: '\e713'; }
+
+/* '' */
+.icon-code:before {
+  content: '\e714'; }
+
+/* '' */
+.icon-export:before {
+  content: '\e715'; }
+
+/* '' */
+.icon-print:before {
+  content: '\e716'; }
+
+/* '' */
+.icon-comment:before {
+  content: '\e718'; }
+
+/* '' */
+.icon-chat:before {
+  content: '\e720'; }
+
+/* '' */
+.icon-docs:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-basket:before {
+  content: '\e73d'; }
+
+/* '' */
+.icon-down-open:before {
+  content: '\e75c'; }
+
+/* '' */
+.icon-left-open:before {
+  content: '\e75d'; }
+
+/* '' */
+.icon-right-open:before {
+  content: '\e75e'; }
+
+/* '' */
+.icon-up-open:before {
+  content: '\e75f'; }
+
+/* '' */
+.icon-down-open-big:before {
+  content: '\e764'; }
+
+/* '' */
+.icon-left-open-big:before {
+  content: '\e765'; }
+
+/* '' */
+.icon-right-open-big:before {
+  content: '\e766'; }
+
+/* '' */
+.icon-up-open-big:before {
+  content: '\e767'; }
+
+/* '' */
+.icon-ccw:before {
+  content: '\f025'; }
+
+/* '' */
+.icon-facebook-circled:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-tumblr-circled:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-linkedin-circled:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-picture:before {
+  content: '🌄'; }
+
+/* '\1f304' */
+.icon-thumbs-up:before {
+  content: '👍'; }
+
+/* '\1f44d' */
+.icon-thumbs-down:before {
+  content: '👎'; }
+
+/* '\1f44e' */
+.icon-users:before {
+  content: '👥'; }
+
+/* '\1f465' */
+.icon-alert:before {
+  content: '💥'; }
+
+/* '\1f4a5' */
+.icon-attach:before {
+  content: '📎'; }
+
+/* '\1f4ce' */
+.icon-phone:before {
+  content: '📞'; }
+
+/* '\1f4de' */
+.icon-upload:before {
+  content: '📤'; }
+
+/* '\1f4e4' */
+.icon-download:before {
+  content: '📥'; }
+
+/* '\1f4e5' */
+.icon-lock:before {
+  content: '🔒'; }
+
+/* '\1f512' */
+.icon-lock-open:before {
+  content: '🔓'; }
+
+/* '\1f513' */
+.icon-back:before {
+  content: '🔙'; }
+
+/* '\1f519' */
+.btn_orange a,
+.submit,
+#cancel-comment-reply-link,
+.back-btn {
+  text-align: center;
+  background: #ff6908;
+  color: white;
+  padding: 7px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: .8em; }
+
+.btn_orange a:hover,
+.submit:hover,
+#cancel-comment-reply-link:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: .8; }
+
+.error_404 h2 {
+  color: #ff6908;
+  font-size: 1.5em; }
+
+/*****************************************************************************************************************
+***************************************************              GENERAL                 **************************
+******************************************************************************************************************/
+body {
+  font-size: 100%;
+  font-family: 'Open Sans', sans-serif; }
+
+html {
+  background: #000; }
+
+.bg {
+  background: url(../img/code.jpg);
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  text-indent: -9999px; }
+
+.header {
+  background: #ff6908;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.header_inner {
+  position: relative;
+  z-index: 9999;
+  /* margin: 0.3em 3em;*/
+  /*text-align: right;*/ }
+
+.header a {
+  color: white;
+  text-transform: uppercase; }
+
+.header .current_page_item {
+  background: #000; }
+
+body.ie-not-supported {
+  position: relative;
+  overflow: hidden; }
+
+.ie-browsers {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #ff6908;
+  color: white;
+  text-align: center;
+  z-index: 9999;
+  font-size: 1.5em;
+  padding: 100px;
+  line-height: 30px; }
+
+.ie-browsers a {
+  display: block;
+  margin: 20px;
+  color: white;
+  font-weight: bold; }
+
+.ie-browsers a:hover {
+  color: #000; }
+
+.ie-not-supported .footer {
+  position: static !important; }
+
+.ie-not-supported p.download {
+  margin-top: 50px; }
+
+/* HEADER */
+.header_inner {
+  width: 100%;
+  text-align: center; }
+
+.header nav {
+  color: white; }
+
+.header li a {
+  display: block;
+  font-size: 1.4em;
+  line-height: 2.2em;
+  font-weight: 600; }
+
+.header .current_page_item,
+.header .current_page_parent {
+  background: white; }
+
+.header .current_page_item a,
+.header .current_page_parent a {
+  color: #ff6908; }
+
+.header .icon {
+  color: white;
+  font-size: 2em;
+  display: inline-block;
+  padding: 0.4em 0.2em; }
+
+.header .icon em {
+  display: none; }
+
+.header .icon:hover {
+  color: #d5d5d5; }
+
+/* FOOTER */
+.footer {
+  background: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 4px solid #ff6908; }
+
+.footer h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  padding: 20px 0 10px 0;
+  color: #ff6908; }
+
+.footer .block_01 {
+  width: 96%;
+  padding: 2%; }
+
+.footer .block_02,
+.footer .block_03 {
+  text-align: center; }
+
+.footer .block_02 li {
+  display: inline-block;
+  padding: 5px 8px; }
+
+.footer ul {
+  width: 100%; }
+
+.footer li {
+  list-style: none;
+  margin: 10px 0; }
+
+.footer li a {
+  color: white; }
+
+.footer li input,
+.footer li textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-resize: none;
+  -moz-resize: none;
+  resize: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 0; }
+
+.footer li button {
+  background: #ff6908;
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 15px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 0; }
+
+.footer li button:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: .8;
+  border: none; }
+
+.footer .submit-wrap {
+  position: relative; }
+
+.footer .submit-wrap div {
+  display: none; }
+
+.footer .submit-wrap.disabled-button div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  cursor: pointer; }
+
+.footer .error-input-message {
+  background: #ff6908;
+  color: white;
+  padding: .5em; }
+
+.copyright {
+  background: #333333;
+  color: white;
+  display: block;
+  padding: 0 0 1em;
+  text-align: center;
+  line-height: 1.5em;
+  position: relative; }
+
+.copyright span {
+  border-bottom: 1px dashed;
+  display: block;
+  margin: 1em 2%;
+  padding: 1em 3em 1em 0;
+  color: #ff6908;
+  text-align: left; }
+
+.copyright .icon-up-open-big:before {
+  color: #ff6908;
+  float: right;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 10px; }
+
+.copyright em {
+  cursor: pointer; }
+
+.copyright a {
+  color: #ff6908;
+  padding: 0 2px 0 4px; }
+
+.message-alert-success {
+  margin: 0.4em .5em 1em;
+  padding: 0.7em;
+  font-size: 1em;
+  background: #ff6908;
+  color: white;
+  position: relative; }
+
+.message-alert-success .close {
+  position: absolute;
+  top: 0.1em;
+  right: 0.3em;
+  height: 2em;
+  width: 2em;
+  text-indent: 1em;
+  line-height: 2em;
+  cursor: pointer; }
+
+.impress-not-supported .message-alert-success {
+  margin: 2em .5em 1em; }
+
+/*********************************************************************************************************
+***************************************************              MIN WIDTH 600px          **************************
+***********************************************************************************************************/
+@media (min-width: 600px) {
+  .header_inner {
+    text-align: right; }
+
+  .header nav {
+    position: absolute;
+    top: 0; }
+
+  .header li {
+    float: left; }
+
+  .header li a {
+    padding: 0 1em;
+    line-height: 2em; }
+
+  .header .icon {
+    padding: 0.2em; }
+
+  .footer .block_02,
+  .footer .block_03 {
+    text-align: left;
+    float: left;
+    margin-left: 4em; }
+
+  .footer .block_02 li {
+    display: block;
+    padding: 5px 0; }
+
+  .message-alert-success {
+    margin: 0.8em .5em 1em; }
+
+  .impress-supported .message-alert-success {
+    margin: 0.8em .5em 1em; } }
+/*********************************************************************************************************
+***************************************************              MIN WIDTH 1024PX          **************************
+***********************************************************************************************************/
+@media (min-width: 1024px) {
+  .footer .block_01 {
+    width: 50%;
+    float: left; }
+
+  .footer .block_02,
+  .footer .block_03 {
+    margin-top: 2em; }
+
+  .message-alert-success {
+    margin: 0 0 1em 1em; }
+
+  .message-alert-success .close {
+    top: 0.6em;
+    right: 0.6em;
+    height: auto;
+    width: auto;
+    text-indent: 0;
+    line-height: 1em; } }

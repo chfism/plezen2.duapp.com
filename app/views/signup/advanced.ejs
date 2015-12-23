@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Plezen</title>
+    <!-- Common Metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp,noydir"/>
+    <meta name="description"
+          content="Plezen designs and creates presentation software that is enabling millions of people to be great presenters.">
+    <link rel="stylesheet" href="../../styles/extend/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="../../styles/extend/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../../styles/extend/signup.css" type="text/css"/>
+</head>
+<body class="lazy">
+
+<!-- Header -->
+<header id="header" class="p-grey-background">
+    <div class="p-container container-fluid">
+        <div id="p-header-row" class="row">
+            <div id="p-header-logo">
+                <a href="/">
+                    <img src="../../img/extend/plezen-logo-blue.png" height="44" width="97"/></a>
+            </div>
+            <div id="p-header-dropdown">
+                <div class="dropdown-container">
+                    <div class="dropdown">
+                        <a href="/login/" class="btn btn-discreet">Log in <span class="caret"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Content -->
+<div class="container p-container p-container-payment">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Start your free month of Advanced</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-7">
+            <form method="POST" action="/users" id="signup-form">
+                <!--<div style='display:none'>-->
+                <!--<input type='hidden' name='csrfmiddlewaretoken' value='2f0e1f995ab8f63ad153e8ee48af03d8'/></div>-->
+                <div class="">
+                    <div class="form-group has-feedback">
+                        <input type="text" name="username" class="form-control" placeholder="username"
+                               autofocus="on"/>
+                        <span class="glyphicon form-control-feedback hidden"></span>
+                        <label for="first_name" class="error hidden"></label>
+                    </div>
+                </div>
+                <div class="form-group has-feedback email-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email"/>
+                    <span class="glyphicon form-control-feedback hidden"></span>
+                    <label for="email" class="error hidden"></label>
+                </div>
+                <div class="form-group has-feedback password-group">
+                    <input type="password" name="password" class="form-control" placeholder="Password"/>
+                    <span class="glyphicon form-control-feedback hidden"></span>
+                    <label for="password" class="error hidden"></label>
+                    <input type="hidden" name="usertype" value="3"/>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary p-full-width" id="continue-payment">Continue</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-5 p-payment-sidebar">
+            <div class="">
+                <h3>Advanced &mdash; everything you need to be a better presenter</h3>
+                <ul class="p-feature-list">
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/>Unlimited storage</li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/>Create 3D Effect
+                        Presentation
+                    </li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/>Important Microsoft
+                        PowerPoint
+                    </li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/>Present Plezen Online
+                    </li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/>Downloadable
+                        Presentation
+                    </li>
+                    <li><img class="p-cross" src="../../img/extend/checkmark@2x.png" height="15"/>Use your own logo</li>
+                    <li><img class="p-cross" src="../../img/extend/checkmark@2x.png" height="15"/>Premium support</li>
+                    <li><img class="p-cross" src="../../img/extend/checkmark@2x.png" height="15"/>Private storage</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer id="footer" class="p-grey-background">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 p-center">
+                <p class="p-center">
+                    &copy; 2014 Plezen Inc.&nbsp;&middot;&nbsp;
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

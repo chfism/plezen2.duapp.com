@@ -1,0 +1,56 @@
+#impress .stage
+{
+	height: 100%;
+	max-height:680px;
+	min-height:380px;
+	position:relative; }
+
+#impress .stage article
+{
+	height: 100%;
+	max-height:520px;
+	min-height:310px;
+	position:relative; }
+
+@media all and (min-height: 1150px) {
+	#impress .stage
+	{
+		max-height:930px; }
+	
+	#impress .stage article
+	{
+		max-height:770px; }
+}
+
+@media all and (min-height: 1300px) {
+	#impress .stage
+	{
+		max-height:1080px; }
+	
+	#impress .stage article
+	{
+		max-height:1020px; }
+}
+
+#menu2
+{
+	top:20px; }
+
+.image
+{
+	max-width:100%;
+	text-align:center; }
+
+.next,.pre,.hint
+{
+	display:none; }
+
+#logo
+{
+	left:0;
+	top:-30px;
+	-moz-transform:scale(.75);
+	-o-transform:scale(.75);
+	-webkit-transform:scale(.75);
+	transform:scale(.75); }
+	

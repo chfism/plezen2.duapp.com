@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="mac chrome chrome3 webkit webkit5">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Log into Plezen for Plezen account access.">
+    <!--[if lt IE 9]>
+    <script src="../scripts/extend/html5shiv.js"></script>
+    <![endif]-->
+    <title>Plezen - Log In</title>
+    <link rel="stylesheet" href="../styles/extend/main3.css" type="text/css">
+    <link rel="stylesheet" href="../styles/extend/main2.css" type="text/css">
+    <link rel="stylesheet" href="../styles/extend/responsive.css" type="text/css"/>
+</head>
+<body class="lazy webkit">
+
+<div class="header header-fixed">
+    <div class="container">
+        <a class="branding" href="/">Plezen</a>
+        <ul class="nav-main container" id="navigation">
+            <li class="nav-create">
+                <a href="/your/" data-i18n="commonlang.create"> <span class="pointer"></span>
+                </a>
+            </li>
+            <li class="nav-explore">
+                <a href="/explore/staff-picks/" data-i18n="commonlang.explore"><span class="pointer"></span>
+                </a>
+            </li>
+        </ul>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <% if (!user) { %>
+                <a class="btn btn-primary sign-up" href="/signup/free" data-i18n="commonlang.signup"></a>
+                <a href="/login/" class="btn btn-discreet" data-i18n="commonlang.login"><span class="caret"></span></a>
+                <% } else { %>
+                <a class="btn btn-primary sign-up" href="/signup/free" data-i18n="commonlang.signup"></a>
+                <a href="/logout/" class="btn btn-discreet" data-i18n="commonlang.logout"><span
+                            class="caret"></span></a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content -->
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="span8">
+                <h1 class="span5 m-left0" data-i18n="commonlang.login"></h1>
+                <span class="pull-right top15"><i data-i18n="loginlang.new"></i>  <a href="/signup/free"
+                                                                                     data-i18n="commonlang.signup"></a></span>
+                <% if (message.length > 0) { %>
+                <p class="alert alert-error pull-left"><%= message %></p>
+                <% } %>
+                <form class="control-group " id="loginform" action="/users/session" method="post"
+                      accept-charset="utf-8">
+                    <!--<div style="display:none">-->
+                    <!--<input type="hidden" name="csrfmiddlewaretoken" value="50ca62d1534441f57854f964ba2623d4">-->
+                    <!--</div>-->
+                    <label>
+                        <input id="id_username" type="email" name="email" required=""
+                               data-i18n="[placeholder]signuplang.placeholderemail" class="span8 input-large"></label>
+                    <label>
+                        <input id="id_password" type="password" required="" name="password"
+                               data-i18n="[placeholder]signuplang.placeholderpassword" class="span8 input-large"
+                               maxlength="128"></label>
+                    <!--<input type="hidden" name="next" value="/your/" id="id_next">-->
+
+                    <div class="form-actions call-action large">
+                        <button type="submit" id="btn_login" class="btn btn-primary btn-large btn-login pull-left"
+                                data-i18n="commonlang.login"></button>
+                        <p class="message"><a href="/profile/reset/" data-i18n="loginlang.forget"></a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- /content -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <!--<ul class="nav-sub row">-->
+        <!--<li class="span2">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<h4 data-i18n="commonlang.company"></h4>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/about/" data-i18n="commonlang.about"></a> / <a href="/about-team/">Team</a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/contact/" data-i18n="commonlang.contact"></a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/privacy-policy/">Privacy</a> &amp; <a href="/terms-of-use/">Terms</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="span2">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<h4 data-i18n="commonlang.product"></h4>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/pricing/" data-i18n="commonlang.pricing"></a>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<a href="/create/" data-i18n="commonlang.create"></a>-->
+        <!--</li>-->
+        <!--<li><a href="/collaborate/">Collaborate</a></li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="span2">-->
+        <!--<ul>-->
+        <!--<li><h4 data-i18n="commonlang.customer"></h4></li>-->
+        <!--<li><a href="/signup/free" data-i18n="commonlang.free"></a></li>-->
+        <!--<li><a href="/signup/basic" data-i18n="commonlang.basic"></a></li>-->
+        <!--<li><a href="/signup/advanced" data-i18n="commonlang.advanced"></a></li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--<li class="span2">-->
+        <!--<ul>-->
+        <!--<li><h4 data-i18n="commonlang.support"></h4></li>-->
+        <!--<li><a href="/support/">All Support</a></li>-->
+        <!--<li><a href="/support/article/steps/">Get Started</a></li>-->
+        <!--<li><a href="/support/article/">Manual/FAQ</a></li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--<hr class="separator">-->
+        <p class="copyright" data-i18n="commonlang.footer"></p>
+    </div>
+</div>
+<!--<script type="text/javascript">-->
+<!--$(function(){-->
+<!--$("#id_username").focus();-->
+<!--$("#btn_login").click(function(e){-->
+<!--e.preventDefault();-->
+<!--$("#loginform").submit();-->
+<!--});-->
+<!--});-->
+<!--</script>-->
+<script src="../scripts/extend/jquery.js"></script>
+<!--<script src="../scripts/extend/main.js"></script>-->
+<script src="../scripts/extend/i18next-1.7.4.min.js"></script>
+<script src="../scripts/extend/language.js"></script>
+</body>
+</html>

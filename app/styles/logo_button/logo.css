@@ -1,0 +1,36 @@
+.logo {
+	width: 150px;
+	/*height: 32px;*/
+	margin-left: 5px;
+	padding: 0px 20px 0px 5px;
+}
+
+.logo-bg {
+	background-image: url('../../img/extend/plezen-logo-white-s.png');
+    /*background-image: url('img/strut-logo-32-light.png');*/
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+}
+
+.logo-holder {
+	margin-top: 5px;
+	margin-left: -8px;
+}
+
+.logo:hover {
+	background-position: 5px 0;
+}
+
+.logo-group .logo .caret {
+	position: absolute;
+	right: 6px;
+	top: 5px;
+	border-top-color: #FFF;
+	border-bottom-color: #FFF;
+}
+
+.logo-holder .dropdown-menu .label {
+	position: absolute;
+	right: 5px;
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" class=" js cssgradients js cssgradients">
+<head>
+    <title>Plezen - Build Impressive HTML Presentation</title>
+    <meta charset="utf-8">
+    <meta name=”description” content=”Plezen是采用Impress.js为核心的HTML5在线PPT编辑，分享网站”>
+    <meta name=”keyword” content=”Plezen，HTML5，Impress.js,在线PPT编辑“>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/extend/main.css" type="text/css">
+    <link rel="stylesheet" href="../styles/extend/home.css" type="text/css">
+    <link rel="stylesheet" href="../styles/extend/templates.css" type="text/css">
+    <link rel="stylesheet" href="../styles/extend/bootstrap.css" type="text/css">
+    <script src="../scripts/extend/jquery.js"></script>
+    <!--<script src="../scripts/extend/main.js"></script>-->
+    <script src="../scripts/extend/jquery.nicescroll.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("html").niceScroll();
+        });
+    </script>
+</head>
+<body class="lazy">
+<div class="p-scrollmenu p-border-bottom" style="display: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <img class="p-scrollmenu-logo" src="../img/extend/plezen-logo-blue.png" width="105" height="44" alt="">
+            </div>
+            <div class="col-xs-6 p-right p-p-top-5">
+                <% if (!user) { %>
+                <a id="p-signup-button-scrollmenu" href="/pricing/" class="btn btn-primary p-m-right-10"
+                   data-i18n="homelang.getstarted"></a>
+                <a class="p-scrollmenu-link" href="/login/" data-i18n="commonlang.login"></a>
+                <% } else { %>
+                <a class="p-scrollmenu-link p-m-right-15" href="/your" data-i18n="commonlang.your"></a>
+                <a class="p-scrollmenu-link" href="/logout/" data-i18n="commonlang.logout"></a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /scrollmenu -->
+<div class="p-above-fold hidden-xs">
+    <div class="p-cover-background-images">
+        <div class="parallax img-overlay3"
+             style="background-image: url(../img/extend/earth.jpg); background-position: 50% 0px;"
+             data-stellar-background-ratio="0.2"></div>
+        <div class="img-overlay-solid" style="background-color:rgba(60,62,71,0.3);"></div>
+    </div>
+    <div class="p-topmenu fading-images">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="/">
+                        <img class="p-cover-header-prezi-logo" src="../img/extend/plezen-logo-white.png" width="105"
+                             height="44" alt=""></a>
+                </div>
+                <div class="col-xs-6 p-right">
+                    <% if(!user) { %>
+                    <a class="btn btn-primary p-m-right-100" href="/login/" data-i18n="commonlang.login"></a>
+                    <% } else { %>
+                    <a class="btn btn-primary p-m-right-15" href="/your" data-i18n="commonlang.your"></a>
+                    <a class="btn btn-primary p-m-right-100" href="/logout/" data-i18n="commonlang.logout"></a>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /topmenu -->
+    <div class="container">
+        <div class="vertical-center" style="margin-top: 154.5px;">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="color-white weight-300" data-i18n="homelang.title_line1"></h2>
+
+                    <h1 class="weight-800 uppercase color-white super-large-caption" data-i18n="homelang.plezen"></h1>
+                </div>
+            </div>
+            <div class="row color-white">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h3 class="color-white weight-300" data-i18n="homelang.title_line2"></h3>
+
+                    <div class="text-center">
+                        <a id="p-signup-button-top" href="/signup/free"
+                           class="p-signup-button-top fading-images btn btn-primary btn-lg"
+                           data-i18n="homelang.getstarted"></a>
+                        <a href="/" class="p-learn fading-images btn btn-primary btn-lg"
+                           data-i18n="homelang.learnmore"></a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- /abovefold -->
+<div class="p-above-fold-xs visible-xs p-white-background">
+    <div class="p-mobile-background img-overlay3-mobile"></div>
+    <div class="p-topmenu-mobile p-p-top-20">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="/">
+                        <img class="p-m-left-15" src="../img/extend/plezen-logo-white.png" width="105" height="44"
+                             alt="">
+                    </a>
+                </div>
+                <div class="col-xs-6 p-right">
+                    <% if(!user) { %>
+                    <a class="p-m-right-15 p-topmenu-link p-login-topmenu" href="/login/"
+                       data-i18n="commonlang.login"></a>
+                    <% } else { %>
+                    <a class="p-m-right-15 p-topmenu-link p-login-topmenu" href="/your"
+                       data-i18n="commonlang.your"></a>
+                    <a class="p-m-right-15 p-topmenu-link p-login-topmenu" href="/logout/"
+                       data-i18n="commonlang.logout"></a>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-signupbox-expandable-start p-mobile-tagline">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 p-center">
+                    <h2 class="color-white weight-300" data-i18n="homelang.title_line1"></h2>
+
+                    <h1 class="weight-600 uppercase color-white large-caption" data-i18n="homelang.plezen"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-mobile-signup">
+        <div class="container">
+            <div class="row">
+                <div class="p-center">
+                    <a id="p-signup-button-mobile-top" href="/pricing/"
+                       class="p-min-width-170 p-min-height-30 btn btn-primary" data-i18n="homelang.getstarted"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- /abovefold-mobile -->
+<div class="p-cover-section p-below-fold-section ">
+    <div class="container-fluid p-p-side-50">
+        <div class="row">
+            <div class="col-xs-12 p-center">
+                <h2 class="p-cover-header" data-i18n="homelang.subtitle"></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 p-center p-m-top-50">
+                <img class="p-feature-image" src="../img/extend/icon-zooming-streamline@2x.png" width="55"
+                     alt="Projector screen">
+
+                <p class="p-m-top-30 p-cover-column-content"><font size="5">Easy-To-Use</font>
+
+                <p data-i18n="homelang.subtitle_description1"/>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-3 p-center p-m-top-50">
+                <img class="p-feature-image" src="../img/extend/icon-ideas-streamline@2x.png" width="55"
+                     alt="Connecting dots">
+
+                <p class="p-m-top-30 p-cover-column-content"><font size="5">Cloud-Based</font>
+
+                <p data-i18n="homelang.subtitle_description2"/>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-3 p-center p-m-top-50">
+                <img class="p-feature-image" src="../img/extend/icon-visuals-streamline@2x.png" width="55"
+                     alt="Animated images">
+
+                <p class="p-m-top-30 p-cover-column-content"><font size="5">Multi-Device</font>
+
+                <p data-i18n="homelang.subtitle_description3"/>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-3 p-center p-m-top-50">
+                <img class="p-feature-image" src="../img/extend/icon-collaboration-streamline@2x.png" width="55"
+                     alt="Animated people connect">
+
+                <p class="p-m-top-30 p-cover-column-content"><font size="5">HTML5</font>
+
+                <p data-i18n="homelang.subtitle_description4"/>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="p-cover-product-section p-white-background">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 p-center">
+                <h2 class="p-cover-header" data-i18n="homelang.subtitle2"></h2>
+
+                <p class="p-m-top-20 p-cover-product-desc" data-i18n="homelang.subtitle2_line1"></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid hidden-xs">
+        <div class="row">
+            <div class="col-xs-12 p-p-top-30 p-p-bottom-30 p-center">
+                <img src="../img/extend/device@2x.png" width="960" height="550" alt="Plezen Mobile">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid visible-xs">
+        <div class="row">
+            <div class="col-xs-12 p-p-top-30 p-p-bottom-30 p-center">
+                <img src="../img/extend/device@2x.png" width="290" alt="Plezen Mobile">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-cta-section p-smoke-background" style="padding-bottom: 0px">
+    <div class="container">
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="col-xs-12 p-center">
+                <h2 class="p-cover-header" data-i18n="homelang.subtitle3"></h2>
+
+                <p class="p-m-top-20 p-cover-product-desc" data-i18n="homelang.subtitle3_line1"></p>
+            </div>
+        </div>
+    </div>
+    <section id="portfolio">
+        <div class="row">
+            <div id="isotope" class="isotope">
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/home/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/home/overview.png');">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/life/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/life/overview.png');">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/prongoweb/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/prongoweb/overview.png');">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/symposium/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/symposium/overview.png');">
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/hashdog/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/hashdog/overview.png');">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/css3/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/css3/overview.png');">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/ava/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/ava/overview.png');">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/poetry/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/poetry/overview.png');">
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/responsive/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb"
+                         style="background-image: url('../impress_template/responsive/overview.png');">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/resume/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/resume/overview.png');">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/party/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/party/overview.png');">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-buttons">
+                            <a href="../impress_template/ubuntu/index.html" target="_blank"
+                               data-i18n="homelang.viewproject"></a>
+                        </div>
+                    </div>
+                    <div class="img-thumb" style="background-image: url('../impress_template/ubuntu/overview.png');">
+                    </div>
+                </div>
+            </div>
+            <!-- END ISOTOPE SCRIPT -->
+        </div>
+    </section>
+</div>
+
+
+<div class="p-cover-section p-white-background">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 p-center">
+                <p class="p-cta-text p-m-bottom-30" data-i18n="homelang.subtitle4"></p>
+            </div>
+        </div>
+        <div class="row hidden-xs">
+            <div class="col-xs-12 p-center">
+                <a id="p-signup-button-bottom" href="/pricing/" class="p-min-width-300 btn btn-primary btn-lg"
+                   data-i18n="homelang.getstarted"></a>
+            </div>
+        </div>
+        <div class="row visible-xs">
+            <div class="col-xs-12 p-center">
+                <a id="p-signup-button-mobile-bottom" href="/pricing/" class="p-min-width-170 btn btn-primary btn-lg"
+                   data-i18n="homelang.getstarted"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer" class="p-dark-background">
+    <div class="container-fluid">
+        <div class="row p-m-bottom-15">
+            <div class="col-xs-12 p-center p-footer-navigation-links">
+                <ul class="list-inline">
+                    <li class="p-p-side-10"><a class="p-footer-explore" href="/explore/staff-picks/"
+                                               data-i18n="commonlang.explore"></a></li>
+                    <li class="p-p-side-10"><a class="p-footer-company" href="/about/"
+                                               data-i18n="commonlang.company"></a></li>
+                    <li class="p-p-side-10"><a class="p-footer-support" href="/support/"
+                                               data-i18n="commonlang.support"></a></li>
+                    <li class="p-p-side-10"><a class="p-footer-pricing" href="/pricing/"
+                                               data-i18n="commonlang.pricing"></a></li>
+                    <li class="p-p-side-10"><a class="p-footer-terms" href="/terms/" data-i18n="commonlang.terms"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 p-center">
+                <p data-i18n="commonlang.footer"></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script type="text/javascript" src="../scripts/plezen/home.js"></script>
+<script src="../scripts/extend/i18next-1.7.4.min.js"></script>
+<script src="../scripts/extend/language.js"></script>
+</body>
+</html>

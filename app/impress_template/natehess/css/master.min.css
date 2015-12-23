@@ -1,0 +1,303 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+hr {
+    color: #ccc;
+    opacity: .5;
+    margin-top: .5em
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    line-height: 1;
+    pointer-events: none;
+    font-family: sans-serif;
+    background: rgba(40, 40, 40, 1);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+b, strong {
+    font-weight: 700
+}
+
+i, em {
+    font-style: italic
+}
+
+a {
+    color: rgba(40, 40, 40, .7);
+    padding: 0 .1em;
+    text-decoration: none;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
+a:visited, {
+    color: rgba(40, 40, 40, 1)
+}
+
+a:hover, a:focus {
+    color: black
+}
+
+h1 {
+    font-size: 100px
+}
+
+h2 {
+    padding-top: 18px;
+    font-size: 50px
+}
+
+h3 {
+    font-size: 72px
+}
+
+#about {
+    visibility: visible
+}
+
+#aboutFallback {
+    visibility: hidden
+}
+
+.step {
+    position: relative;
+    pointer-events: auto;
+    padding: 0;
+    color: #ccc;
+    line-height: 1.5
+}
+
+.impress-enabled .step.active {
+    opacity: 1;
+    cursor: normal
+}
+
+.portrait {
+    display: block;
+    width: 700px;
+    height: 700px;
+    padding: 0;
+    opacity: .1
+}
+
+.impress-enabled .portrait {
+    margin: 0;
+    opacity: .1;
+    z-index: 0;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s
+}
+
+.impress-enabled .portrait.active {
+    opacity: .1
+}
+
+.step.active .next, .step.active .prev {
+    opacity: .5;
+    pointer-events: auto
+}
+
+.step.active .next:hover, .step.active .prev:hover {
+    opacity: 1
+}
+
+.impress-on-overview .fader {
+    opacity: .1;
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    -ms-transition: opacity 3s;
+    -o-transition: opacity 3s;
+    transition: opacity 3s
+}
+
+.fader {
+    opacity: .1;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s
+}
+
+.fader:hover {
+    opacity: 1;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.shortslide {
+    height: 622px;
+    display: block;
+    width: 933px
+}
+
+.slide {
+    display: block;
+    width: 933px;
+    height: 700px
+}
+
+.impress-on-overview .cycle-pager {
+    opacity: 0
+}
+
+.impress-on-overview .step {
+    cursor: pointer
+}
+
+.impress-on-overview .slide, .impress-on-overview .shortslide {
+    opacity: .1
+}
+
+.impress-on-overview .slide:hover, .impress-on-overview .shortslide:hover {
+    opacity: 1
+}
+
+.impress-enabled {
+    pointer-events: none
+}
+
+.impress-enabled #impress {
+    pointer-events: auto
+}
+
+.fallback-message {
+    font-family: 'Squada One';
+    line-height: 1.3;
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+    border: 1px solid #e4c652;
+    border-radius: 10px;
+    background: #eedc94
+}
+
+.fallback-message p {
+    margin-bottom: 10px
+}
+
+.impress-supported .fallback-message {
+    display: none
+}
+
+.impress-not-supported {
+    text-align: center
+}
+
+#impress {
+    width: 933px;
+    margin: 0 auto
+}
+
+.overview:after {
+    content: url('images/ui/fallback_header.svg')
+}
+
+.step {
+    position: relative;
+    pointer-events: auto;
+    padding: 0;
+    color: #ccc;
+    line-height: 1.5
+}
+
+.carrotNext {
+    position: fixed;
+    right: -550px;
+    top: 0;
+    height: 400px;
+    width: 500px;
+    opacity: 0;
+    pointer-events: none;
+    padding-left: 50px;
+    padding-top: 300px;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s
+}
+
+.carrotPrev:hover {
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s
+}
+
+.carrotNext:hover {
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s
+}
+
+.carrotNext:img {
+    pointer-events: auto
+}
+
+.carrotPrev {
+    position: fixed;
+    left: -600px;
+    top: 0;
+    height: 350px;
+    width: 500px;
+    opacity: 0;
+    pointer-events: none;
+    padding: 50px;
+    padding-top: 300px;
+    text-align: right;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s
+}
+
+.impress-on-overview .carrotPrev, .impress-on-overview .carrotNext {
+    pointer-events: none
+}
+
+.slide.active .carrotPrev, .slide.active .carrotNext {
+    pointer-events: auto
+}
+
+}

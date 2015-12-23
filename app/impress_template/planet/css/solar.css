@@ -1,0 +1,95 @@
+body {
+	background-image: url(../images/stars.png);
+	background-color: #000000;
+	font-family: 'Source Code Pro', 'Source Sans Pro', courier, monospace;
+	color: #FFF;
+	text-shadow: 3px 3px 5px #AAA; 
+	font-size: 40px;
+}
+
+.bloody {
+	font-family: 'Nosifer', cursive;
+	color: red;
+	text-shadow: 3px 3px 5px rgb(99, 10, 10); 
+}
+
+#solar-sub2 {
+	position: absolute;
+}
+
+#earth #speedy {
+	height: 100px;
+}
+
+.planet {
+	height:500px;
+	position: absolute;
+	left: -15%;
+/*	transform: translate3d(0px, 9px, -100px);*/
+}
+
+.floatleft {
+	float:left;
+}
+
+.floatright {
+	float:right;
+}
+
+#underhearts {
+	margin-top:50px;
+}
+
+#saturn .planet {
+	left: 50%;
+}
+#saturn div.substep {
+	left: -25%;
+}
+
+.slide {
+    display: block;
+    border: 0px;
+    
+    width: 900px;
+    height: 700px;
+    padding: 40px 60px;
+    background-color: transparent;
+
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
+.step .title, .step .subtitle {
+	font-size: 60px;
+	font-family: 'Holtwood One SC', serif;
+	opacity: 0;
+	padding-bottom:50px;
+}
+
+.step a.noscale {
+	opacity: 0;
+}
+
+.step .subtitle {
+	font-size:30px;
+}
+
+.step.active .title, .step.active .subtitle, .step.active a.noscale {
+	opacity: 1;
+}
+
+#credits li {
+	padding-top:10px;
+	font-size:15px;
+	min-width:500px;
+}
+
+#credits li a {
+	display: inline-block;
+	min-width:500px;
+}
+
+.step { pointer-events: none !important }
+.step.active { pointer-events: auto !important }

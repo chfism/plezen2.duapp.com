@@ -1,0 +1,464 @@
+#slides .caption .super-large-caption, .super-large-caption {
+    font-size: 100px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#slides .caption .large-caption, .large-caption {
+    font-size: 60px;
+}
+
+.img-overlay3:after{
+    background: url(../../img/extend/pat3.png) repeat;
+    content:'';
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.img-overlay3-mobile:after{
+    background: url(../../img/extend/pat3.png) repeat;
+    content:'';
+    width: 100%;
+    height: 400px;
+    top:0;
+    left:0;
+    position: absolute;
+    opacity: 0.5;
+}
+
+/* =================================  */
+/* ========== 2. BASIC STYLES ==========  */
+/* =================================  */
+html {
+    -webkit-font-smoothing: antialiased !important;
+    font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+    min-height: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFF;
+    /*color: #777;*/
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.64285;
+    overflow-x: hidden;
+    height: 100%;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    /*color: #fff6bf;*/
+    outline: 0;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+a:active, a:hover {
+    color: #f56363;
+    outline: 0;
+}
+section {
+    position: relative;
+}
+.bg-img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.fullwidth-section {
+    position: relative;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.fullwidth-section.half-padding {
+    position: relative;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.static-image {
+    position: relative;
+    padding-top:0;
+    padding-bottom:0;
+}
+.parallax {
+    position: absolute;
+    background-attachment: fixed;
+    background-position: top center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 1028px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+/* Page Loading */
+#pageloader {
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color:#FFF;
+    z-index:999999;
+}
+
+.loader-img {
+    position:absolute;
+    margin:-27px 0 0 -27px;
+    top:50%;
+    margin-top: -40px;
+    left:50%;
+    margin-left: -40px;
+    text-align:center;
+}
+
+/* =================================  */
+/* ========== 3. HELPER CLASSES ==========  */
+/* =================================  */
+.color-primary {
+    color: #f56363 !important;
+}
+.bg-primary {
+    color: #fff;
+    background-color: #f56363 !important;
+}
+.border-primary {
+    border-color: #f56363 !important;
+}
+.color-white {
+    color:#FFF !important;
+}
+.bg-white {
+    background-color:#FFF !important;
+}
+.border-white {
+    border-color: #FFF !important;
+}
+.color-dark {
+    color:#50525f!important;
+}
+.bg-dark {
+    background-color:#50525f!important;
+}
+.bg-transparent {
+    background-color: transparent !important;
+}
+.weight-300 {
+    font-weight: 300;
+}
+.weight-400 {
+    font-weight: 400;
+}
+.weight-500 {
+    font-weight: 500;
+}
+.weight-600 {
+    font-weight: 600;
+}
+.weight-700 {
+    font-weight: 700;
+}
+.weight-800 {
+    font-weight: 800;
+}
+.weight-900 {
+    font-weight: 900 !important;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.kill-top-margin {
+    margin-top: 0 !important;
+}
+.kill-bottom-margin {
+    margin-bottom: 0 !important;
+}
+.kill-top-padding {
+    padding-top: 0 !important;
+}
+.kill-bottom-padding {
+    padding-bottom: 0 !important;
+}
+.img-center {
+    margin: 0 auto;
+}
+.rounded {
+    border-radius: 1000px !important;
+}
+/* =================================  */
+/* ========== 4. HEADING STYLES ==========  */
+/* =================================  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #50525f;
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h4,
+h5,
+h6 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+h1,
+.h1 {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2
+}
+h2,
+.h2 {
+    font-size: 36px;
+}
+h3,
+.h3 {
+    font-size: 24px;
+}
+h4,
+.h4 {
+    font-size: 18px;
+}
+h5,
+.h5 {
+    font-size: 14px;
+}
+h6,
+.h6 {
+    font-size: 12px;
+}
+/* =================================  */
+/* ========== 11. PRICING TABLE STYLES ==========  */
+/* =================================  */
+.pricing-table div[class*='col-md-'] {
+    background-color: #F5F5F5;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.pricing-table div[class*='col-md-'].active {
+    background-color: #EEE;
+    border-right: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+}
+@media (max-width: 768px) {
+    .pricing-table div[class*='col-md-'].active {
+        border-top: 1px solid #EEE;
+        border-bottom: 1px solid #EEE;
+    }
+}
+.pricing-table .stars i {
+    margin-right: 2px;
+    font-size: 16px;
+    color: #FFD100;
+}
+.pricing-table i {
+    margin-right: 6px;
+    font-size: 14px;
+}
+.pricing-table .decimal {
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.pricing-table ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-table ul.left {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.pricing-table li {
+    padding: 6px 10px;
+}
+
+/* ============================================================ */
+/* ================= 21. PORTFOLIO STYLES ======================= */
+/* ============================================================ */
+#portfolio div[class*='col-sm-'] {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#portfolio button {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+#portfolio .col-sm-3 .img-thumb {
+    height: 250px;
+}
+
+.portfolio-hover {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color:rgba(60,62,71,0.7);
+    opacity: 0;
+    -webkit-transition: all 0.45s;
+    -moz-transition: all 0.45s;
+    -o-transition: all 0.45s;
+    transition: all 0.45s;
+    z-index: 10;
+}
+.portfolio-hover i {
+    position: relative;
+    font-size: 12px;
+    top: 1px;
+}
+.portfolio-hover-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -12px;
+    color: #FFF;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.portfolio-hover-buttons a{
+    border: 2px solid #FFF;
+    border-radius: 2px;
+    padding: 8px 18px;
+    margin: 0 1px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.portfolio-hover-buttons a:last-child {
+    padding: 8px 10px;
+}
+.portfolio-hover-buttons a:hover {
+    background-color:#FFF;
+    color: #327CCB;
+    border: 2px solid #FFF;
+}
+.portfolio-hover:hover {
+    opacity: 1;
+}
+/* ============================================= */
+/* ========== 22. ISOTOPE FILTERING SCRIPT ========== */
+/* ============================================= */
+#isotope, #isotope-masonry {
+    width:100%;
+    margin-top:0;
+}
+
+.isotope-item {
+    z-index:2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events:none;
+    z-index:1;
+}
+
+.isotope,.isotope .isotope-item {
+    -webkit-transition-duration:1s;
+    -moz-transition-duration:1s;
+    -ms-transition-duration:1s;
+    -o-transition-duration:1s;
+    transition-duration:1s;
+}
+
+.isotope {
+    -webkit-transition-property:height, width;
+    -moz-transition-property:height, width;
+    -ms-transition-property:height, width;
+    -o-transition-property:height, width;
+    transition-property:height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property:0 opacity;
+    -moz-transition-property:0 opacity;
+    -ms-transition-property:0 opacity;
+    -o-transition-property:0 opacity;
+    transition-property:transform, opacity;
+}
+
+#isotope .col-sm-3, #isotope-masonry .col-sm-3, #isotope .col-md-3, #isotope-masonry .col-md-3 {
+    width:24.9%;
+}
+#isotope .col-sm-4,#isotope-masonry .col-sm-4, #isotope .col-md-4,#isotope-masonry .col-md-4 {
+    width:33.3%;
+}
+
+@media (max-width: 768px) {
+    #isotope .col-sm-3, #isotope-masonry .col-sm-3, #isotope .col-md-3, #isotope-masonry .col-md-3 {
+        width:100%;
+    }
+
+    #isotope .col-sm-4, #isotope-masonry .col-sm-4, #isotope .col-md-4, #isotope-masonry .col-md-4 {
+        width:100%;
+    }
+}
+
+#isotope-filter {
+    margin-bottom: 40px;
+}
+/* =================================  */
+/* ============ 5. IMAGE STYLES ==========  */
+/* =================================  */
+img {
+    max-width: 100%;
+}
+.img-thumb {
+    position:relative;
+    width:100%;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position:center center;
+}

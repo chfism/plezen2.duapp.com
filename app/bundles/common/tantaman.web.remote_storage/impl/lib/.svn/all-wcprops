@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib
+END
+schedule.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/schedule.js
+END
+platform.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/platform.js
+END
+wireClient.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/wireClient.js
+END
+shell.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/shell.js
+END
+nodeConnect.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/nodeConnect.js
+END
+widget.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/widget.js
+END
+getputdelete.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/getputdelete.js
+END
+assets.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/assets.js
+END
+util.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/util.js
+END
+store.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/store.js
+END
+testHelper.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/testHelper.js
+END
+foreignClient.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/foreignClient.js
+END
+i18n.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/i18n.js
+END
+webfinger.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/webfinger.js
+END
+baseClient.js
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/baseClient.js
+END
+sync.js
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/lib/sync.js
+END

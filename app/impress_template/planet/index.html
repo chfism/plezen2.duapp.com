@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js presentation</title>
+    <meta name="description" content="impress.js presentation" />
+    <meta name="author" content="Wojciech Michalak" />
+    <link href='http://fonts.useso.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/solar.css" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
+</head>
+<body>
+<!--
+<audio id="global_music_effect">
+    <source src="sounds/Beethoven_Moonlight_1st_movement.ogg" type="audio/ogg">
+</audio>
+<audio id="global_step_leave_effect">
+    <source src="sounds/flyby.wav" type="audio/wav">
+</audio>
+<audio id="global_step_enter_effect">
+    <source src="sounds/flyby_inverted.wav" type="audio/wav">
+</audio>
+<audio id="global_substep_enter_effect">
+    <source src="sounds/Swoosh.wav" type="audio/wav">
+</audio>
+-->
+<div id="impress" data-rewrite="true" data-transition-duration="1000">
+    <!--
+        Slides with the "skip" class aren't slides but only serve as animation keyframes.
+     -->
+    <div id="overview" class="slide step"  data-scale="100" data-reset="true">
+        <p class="title">Our Planets</p>
+        <p class="subtitle">A impress.js presentation</p>
+        <p class="subtitle">Wojciech Michalak</p>
+
+    </div>
+    <div id="solar" class="slide step"  data-scale="100">
+        <p class="title">The Solar System</p>
+        <div class="substep info" data-animation="slide_left" data-timed="6">
+            The <span class="enlarge colorize solar" >Solar System</span> consists of:
+            <ul class="enlarge">
+                <li><span class="colorize sun">The Sun</span>
+                <li><span class="colorize planets">eight planets</span>
+                <li><span class="colorize moons">their moons</span>
+                <li><span class="colorize others">other non-stellar objects</span>
+            </ul>
+        </div>
+        <div class="substep" data-animation="slide_up">
+            It formed 4.6 billion years ago from the gravitational collapse of a giant molecular cloud.
+        </div>
+    </div>
+    <div class="step skip" data-scale="50" data-rotate="0" data-x="-33000" data-rotate-y="0">
+        <img class="planet" src="img/sun_500.png" alt="Sun"/>
+    </div>
+    <div id="mercury" class="slide step" data-scale="0.18" data-x="2500" data-y="5000" data-rotate="0" >
+        <p class="title">Mercury</p>
+        <img class="planet absolute" src="img/Mercury.png" alt="Mercury"/>
+        <div class="substep" data-timed="1"></div>
+        <div class="substep  info" data-animation="swing_down" data-timed="2.5">
+            <span class="constrict">Closest</span> <span class="planets colorize">planet</span> to the <span class="sun colorize">Sun</span>.<br>
+            <span class="smaller">Smallest</span> <span class="planets colorize">planet</span> in the <span class="solar colorize">Solar System</span>.<br>
+            Namesake: Messenger of the <span class="bolden spaceout">Roman Gods</span><br>
+        </div>
+        <div class="substep info" data-animation="swing_left">
+            Orbit Size (semi-major axis): 57,909,227 km<br>
+            Mean Radius:  2,439.7 km <br>
+            Volume:  60,827,208,742 km<sup>3</sup><br>
+            Mass:  330,104,000,000,000,000,000,000 kg<br>
+        </div>
+    </div>
+    <div class="step skip" data-scale="30" data-y="-7500" data-rotate="90" data-rotate-y="-30"></div>
+    <div id="venus" class="slide step" data-scale="0.44" data-x="2115" data-y="-7500" data-rotate="87.4">
+        <p class="title">Venus</p>
+        <img class="planet absolute" src="img/Venus.png" alt="Venus"/>
+        <div class="substep" data-timed="1"></div>
+        <div class="substep info" data-animation="swing_right" data-timed="3">
+            Close in size to <span class="planets colorize">Earth</span>.<br>
+            It is the <span class="colorize redhot">hottest</span> <span class="planets colorize">planet</span> <span class="colorize redhot">400°C</span><br>
+            Namesake: Roman goddess of love and beauty.
+        </div>
+        <!--
+        <div class="floatleft substep inline" data-animation="spin_outer" data-timed="0"><img src="img/heart.png"/></div>
+        <div class="floatleft substep inline" data-animation="spin_inner" data-timed="0"><img src="img/heart.png"/></div>
+        <div class="floatright substep inline" data-animation="spin_outer" data-timed="0"><img src="img/heart.png"/></div>
+        <div class="floatright substep inline" data-animation="spin_inner" data-timed="0"><img src="img/heart.png"/></div>
+         -->
+        <div id="underhearts" class="substep info" data-animation="swing_up">
+            Orbit Size (semi-major axis):  108,209,475 km<br>
+            Mean Radius:  6,051.8 km<br>
+            Volume:  928,415,345,893 km<sup>3</sup><br>
+            Mass:  4,867,320,000,000,000,000,000,000 kg <br>
+        </div>
+    </div>
+    <div id="venus-earth-skip" class="step skip" data-scale="10"></div>
+    <div id="earth" class="slide step" data-x="5000" data-scale="0.46" data-x="2115" data-y="7500" data-rotate="-153.95">
+        <p class="title">Earth</p>
+        <img class="planet absolute" src="img/Earth.png" alt="Earth"/>
+        <div class="substep" data-timed="1"></div>
+        <div class="substep info" id="speedy" data-animation="upside_down_flip" data-timed="2">
+            Estimated to be 4.5 billion years old.<br>
+            <div class="substep absolute hidden" data-animation="slide_through" data-timed="2">It travels through space at 660,000 miles per hour.<br></div>
+            <div class="substep absolute hidden" data-animation="slide_through" data-timed="2">It travels through space at 660,000 miles per hour.<br></div>
+            <div class="substep absolute" data-animation="slide_right" data-timed="2">It travels through space at 660,000 miles per hour.<br></div>
+        </div>
+        <div class="substep info" data-animation="spin_inner">
+            Orbit Size (semi-major axis):  149,598,262 km<br>
+            Mean Radius:  6,371.00 km<br>
+            Volume:  1,083,206,916,846 km<sup>3</sup><br>
+            Mass:  5,972,190,000,000,000,000,000,000 kg <br>
+        </div>
+    </div>
+    <div class="step skip" data-scale="10" data-y="-2500" data-rotate="180"></div>
+    <div id="mars" class="slide step" data-scale="0.24" data-x="3334" data-y="-2500" data-rotate="180.53" data-rotate-x="15">
+        <p class="title">Mars</p>
+        <img class="planet absolute" src="img/Mars.png" alt="Mars"/>
+        <div class="substep" data-timed="1"></div>
+        <div class="substep info" data-animation="upside_down_flip" data-timed="2">
+            <span class="planets colorize">Mars</span> is a <span class="colorize icecold">cold</span> desert world <span class="colorize icecold">-87°C</span><br>
+            There are signs of ancient <span class="colorize water">floods</span> on Mars<br>
+            Namesake: Roman God of <div class="substep inline" data-animation="spin_outer" data-timed="2"><span class="redhot bloody">WAR</span></div>
+        </div>
+        <div class="substep info" data-animation="spin_inner">
+            Orbit Size (semi-major axis):  227,943,824 km<br>
+            Mean Radius:  3,389.5 km<br>
+            Volume:  163,115,609,799 km<sup>3</sup><br>
+            Mass:  641,693,000,000,000,000,000,000 kg<br>
+        </div>
+    </div>
+    <div class="step skip" data-scale="10" data-y="-2500"></div>
+    <div id="jupiter" class="slide step" data-scale="5.13" data-x="23589" data-y="-2500" data-rotate="-20.9" data-rotate-x="15">
+        <p class="title">Jupiter</p>
+        <img class="planet absolute" src="img/Jupiter.png" alt="Jupiter"/>
+        <div class="substep" data-timed="1"></div>
+        <div class="substep info" data-animation="upside_down_flip" data-timed="2">
+            Most <span class="enlarge">MASSIVE</span> planet in the <span class="solar colorize">solar system</span><br>
+            With dozens of moons and an <div class="substep inline" data-animation="slow_entrance" data-timed="2">enormous</div><br>magnetic field -- forms a kind of miniature solar system.
+        </div>
+        <div class="substep info" data-animation="upside_down_flip_counter">
+            Orbit Size (semi-major axis):  227,943,824 km<br>
+            Mean Radius:  3,389.5 km<br>
+            Volume:  163,115,609,799 km<sup>3</sup><br>
+            Mass:  641,693,000,000,000,000,000,000 kg<br>
+        </div>
+    </div>
+    <div class="step skip" data-scale="10"></div>
+    <div id="saturn" class="slide step" data-scale="4.31" data-x="27821" data-y="-5000" data-rotate="23.65" data-rotate-x="-15">
+        <p class="title">Saturn</p>
+        <img class="planet" src="img/Saturn.png" alt="Saturn"/>
+        <div class="substep" data-timed="1"></div>
+        <div class="substep info" data-animation="upside_down_flip" data-timed="2">
+            A massive ball of hydrogen and helium.<br>
+            Namesake: Roman god of
+            <div class="substep inline" data-timed="0.1" data-animation="slide_left">a</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">g</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">r</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">i</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">c</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">u</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">l</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">t</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">u</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">r</div><div class="substep inline" data-timed="0.1" data-animation="slide_left">e</div>
+        </div>
+        <div class="substep info" data-animation="upside_down_flip_counter">
+            Orbit Size (semi-major axis):  1,426,666,422 km<br>
+            Mean Radius:  58,232 km<br>
+            Volume:  827,129,915,150,897 km<sup>3</sup><br>
+            Mass:  568,319,000,000,000,000,000,000,000 kg<br>
+        </div>
+    </div>
+    <div class="step skip" data-scale="10"></div>
+    <div id="uranus" class="slide step" data-scale="1.84" data-x="61795" data-y="5000" data-rotate="71.19" data-rotate-x="-15">
+        <p class="title">Uranus</p>
+        <img class="planet" src="img/Uranus.png" alt="Uranus"/>
+        <div class="substep" data-timed="1"></div>
+        <div class="substep" data-animation="upside_down_flip" data-timed="2">
+            <div class="info colorizebg methane">
+                Methane gives Uranus its blue tint.<br>
+                Nights on Uranus can last 40 years.<br>
+                Namesake: Greek God of the sky.<br>
+            </div>
+        </div>
+        <div class="substep info" data-animation="upside_down_flip_counter">
+            Orbit Size (semi-major axis):  2,870,658,186 km<br>
+            Mean Radius:  25,362 km<br>
+            Volume:  68,334,355,695,584 km<sup>3</sup><br>
+            Mass:  86,810,300,000,000,000,000,000,000 kg<br>
+        </div>
+    </div>
+    <div class="step skip" data-scale="10"></div>
+    <div id="neptune" class="slide step" data-scale="1.78" data-x="69743" data-y="5000" data-rotate="-69.12" data-rotate-x="0">
+        <p class="title">Neptune</p>
+        <img class="planet" src="img/Neptune.png" alt="Neptune"/>
+        <div class="substep" data-timed="1"></div>
+        <div class="substep info" data-animation="upside_down_flip" data-timed="2">
+            <span class="hide">Dark</span>, <span class="colorize icecold">cold</span> and whipped by supersonic winds<br>
+            In 2011 Neptune completed its first orbit since its discovery in 1846.<br>
+        </div>
+        <div class="substep info" data-animation="upside_down_flip_counter">
+            Orbit Size (semi-major axis):  4,498,396,441 km<br>
+            Mean Radius:  24,622 km<br>
+            Volume:  62,525,703,987,421 km<sup>3</sup><br>
+            Mass:  102,410,000,000,000,000,000,000,000 kg<br>
+        </div>
+    </div>
+    <div id="credits" class="slide step" data-scale="100">
+        <p class="subtitle">Thank you for watching</p>
+        <div class="substep">
+            Data:
+            <ul>
+                <li><a href="http://solarsystem.nasa.gov/planets/">NASA - Solar System Exploration: : Planets</a></li>
+                <li><a href="http://www.planetfacts.net/">Planet Facts.net</a></li>
+            </ul>
+            Imagery courtesy of NASA:
+            <ul>
+                <li><a href="http://solarsystem.nasa.gov/planets/">NASA - Solar System Exploration: : Planets</a></li>
+                <li><a href="http://apod.nasa.gov/cgi-bin/apod/apod_search">Astronomy Picture of the Day - Searchable Archive</a></li>
+            </ul>
+            Music:
+            <ul>
+                <li><a href="http://en.wikipedia.org/wiki/File:Beethoven_Moonlight_1st_movement.ogg">"Beethoven: Moonlight sonata 1st movement" by Bernd Krueger (CC-BY-SA 2.0)</a></li>
+            </ul>
+            Sounds:
+            <ul>
+                <li><a href="http://soundbible.com/1891-Flyby.html">"Flyby sound" by Conor (Attribution 3.0)</a></li>
+                <li><a href="http://soundbible.com/682-Swoosh-1.html">"Swoosh sound" by man (Sampling Plus 1.0)</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<script src="js/impress.js"></script>
+<script src="js/impress-animations.js"></script>
+<script>
+    var impress = impress();
+    impress.init();
+</script>
+</body>
+</html>

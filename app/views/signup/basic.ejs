@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Plezen</title>
+    <!-- Common Metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp,noydir"/>
+    <meta name="description"
+          content="Plezen designs and creates presentation software that is enabling millions of people to be great presenters.">
+    <link rel="stylesheet" href="../../styles/extend/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="../../styles/extend/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../../styles/extend/signup.css" type="text/css"/>
+</head>
+<body class="lazy">
+
+<!-- Header -->
+<header id="header" class="p-grey-background">
+    <div class="p-container container-fluid">
+        <div id="p-header-row" class="row">
+            <div id="p-header-logo">
+                <a href="/">
+                    <img src="../../img/extend/plezen-logo-blue.png" height="44" width="97"/></a>
+                </a>
+            </div>
+            <div id="p-header-dropdown">
+                <div class="dropdown-container">
+                    <div class="dropdown">
+                        <a href="/login/" class="btn btn-discreet" data-i18n="commonlang.login"><span
+                                    class="caret"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Content -->
+<div class="container p-container p-container-payment">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 data-i18n="signuplang.startbasic"></h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-7">
+            <form method="POST" action="/users" id="signup-form">
+                <div class="">
+                    <div class="form-group has-feedback">
+                        <input type="text" name="username" class="form-control"
+                               data-i18n="[placeholder]signuplang.placeholderuser"
+                               autofocus="on"/>
+                        <span class="glyphicon form-control-feedback hidden"></span>
+                        <label for="first_name" class="error hidden"></label>
+                    </div>
+
+                </div>
+                <div class="form-group has-feedback email-group">
+                    <input type="email" name="email" class="form-control"
+                           data-i18n="[placeholder]signuplang.placeholderemail"/>
+                    <span class="glyphicon form-control-feedback hidden"></span>
+                    <label for="email" class="error hidden"></label>
+                </div>
+                <div class="form-group has-feedback password-group">
+                    <input type="password" name="password" class="form-control"
+                           data-i18n="[placeholder]signuplang.placeholderpassword"/>
+                    <span class="glyphicon form-control-feedback hidden"></span>
+                    <label for="password" class="error hidden"></label>
+                    <input type="hidden" name="usertype" value="2"/>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary p-full-width" id="continue-payment"
+                            data-i18n="signuplang.continue"></button>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-5 p-payment-sidebar">
+            <div class="">
+                <h3 data-i18n="signuplang.basictitle"></h3>
+                <ul class="p-feature-list">
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/><span
+                                data-i18n="pricinglang.basicfeature1"></span></li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/><span
+                                data-i18n="pricinglang.freefeature3"></span></li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/><span
+                                data-i18n="pricinglang.freefeature4"></span></li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/><span
+                                data-i18n="pricinglang.freefeature5"></span></li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/><span
+                                data-i18n="pricinglang.freefeature6"></span></li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/><span
+                                data-i18n="pricinglang.freefeature7"></span></li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/><span
+                                data-i18n="pricinglang.freefeature8"></span></li>
+                    <li><img class="p-check" src="../../img/extend/checkmark@2x.png" height="15"/><span
+                                data-i18n="pricinglang.freefeature9"></span></li>
+                </ul>
+                <hr class="p-separator">
+                <p>
+                    <span data-i18n="signuplang.upselladvanced"></span>
+                    <br>
+                    <a href="/signup/advanced/" data-i18n="signuplang.startadvanced"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer id="footer" class="p-grey-background">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 p-center">
+                <p data-i18n="commonlang.footer"></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../scripts/extend/jquery.min.js"></script>
+<!--<script src="../scripts/extend/main.js"></script>-->
+<script src="../scripts/extend/i18next-1.7.4.min.js"></script>
+<script src="../scripts/extend/language.js"></script>
+</body>
+</html>

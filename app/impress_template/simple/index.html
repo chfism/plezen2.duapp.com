@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Impress.js Example</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Manuel Baronetti">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link href='http://fonts.useso.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+    <div id="one" class="step hola" data-rotate-y="90" data-rotate="90" data-x="-7440" data-y="440" data-scale="20">Hello</div>
+    <div id="two" class="step este" data-rotate="90" data-x="7340" data-y="3740" data-scale="8">THIS IS THE <span class="big poder">POWER</span> OF . . .</div>
+    <div id="three" class="step impress" data-x="7640" data-y="1740" data-scale="0.1">IMPRESS.<span class="gold">JS</span></div>
+    <div id="four" class="step excelente"  data-rotate-y="90" data-x="440" data-y="1440" data-scale="6">coo<span class="o">l</span><span class="q">?</span></div>
+    <div id="five" class="step stexplore" data-x="1440" data-y="-140" data-scale="10">
+        <span class="e">E</span>
+        <span class="ex">X</span>
+        <span class="exp">P</span>
+        <span class="expl">L</span>
+        <span class="explo">O</span>
+        <span class="explor">R</span>
+        <span class="explore">E</span>
+    </div>
+    <div id="six" class="step" data-rotate-x="90" data-x="9840" data-y="540" data-scale="10"><span class="manipulate"><span class="ma">MA</span>NI<span class="ma">PU</span>LA<span class="ma">TE</span></span></div>
+    <div id="seven" class="step" data-rotate-x="180" data-x="17940" data-y="940" data-scale="10"><span class="enjoy"><span class="y">E</span><span class="njo">NJO</span><span class="y">Y</span><span class="sign">!</span></span></div>
+    <div id="eight" class="step innovate" data-rotate-x="180" data-rotate="180" data-x="19940" data-y="940" data-scale="1">INNOVATE</div>
+    <div id="eight" class="step" data-rotate-x="260" data-rotate="180" data-x="19940" data-y="640" data-scale="1"><a href="http://twitter.com/manursio" target="_blank">By @manursio</a></div>
+    <div id="nine" class="step chau" data-rotate-x="180" data-rotate="90" data-x="19940" data-y="1940" data-scale="10">Bye</div>
+</div>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

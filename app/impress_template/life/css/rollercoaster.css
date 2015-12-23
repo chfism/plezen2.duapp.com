@@ -1,0 +1,490 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+    Now here is when interesting things start to appear.
+
+    We set up <body> styles with default font and nice gradient in the background.
+    And yes, there is a lot of repetition there because of -prefixes but we don't
+    want to leave anybody behind.
+*/
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+
+    background: rgb(255, 255, 255);
+    background: -webkit-gradient(radial, 5% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(255, 255, 255)));
+    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(0, 255, 255));
+    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(0, 255, 255));
+    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(0, 255, 255));
+    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(0, 255, 255));
+    background:         radial-gradient(rgb(240, 240, 240), rgb(0, 255, 255));
+}
+
+/*
+    Now let's bring some text styles back ...
+*/
+b, strong { font-weight: bold }
+i, em { font-style: italic }
+
+/*
+    ... and give links a nice look.
+*/
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: rgba(255,255,255,0.5);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+a:hover,
+a:focus {
+    background: rgba(255,255,255,1);
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
+
+.fallback-message {
+    font-family: sans-serif;
+    line-height: 1.3;
+
+    width: 780px;
+    padding: 10px 10px 0;
+    margin: 20px auto;
+
+    border: 1px solid #E4C652;
+    border-radius: 10px;
+    background: #EEDC94;
+}
+
+.fallback-message p {
+    margin-bottom: 10px;
+}
+
+.impress-supported .fallback-message {
+    display: none;
+}
+
+/*
+    Now let's style the presentation steps.
+
+    We start with basics to make sure it displays correctly in everywhere ...
+*/
+
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+/*
+    ... and we enhance the styles for impress.js.
+
+    Basically we remove the margin and make inactive steps a little bit transparent.
+*/
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+/*
+    These 'slide' step styles were heavily inspired by HTML5 Slides:
+    http://html5slides.googlecode.com/svn/trunk/styles.css
+
+    ;)
+
+    They cover everything what you see on first three steps of the demo.
+*/
+.slide {
+    display: block;
+
+    width: 900px;
+    height: 700px;
+    padding: 40px 60px;
+
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+}
+
+.slide q {
+    display: block;
+    font-size: 50px;
+    line-height: 72px;
+
+    margin-top: 100px;
+}
+
+.slide q strong {
+    white-space: nowrap;
+}
+
+/*
+    And now we start to style each step separately.
+
+    I agree that this may be not the most efficient, object-oriented and
+    scalable way of styling, but most of steps have quite a custom look
+    and typography tricks here and there, so they had to be styled separately.
+
+    First is the title step with a big <h1> (no room for padding) and some
+    3D positioning along Z axis.
+*/
+
+#first {
+    padding: 0;
+}
+
+#first h2 {
+    font-size: 150px;
+    color: red;
+}
+
+#up strong {
+    color: rgb(255, 165, 0);
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+#up.present .up {
+    -webkit-transform: translateY(-20px);
+    -moz-transform:    translateY(-20px);
+    -ms-transform:     translateY(-20px);
+    -o-transform:      translateY(-20px);
+    transform:         translateY(-20px);
+}
+
+#down strong {
+    color: rgb(00, 33, 66);
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+}
+
+#down.present .down {
+    -webkit-transform: translateY(20px);
+    -moz-transform:    translateY(20px);
+    -ms-transform:     translateY(20px);
+    -o-transform:      translateY(20px);
+    transform:         translateY(20px);
+}
+
+#fast { width: 600px }
+#fast strong {
+    color: rgb(82, 205, 0);
+
+    display: inline-block;
+    -webkit-transition: 0.3s;
+    -moz-transition:    0.3s;
+    -ms-transition:     0.3s;
+    -o-transition:      0.3s;
+    transition:         0.3s;
+}
+#fast.present .fast {
+    -webkit-transform: translateX(100px);
+    -moz-transform:    translateX(50px);
+    -ms-transform:     translateX(50px);
+    -o-transform:      translateX(50px);
+    transform:         translateX(100px);
+}
+
+#updown span {
+    display: inline-block;
+    -webkit-transition: 1.5s;
+    -moz-transition:    1.5s;
+    -ms-transition:     1.5s;
+    -o-transition:      1.5s;
+    transition:         1.5s;
+}
+#updown.present .rotate {
+    color: rgb(28, 69, 135);
+    -webkit-transform: rotate(-540deg);
+    -moz-transform:    rotate(-540deg);
+    -ms-transform:     rotate(-540deg);
+    -o-transform:      rotate(-540deg);
+    transform:         rotate(-540deg);
+
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay:    0.2s;
+    -ms-transition-delay:     0.2s;
+    -o-transition-delay:      0.2s;
+    transition-delay:         0.2s;
+}
+
+#slow .slow{
+    color: rgb(53, 28, 117);
+}
+
+#circle .circle {
+    color: rgb(205, 205, 0);
+}
+
+#sunset {
+    width: 800px;
+    padding-top: 250px;
+    background-image: url('../img/sunset.jpg');
+    background-size: 320px 240px;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#right span {
+    display: inline-block;
+    -webkit-transition: 1.3s;
+    -moz-transition:    1.3s;
+    -ms-transition:     1.3s;
+    -o-transition:      1.3s;
+    transition:         1.3s;
+}
+
+#right.present .rotateR {
+    color: rgb(56, 118, 29);
+    -webkit-transform: rotateY(360deg) rotate(30deg) translateY(25px) translateX(5px);
+    -moz-transform:    rotateY(360deg) rotate(30deg) translateY(25px) translateX(5px);
+    -ms-transform:     rotateY(360deg) rotate(30deg) translateY(25px) translateX(5px);
+    -o-transform:      rotateY(360deg) rotate(30deg) translateY(25px) translateX(5px);
+    transform:         rotateY(360deg) rotate(30deg) translateY(25px) translateX(5px);
+
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay:    0.2s;
+    -ms-transition-delay:     0.2s;
+    -o-transition-delay:      0.2s;
+    transition-delay:         0.2s;
+}
+
+#ending {
+    width: 700px;
+    padding-bottom: 100px;
+    background-image: url('../img/tumblr.gif');
+    background-size: 320px 240px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#ending .ending {
+    color: rgb(67, 67, 67);
+}
+
+#despair .despair {
+    color: rgb(128, 128, 128);
+}
+
+#back .back {
+    color: rgb(53, 28, 117);
+}
+
+
+#beautiful .beautiful {
+    font-size: 110px;
+    color: rgb(255, 10, 255);
+}
+
+#smile .smile {
+    color: rgb(255, 165, 0);
+}
+
+#overview { display: none }
+
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hint {
+    /*
+        We hide the hint until presentation is started and from browsers not supporting
+        impress.js, as they will have a linear scrollable view ...
+    */
+    display: none;
+
+    /*
+        ... and give it some fixed position and nice styles.
+    */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+
+    background: rgba(0,0,0,0.5);
+    color: #EEE;
+    text-align: center;
+
+    font-size: 50px;
+    padding: 20px;
+
+    z-index: 100;
+
+    /*
+        By default we don't want the hint to be visible, so we make it transparent ...
+    */
+    opacity: 0;
+
+    /*
+        ... and position it below the bottom of the screen (relative to it's fixed position)
+    */
+    -webkit-transform: translateY(400px);
+    -moz-transform:    translateY(400px);
+    -ms-transform:     translateY(400px);
+    -o-transform:      translateY(400px);
+    transform:         translateY(400px);
+
+    /*
+        Now let's imagine that the hint is visible and we want to fade it out and move out
+        of the screen.
+
+        So we define the transition on the opacity property with 1s duration and another
+        transition on transform property delayed by 1s so it will happen after the fade out
+        on opacity finished.
+
+        This way user will not see the hint moving down.
+    */
+    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+    transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+/*
+    Now we 'enable' the hint when presentation is initialized ...
+*/
+.impress-enabled .hint { display: block }
+
+.impress-on-first .hint {
+    /*
+        We remove the transparency and position the hint in its default fixed
+        position.
+    */
+    opacity: 1;
+
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+
+    /*
+        Now for fade in transition we have the oposite situation from the one
+        above.
+
+        First after 4.5s delay we animate the transform property to move the hint
+        into its correct position and after that we fade it in with opacity
+        transition.
+    */
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+
+/*
+    And as the last thing there is a workaround for quite strange bug.
+    It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
+
+    Sometimes the element positioned in 3D (especially when it's moved back
+    along Z axis) is not clickable, because it falls 'behind' the <body>
+    element.
+
+    To prevent this, I decided to make <body> non clickable by setting
+    pointer-events property to `none` value.
+    Value if this property is inherited, so to make everything else clickable
+    I bring it back on the #impress element.
+
+    If you want to know more about `pointer-events` here are some docs:
+    https://developer.mozilla.org/en/CSS/pointer-events
+
+    There is one very important thing to notice about this workaround - it makes
+    everything 'unclickable' except what's in #impress element.
+
+    So use it wisely ... or don't use at all.
+*/
+.impress-enabled          { pointer-events: none }
+.impress-enabled #impress { pointer-events: auto }
+

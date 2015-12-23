@@ -1,0 +1,166 @@
+10
+
+dir
+183
+https://svn.duapp.com/appidxf29odmj09/app/styles
+https://svn.duapp.com/appidxf29odmj09
+
+
+
+2015-02-26T16:25:41.589108Z
+165
+13601656357
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1a0beb16-39a9-491a-8432-0dfbb1476d54
+
+add-btn.css
+file
+
+
+
+
+2014-07-28T14:06:08.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2014-07-28T07:29:04.071306Z
+2
+13601656357
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+close-btn.css
+file
+
+
+
+
+2014-07-28T14:06:08.000000Z
+5265a6dde1f6f68ef7c9be9a7cee0e0f
+2014-07-28T07:29:04.071306Z
+2
+13601656357
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19278
+
+etch_extension
+dir
+
+extend
+dir
+
+header
+dir
+
+img
+dir
+
+logo_button
+dir
+
+main.css
+file
+
+
+
+
+2014-07-28T14:06:08.000000Z
+11388bc29649703292d0dceae4b253c8
+2014-07-28T07:29:04.071306Z
+2
+13601656357
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5869
+
+slide_components
+dir
+
+slide_editor
+dir
+
+slide_snapshot
+dir
+
+storage
+dir
+
+strut.themes
+dir
+
+transition_editor
+dir
+
+widgets
+dir
+

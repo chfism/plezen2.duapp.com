@@ -1,0 +1,55 @@
+body {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+	color: #FFF;
+	background: #4bc0bb;
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: normal !important;
+	margin:0;
+}
+.step {
+	width: 35em;
+	opacity: 0;
+}
+.step h3 {
+	font-size:1.5em;
+}
+.step h1 {
+	font-size: 3.5em;
+}
+.number {
+	position:absolute;
+}
+
+.button {
+	background: #ee8d30;
+	color:#FFF;
+	padding:8px 20px;
+	text-decoration: none;
+}
+p.start {
+	opacity: 1 !important;
+}
+
+a.appstore {
+	display:block !important;
+}
+p a {
+	color:#FFF;
+}
+h3, h2 {
+	opacity: 0.8;
+}
+p {
+	opacity: 0.7;
+}
+p.reply {
+	border-top: 1px dotted #cffaf8;
+	margin-top:10px;
+	padding-top:20px !important;
+}
+p.reply a {
+	float:right;
+}

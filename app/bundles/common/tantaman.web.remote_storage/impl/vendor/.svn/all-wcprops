@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/vendor
+END
+validate.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/vendor/validate.js
+END
+Math.uuid.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/vendor/Math.uuid.js
+END
+mailcheck.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/vendor/mailcheck.js
+END
+levenshtein.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/vendor/levenshtein.js
+END
+IndexedDBShim.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/appidxf29odmj09/!svn/ver/2/app/bundles/common/tantaman.web.remote_storage/impl/vendor/IndexedDBShim.js
+END

@@ -1,0 +1,71 @@
+10
+
+dir
+183
+https://svn.duapp.com/appidxf29odmj09/app/bundles/app/strut.transition_editor
+https://svn.duapp.com/appidxf29odmj09
+
+
+
+2015-03-30T15:39:05.586588Z
+181
+13601656357
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1a0beb16-39a9-491a-8432-0dfbb1476d54
+
+main.js
+file
+
+
+
+
+2015-01-24T14:51:33.000000Z
+632e5ba7d99beeac1564f8569d7ea8df
+2014-07-28T07:29:04.071306Z
+2
+13601656357
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1269
+
+model
+dir
+
+templates
+dir
+
+view
+dir
+

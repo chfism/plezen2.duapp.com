@@ -1,0 +1,398 @@
+
+<!doctype html>
+<!-- Created by Damien Gauthier on 31-october-2013
+ Based on Daniel Schneider demo : http://tecfa.unige.ch/guides/impress.js/impress-demo-1/
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- stylesheets -->
+    <link href="css/impress-min-presi.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/impress-verbes-japonais.css" />
+    <title>impress.js test for impress-min-presi.css</title>
+</head>
+<body>
+
+<!--
+That's the wrapper for your presentation steps. In this element all the impress.js magic happens.
+It doesn't have to be a `<div>`. Only `id` is important here as that's how the script find it.
+It's worth to notice the `impress-not-supported` class. This class means, that browser doesn't
+support features required by impress.js, so you can apply some fallback styles in your CSS.
+It's not necessary to add it manually on this element. If the script detects that browser is not
+good enough it will add this class, but keeping it in HTML means that users without JavaScript
+will also get fallback styles.
+-->
+<div id="impress" class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+</div>
+
+<div id="overall-title" class="normal no-step" data-x="0" data-y="-750" data-scale="1">
+    <h1>Japanese<br/>verbs of giving</h1>
+</div>
+<div id="overall-title-below" class="normal no-step" data-x="0" data-y="700" data-scale="1">
+    <h1>and receiving</h1>
+</div>
+
+<!-- slide 1 -->
+<div id="slide1" class="step normal" data-x="0" data-y="0" data-scale="1">
+    <!-- Copyright : this image is on the public domain, http://commons.wikimedia.org/wiki/File:Nihongo.svg -->
+    <img id="nihongo" class="title map" src="img/nihongo_vertical.svg" alt="Nihongo" onClick="location='http://en.wikibooks.org/wiki/Japanese/Lessons/Giving_and_Receiving';" onmouseover="showHint(this.id+'-hint')" onmouseout="hideHint(this.id+'-hint')"/>
+
+    <!-- Copyright : this image is under GNU licence,
+http://commons.wikimedia.org/wiki/File:Japanese_Verbs_of_Giving.png -->
+    <img usemap="verbes-map" src="img/japanese-verbs-of-giving-and-receiving.png" alt="Verbes donner et recevoir en japonais"/>
+    <map name="verbes-map">
+        <area id="kureru" shape="rect" coords="195,75,265,170" href="#/slide5" onmouseover="showHint(this.id+'-hint')" onmouseout="hideHint(this.id+'-hint')"/>
+        <area id="kudasaru" shape="rect" coords="185,175,280,225" href="#/slide6" onmouseover="showHint(this.id+'-hint')" onmouseout="hideHint(this.id+'-hint')" />
+        <area id="sashiageru" shape="rect" coords="320,75,430,120" href="#/slide2" onmouseover="showHint(this.id+'-hint')" onmouseout="hideHint(this.id+'-hint')" />
+        <area id="ageru" shape="rect" coords="335,130,414,175" href="#/slide3" onmouseover="showHint(this.id+'-hint')" onmouseout="hideHint(this.id+'-hint')" />
+        <area id="yaru" shape="rect" coords="335,180,405,225" href="#/slide4" onmouseover="showHint(this.id+'-hint')" onmouseout="hideHint(this.id+'-hint')" />
+        <area id="itadaku" shape="rect" coords="340,385,420,440" href="#/slide7" onmouseover="showHint(this.id+'-hint')" onmouseout="hideHint(this.id+'-hint')" />
+        <area id="morau" shape="poly" coords="245,455,370,455,370,485,410,500,410,550,335,550,335,500,305,485,245,485" href="#/slide8" onmouseover="showHint(this.id+'-hint')" onmouseout="hideHint(this.id+'-hint')"  />
+    </map>
+
+    <div class="hint" id="slide1-hint">
+        <p class="secondary-hint" id="kureru-hint">Kureru</p>
+        <p class="secondary-hint" id="kudasaru-hint">Kudasaru</p>
+        <p class="secondary-hint" id="sashiageru-hint">Sashiageru</p>
+        <p class="secondary-hint" id="ageru-hint">Ageru</p>
+        <p class="secondary-hint" id="yaru-hint">Yaru</p>
+        <p class="secondary-hint" id="itadaku-hint">Itadaku</p>
+        <p class="secondary-hint" id="morau-hint">Morau</p>
+        <p class="secondary-hint" id="nihongo-hint">Page Wikibooks</p>
+        <p class="main-hint">Use arrow keys to navigate.
+            <br/>Click on the white rectangles to jump to the corresponding part.</p>
+    </div>
+</div>
+
+<!-- slide 1 b -->
+<div id="slide1-b" class="step normal" data-x="40" data-y="-850" data-z="-700" data-rotate-x="-90" data-scale="0.3">
+    <h1>Politeness</h1>
+    <ul>
+        <li>3 levels of speech
+            <ul>
+                <li>honorific or humble</li>
+                <li>normal or casual</li>
+                <li>vulgar or manly</li>
+            </ul>
+        </li>
+        <li>2 levels of politeness (but only 4 of the 6 possible levels are really used)
+        </li>
+    </ul>
+</div>
+
+<!-- slide 1 c -->
+<!--<div id="slide1-c" class="step normal" data-x="40" data-y="-1120" data-z="-400" data-scale="0.1">
+  <h1>Special</h1>
+  <ul>
+      <li>In japanese, there is a special verb meaning "to give to me".
+      </li>
+  </ul>
+</div>
+-->
+
+<!-- slide 1 d -->
+<div id="slide1-d" class="step normal" data-x="0" data-y="-1500" data-z="0" data-scale="1">
+    <h1>Keigo</h1>
+    <ul>
+        <li>highest level of speech
+        </li>
+        <li>honorific : you raise you interlocutor above yourself
+        </li>
+        <li>or humble : you lower yourself in relation with you interlocutor
+        </li>
+    </ul>
+</div>
+
+<!-- slide 1 e -->
+<div id="slide1-e" class="step normal" data-x="500" data-y="-2660" data-z="-2000" data-scale="1">
+    <h1>Neutral or casual</h1>
+    <ul>
+        <li>with 2 levels of politeness
+        </li>
+        <li>the most commonly used
+        </li>
+        <li>when in doubt, use neutral polite speech
+        </li>
+    </ul>
+</div>
+
+<!-- slide 1 f -->
+<div id="slide1-f" class="step normal" data-x="1200" data-y="-3360" data-z="-3000" data-scale="1">
+    <h1>Vulgar Speech</h1>
+    <ul>
+        <li>for boys and men only
+        </li>
+        <li>a lot in manga (especially shounen manga) since manga's speech tends to be very casual.
+        </li>
+    </ul>
+</div>
+
+<!-- slide 2 -->
+<div id="slide2" class="step normal" data-x="1000" data-y="-1000" data-scale="1">
+    <h1>さしあげる</h1>
+    <h2>Sashiageru</h2>
+    <p><strong>you</strong> give something to <strong>someone superior</strong>
+        <br/><em>Honorific speech (Keigo)</em>
+    </p>
+    <p>This verb elevate the person that is given to in a higher position than the one that is giving.
+    </p>
+</div>
+
+<!-- slide 2 note -->
+<div id="slide2-note" class="step note" data-x="1000" data-y="-1150" data-rotate-y="180" data-scale="0.1">
+    <h1>Variations of さしあげる</h1>
+    <ul class="secondary">
+        <li>Since it is Keigo, you should always use it in the polite form さしあげます (sashiagemasu).
+        </li>
+        <li>If you use it with someone else than you for subject, be aware that it implies a strong social hierarchy.
+        </li>
+        <li>Usually in these cases, you should rather use あげる (ageru), especially in the polite form.
+        </li>
+    </ul>
+</div>
+
+<!-- slide 3 -->
+<div id="slide3" class="step normal" data-x="1170" data-y="0" data-scale="1">
+    <h1>あげる</h1>
+    <h2>Ageru</h2>
+    <p><strong>you</strong> give something to <strong>someone else</strong>
+        <br/><em>Normal speech</em>
+    </p>
+    <p>Use it when you don't need to be especially formal (most of the time).
+    </p>
+</div>
+
+<!-- slide 3 note -->
+<div id="slide3-note" class="step note" data-x="1170" data-y="-70" data-rotate-y="180" data-scale="0.1">
+    <h1>Variations of あげる</h1>
+    <ul class="secondary">
+        <li>If you want to show some politeness (with colleagues for instance), use it in the polite form あげます (agemasu).
+        </li>
+        <li>With your close friends or family, use it in plain casual form あげる (ageru).
+            <strong>Do not</strong> use やる (yaru).
+        </li>
+    </ul>
+</div>
+
+<!-- slide 4 -->
+<div id="slide4" class="step normal" data-x="1000" data-y="1000" data-scale="1">
+    <h1>やる</h1>
+    <h2>Yaru</h2>
+    <p><strong>you</strong> give something to <strong>someone inferior</strong>
+        <br/><em>Vulgar speech</em>
+    </p>
+    <p>Use it when you give something to an animal or if you want to stress out you superiority.
+    </p>
+    <p>Beware, it could be seen as insulting for the other person.
+    </p>
+</div>
+
+<!-- slide 4 note -->
+<div id="slide4-note" class="step note" data-x="1000" data-y="770" data-rotate-y="180" data-scale="0.1">
+    <h1>Variations of やる</h1>
+    <ul class="secondary">
+        <li>Women should <strong>never</strong> use やる (yaru) since it is vulgar.
+        </li>
+        <li>Men should only use it as a joke, insult or with animals.
+        </li>
+        <li>Since it is vulgar speech, you don't need to use the polite form. Use only the plain form やる (yaru).
+        </li>
+    </ul>
+</div>
+
+
+<!-- slide 5 before -->
+<div id="slide5-before" class="step note" data-x="100" data-y="0" data-z="-500" data-rotate-y="90" data-rotate-z="90" data-scale="0.1">
+    <h1>Special case</h1>
+    <p class="secondary"><strong class="very-strong">Given to you</strong></p>
+    <ul class="secondary">
+        <li>There is a distinct set of verbs when <strong>you</strong> are the one being given to.
+        </li>
+        <li>They can also be used when given to someone very close to you, considered in your inner circle, like your wife or husband.
+        </li>
+    </ul>
+</div>
+
+<!-- slide 5 -->
+<div id="slide5" class="step normal" data-x="-1000" data-y="-1000" data-scale="1">
+    <h1>くれる</h1>
+    <h2>Kureru</h2>
+    <p><strong>Someone</strong> give something to <strong class="very-strong">you</strong>
+        <br/><em>Normal speech</em>
+    </p>
+    <p>It can only be used when something is given to you or someone very close to you (your wife or husband).
+    </p>
+    <p>Use it when someone gives something to you and you want to put the emphasis on him rather than you.
+    </p>
+</div>
+
+<!-- slide 5 note -->
+<div id="slide5-note" class="step note" data-x="-1000" data-y="-1230" data-rotate-y="180" data-scale="0.1">
+    <h1>Variations of くれる</h1>
+    <ul class="secondary">
+        <li>You can also use it in conjunction with other verbs, in that case it add a meaning of &quot;giving a favour&quot;
+        </li>
+        <li>Japanese people use it a lot to ask for a variety of things.
+        </li>
+    </ul>
+</div>
+
+<!-- slide 6 -->
+<div id="slide6" class="step normal" data-x="-1170" data-y="100" data-scale="1">
+    <h1>くださる</h1>
+    <h2>Kudasaru</h2>
+    <p><strong>Someone superior</strong> give something to <strong class="very-strong">you</strong>
+        <br/><em>Humble speech (Keigo)</em>
+    </p>
+    <p>Use it when you want to describe yourself as inferior when someone give something to you.
+    </p>
+    <p>Use it to humbly ask for something.
+    </p>
+</div>
+
+<!-- slide 6 note -->
+<div id="slide6-note" class="step note" data-x="-1170" data-y="-190" data-rotate-y="180" data-scale="0.1">
+    <h1>Variations of くださる</h1>
+    <ul class="secondary">
+        <li>The japanese word for &quot;please&quot; is ください (kudasai), which literally means &quot;I wish (you) to humbly give me&quot;.
+        </li>
+    </ul>
+</div>
+
+<!-- slide 7 before -->
+<div id="slide7-before" class="step note" data-x="-1000" data-y="760" data-z="-500" data-rotate-y="90" data-rotate-z="90" data-scale="0.1">
+    <h1>To receive</h1>
+    <ul class="secondary">
+        <li>Verbs of receiving are much easier
+        </li>
+        <li>There are only two forms, one humble and one neutral.
+        </li>
+    </ul>
+</div>
+
+<!-- slide 7 -->
+<div id="slide7" class="step normal" data-x="-1000" data-y="1100" data-scale="1">
+    <h1>いただく</h1>
+    <h2>Itadaku</h2>
+    <p><strong>you</strong> recieve something from <strong>someone superior</strong>
+        <br/><em>Humble speech (Keigo)</em>
+    </p>
+    <p>Use it when you receive something from a superior or you want to express deep gratitude.
+    </p>
+</div>
+
+<!-- slide 7 note -->
+<div id="slide7-note" class="step note" data-x="-1000" data-y="960" data-rotate-y="180" data-scale="0.1">
+    <h1>Variations of いただく</h1>
+    <ul class="secondary">
+        <li>The japanese word for &quot;bon appetit&quot; is いただきます (itadakimasu), which literally means &quot;I receive humbly&quot;.
+            This way, buddhists express gratitude over the plants and animals that gave their lives in order to make the meal.
+        </li>
+        <li>Like くれる (kureru), it is often used to ask for permission to do something, with meaning of &quot;being alowed to&quot;
+        </li>
+    </ul>
+</div>
+
+<!-- slide 8 -->
+<div id="slide8" class="step normal" data-x="0" data-y="1450" data-scale="1">
+    <h1>もらう</h1>
+    <h2>Morau</h2>
+    <p><strong>you</strong> receive something from <strong>someone</strong>
+        <br/><em>Normal speech</em>
+    </p>
+    <p>Use it when you receive something from someone as an equal (most of the time).
+    </p>
+</div>
+
+<!-- slide 8 note -->
+<div id="slide8-note" class="step note" data-x="0" data-y="1300" data-rotate-y="180" data-scale="0.1">
+    <h1>Variations of もらう</h1>
+    <ul class="secondary">
+        <li>If you want to show some politeness or respect (with colleagues for instance), use it in the polite form もらいます (moraimasu).
+        </li>
+        <li>With your close friends or family, use it in plain casual form もらる (morau).
+        </li>
+    </ul>
+</div>
+
+
+<!-- overview, just position and zoom out a lot -->
+<div id="overview" class="step" data-x="0" data-y="0" data-scale="5">
+</div>
+
+</div>
+<!--
+
+    Hint is not related to impress.js in any way.
+
+    But it can show you how to use impress.js features in creative way.
+
+    When the presentation step is shown (selected) its element gets the class of "active" and the body element
+    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+
+    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+    the first step of presentation is visible for a couple of seconds.
+
+    ...
+
+    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+    It's just a quick and dirty workaround to get different hint text for touch devices.
+    In a real world it should be at least placed in separate JS file ... and the touch content should be
+    probably just hidden somewhere in HTML - not hard-coded in the script.
+
+    Just sayin' ;)
+
+-->
+
+
+
+<!-- initialize the script -->
+<script src="js/impress.js"></script>
+<script>
+    api = impress();
+    api.init();
+    function showHint(hintId) {
+        var targetHint = document.getElementById(hintId);
+        //hide every hints
+        var hintNodes = document.querySelectorAll('div.hint p');
+        for (var i=0; i<hintNodes.length; i++) {
+            hintNodes[i].style.display='none';
+        }
+        //show the one needed (example of use of querySelector method)
+        targetHint.style.display='block';
+    }
+    function hideHint(hintId) {
+        document.getElementById(hintId).style.display = 'none';
+        document.querySelector('#'+hintId+'~.main-hint').style.display= 'block';
+    }
+    function displayDivNoSteps() {
+        /*Cette fonction prends toutes les nodes DIV de classes no-step et les positionne
+         * pour que leur centre soit en coordonnées data-x et data-y comme pour les slides de impress
+         * il applique aussi une valeur de scale de data-scale comme dans impress */
+        var targetNodes = document.querySelectorAll('div.no-step');
+        for (var i=0; i<targetNodes.length; i++) {
+            var obj = targetNodes[i];
+            obj.style.position='absolute';
+            if(obj.getAttribute("data-x")!="") {
+                //Comme la methode getAttribute renvoie un string, il faut faires des conversions de types
+                var posLeft = parseFloat(obj.getAttribute("data-x"))-obj.offsetWidth/2;
+                obj.style.left=posLeft.toString()+"px";
+            }
+            if(obj.getAttribute("data-y")!="") {
+                //Comme la methode getAttribute renvoie un string, il faut faires des conversions de types
+                var posTop = parseFloat(obj.getAttribute("data-y"))-obj.offsetHeight/2;
+                obj.style.top=posTop.toString()+"px";
+            }
+            if(obj.getAttribute("data-scale")!="") {obj.style.transform='scale('+obj.getAttribute("data-scale")+','+obj.getAttribute("data-scale")+')';}
+        }
+    }
+    window.onload = displayDivNoSteps();
+</script>
+</body>
+</html>

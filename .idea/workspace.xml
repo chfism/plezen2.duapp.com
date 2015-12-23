@@ -1,0 +1,1662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list readonly="true" id="e46494f3-35ae-43de-9b21-c693ab52197e" name="Default" comment="minor change" />
+    <list id="36eea40e-ccb9-4ddb-afeb-13ace048016a" name="local" comment="local">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/img/2.pptx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/1.pptx" afterPath="$PROJECT_DIR$/app/img/1.pptx" />
+    </list>
+    <list default="true" id="2269fdc5-a9aa-4331-b24c-119bce3f4c82" name="New changelist" comment="connect issue">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.js" afterPath="$PROJECT_DIR$/app/config/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+    </list>
+    <ignored path="plezen2.duapp.com.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="plezen2.duapp.com" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Impress.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Impress.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1875">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1215">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.13392857" vertical-offset="0" max-vertical-offset="672">
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/styles/extend/bootstrap1.css" />
+        <option value="$PROJECT_DIR$/app/scripts/plezen/home.js" />
+        <option value="$PROJECT_DIR$/app/scripts/plezen/homebak.js" />
+        <option value="$PROJECT_DIR$/app/scripts/extend/jquery.nicescroll.min2.js" />
+        <option value="$PROJECT_DIR$/app/scripts/extend/jquery.nicescroll.min.js" />
+        <option value="$PROJECT_DIR$/app/styles/extend/home.css" />
+        <option value="$PROJECT_DIR$/app/config/impess.js" />
+        <option value="$PROJECT_DIR$/app/views/admin/movie.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/views/share/plezenshare.ejs" />
+        <option value="$PROJECT_DIR$/app/models/impress.js" />
+        <option value="$PROJECT_DIR$/app/config/express.js" />
+        <option value="$PROJECT_DIR$/app/scripts/extend/jquery.js" />
+        <option value="$PROJECT_DIR$/app/scripts/plezen/your.js" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/app/views/profile/reset.ejs" />
+        <option value="$PROJECT_DIR$/app/views/signup/free.ejs" />
+        <option value="$PROJECT_DIR$/app/views/signup/basic.ejs" />
+        <option value="$PROJECT_DIR$/app/views/pricing.ejs" />
+        <option value="$PROJECT_DIR$/app/scripts/extend/plezen/settings.js" />
+        <option value="$PROJECT_DIR$/app/scripts/extend/main.js" />
+        <option value="$PROJECT_DIR$/app/views/settings.ejs" />
+        <option value="$PROJECT_DIR$/app/models/user.js" />
+        <option value="$PROJECT_DIR$/app/controllers/users.js" />
+        <option value="$PROJECT_DIR$/app/mindmap/index.html" />
+        <option value="$PROJECT_DIR$/app/mindmap/about.html" />
+        <option value="$PROJECT_DIR$/app/mindmap/js/StatusBar.js" />
+        <option value="$PROJECT_DIR$/app/mindmap/js/MainViewController.js" />
+        <option value="$PROJECT_DIR$/app/scripts/extend/jquery.min.js" />
+        <option value="$PROJECT_DIR$/app/mindmap/css/Aristo/jquery-ui-1.8.7.custom.css" />
+        <option value="$PROJECT_DIR$/app/mindmap/css/app.css" />
+        <option value="$PROJECT_DIR$/app/mindmap/js/FilePicker.js" />
+        <option value="$PROJECT_DIR$/app/mindmap.html" />
+        <option value="$PROJECT_DIR$/app/mindmap/js/ToolBar.js" />
+        <option value="$PROJECT_DIR$/app/mindmap/js/Command.js" />
+        <option value="$PROJECT_DIR$/app/mindmap/js/Node.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/views/home.ejs" />
+        <option value="$PROJECT_DIR$/app/impress_template/copyright/niceshot/index.html" />
+        <option value="$PROJECT_DIR$/app/views/login.ejs" />
+        <option value="$PROJECT_DIR$/app/views/impress/import/mindmapimport.ejs" />
+        <option value="$PROJECT_DIR$/app/mindmap/js/ApplicationController.js" />
+        <option value="$PROJECT_DIR$/app/config/routes.js" />
+        <option value="$PROJECT_DIR$/app/scripts/extend/plezen/your.js" />
+        <option value="$PROJECT_DIR$/app/views/your.ejs" />
+        <option value="$PROJECT_DIR$/app/controllers/impress.js" />
+        <option value="$PROJECT_DIR$/app/bundles/app/strut.transition_editor/view/FreeFormTransitionEditorView.js" />
+        <option value="$PROJECT_DIR$/app/models/mongodb.js" />
+        <option value="$PROJECT_DIR$/app/models/Impress.js" />
+        <option value="$PROJECT_DIR$/app/config/config.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsGruntFileManager">
+    <gruntfiles>
+      <GruntfileState>
+        <alias-tasks>
+          <alias-task value="build" />
+          <alias-task value="default" />
+          <alias-task value="test" />
+        </alias-tasks>
+        <multi-tasks>
+          <GruntMultiTaskState>
+            <name>clean</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>concat</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>connect</name>
+            <targets>
+              <target value="livereload" />
+              <target value="test" />
+              <target value="dist" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>copy</name>
+            <targets>
+              <target value="dist" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>cssmin</name>
+            <targets>
+              <target value="dist" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>handlebars</name>
+            <targets>
+              <target value="compile" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>htmlmin</name>
+            <targets>
+              <target value="dist" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>imagemin</name>
+            <targets>
+              <target value="dist" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>jshint</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>livereload</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>livereload-start</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>mocha</name>
+            <targets>
+              <target value="all" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>open</name>
+            <targets>
+              <target value="server" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>replace</name>
+            <targets>
+              <target value="compile" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>requirejs</name>
+            <targets>
+              <target value="dist" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>server</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>uglify</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>usemin</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>useminPrepare</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>watch</name>
+            <targets>
+              <target value="handlebars" />
+              <target value="livereload" />
+            </targets>
+          </GruntMultiTaskState>
+        </multi-tasks>
+        <gruntfile-path>$PROJECT_DIR$/Gruntfile.js</gruntfile-path>
+      </GruntfileState>
+    </gruntfiles>
+    <initial>false</initial>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="790" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plezen2.duapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plezen2.duapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plezen2.duapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plezen2.duapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plezen2.duapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plezen2.duapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plezen2.duapp.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="74" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="LayoutCode.rearrangeEntriesEJS" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="LayoutCode.rearrangeEntriesPlain text" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJSON" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="le&#9;ACTION&#9;Arrangement.Rule.Add" />
+    <property name="LayoutCode.rearrangeEntriesXML" value="false" />
+    <property name="LayoutCode.rearrangeEntries" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/styles/extend" />
+      <recent name="$PROJECT_DIR$/app/scripts/extend" />
+      <recent name="$PROJECT_DIR$/app/scripts" />
+      <recent name="$PROJECT_DIR$/app/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/impress_template/copyright" />
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/scripts/extend/plezen" />
+      <recent name="$PROJECT_DIR$/app/scripts/plezen" />
+      <recent name="$PROJECT_DIR$/app/lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="false" name="temp.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" uri="http://localhost:63342/plezen2.duapp.com/app/views/temp/temp.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="debug.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/app">
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ComponentView.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="ComponentView.js" working-dir="$PROJECT_DIR$/app/bundles/app/strut.slide_components/view">
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/app">
+      <RunnerSettings RunnerId="NodeJS.debug" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.debug" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.temp.html" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.debug.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.ComponentView.js" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.ComponentView.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.debug.js" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.temp.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" myAutoUpdateAfterCommit="true" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/dist/preview_export" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/dist/preview_export" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e46494f3-35ae-43de-9b21-c693ab52197e" name="Default" comment="" />
+      <changelist id="2269fdc5-a9aa-4331-b24c-119bce3f4c82" name="New changelist" comment="" />
+      <created>1406556385963</created>
+      <updated>1406556385963</updated>
+    </task>
+    <task id="LOCAL-00001">
+      <created>1406613275103</created>
+      <updated>1406613275103</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1406615636101</created>
+      <updated>1406615636101</updated>
+    </task>
+    <task id="LOCAL-00003">
+      <created>1406615906100</created>
+      <updated>1406615906100</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ready for removing css/js">
+      <created>1406616605101</created>
+      <updated>1406616605101</updated>
+    </task>
+    <task id="LOCAL-00005" summary="adding template">
+      <created>1406645787101</created>
+      <updated>1406645787101</updated>
+    </task>
+    <task id="LOCAL-00006" summary="modifying jpg to 1440*810">
+      <created>1406647398101</created>
+      <updated>1406647398101</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding template">
+      <created>1406650072102</created>
+      <updated>1406650072102</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adding pricing page">
+      <created>1406788452102</created>
+      <updated>1406788452102</updated>
+    </task>
+    <task id="LOCAL-00009" summary="reorganize template folder">
+      <created>1406800829101</created>
+      <updated>1406800829101</updated>
+    </task>
+    <task id="LOCAL-00010" summary="reorganize template folder">
+      <created>1406800967102</created>
+      <updated>1406800967102</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add 6th template">
+      <created>1406815737101</created>
+      <updated>1406815737101</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add 7/8/9/10th templates">
+      <created>1406881370101</created>
+      <updated>1406881370101</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add 11/12/13th templates">
+      <created>1406909876104</created>
+      <updated>1406909876104</updated>
+    </task>
+    <task id="LOCAL-00014" summary="replace plezen logo and modify page content">
+      <created>1406969916103</created>
+      <updated>1406969916103</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add 14th template">
+      <created>1406995993102</created>
+      <updated>1406995993102</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add 15/16/17/18/19/20th template">
+      <created>1407057338102</created>
+      <updated>1407057338102</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add template to home page">
+      <created>1407070630102</created>
+      <updated>1407070630102</updated>
+    </task>
+    <task id="LOCAL-00018" summary="rollbak the home.ejs to the previous version since it breaks the ipad">
+      <created>1407072502102</created>
+      <updated>1407072502102</updated>
+    </task>
+    <task id="LOCAL-00019" summary="rollbak the home.ejs to the previous version since it breaks the ipad">
+      <created>1407075614101</created>
+      <updated>1407075614101</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update to the latest version. still couldn't work on Ipad">
+      <created>1407076490101</created>
+      <updated>1407076490101</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix layout issue on homepage">
+      <created>1407122242102</created>
+      <updated>1407122242102</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add iphone support for all template&#10;remove one unnecessarycss">
+      <created>1407130571101</created>
+      <updated>1407130571101</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add one more template">
+      <created>1407142821108</created>
+      <updated>1407142821108</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add one more template">
+      <created>1407207637102</created>
+      <updated>1407207637102</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add one more template">
+      <created>1407227425100</created>
+      <updated>1407227425100</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add signup page">
+      <created>1407314540103</created>
+      <updated>1407314540103</updated>
+    </task>
+    <task id="LOCAL-00027" summary="reformat basic and advanced page">
+      <created>1407396517102</created>
+      <updated>1407396517102</updated>
+    </task>
+    <task id="LOCAL-00028" summary="adding about page">
+      <created>1407406066101</created>
+      <updated>1407406066101</updated>
+    </task>
+    <task id="LOCAL-00029" summary="adding terms page">
+      <created>1407491354103</created>
+      <updated>1407491354103</updated>
+    </task>
+    <task id="LOCAL-00030" summary="adding privacy page">
+      <created>1407492632102</created>
+      <updated>1407492632102</updated>
+    </task>
+    <task id="LOCAL-00031" summary="adding yours page">
+      <created>1407772728102</created>
+      <updated>1407772728102</updated>
+    </task>
+    <task id="LOCAL-00032" summary="adding settings page">
+      <created>1407822207102</created>
+      <updated>1407822207102</updated>
+    </task>
+    <task id="LOCAL-00033" summary="modifying home page style">
+      <created>1407859560101</created>
+      <updated>1407859560101</updated>
+    </task>
+    <task id="LOCAL-00034" summary="adding two more projects">
+      <created>1408258341103</created>
+      <updated>1408258341103</updated>
+    </task>
+    <task id="LOCAL-00035" summary="modify google trasnaltor">
+      <created>1408258669101</created>
+      <updated>1408258669101</updated>
+    </task>
+    <task id="LOCAL-00036" summary="modify pricing page">
+      <created>1408265728101</created>
+      <updated>1408265728101</updated>
+    </task>
+    <task id="LOCAL-00037" summary="rollback app.js">
+      <created>1408265761101</created>
+      <updated>1408265761101</updated>
+    </task>
+    <task id="LOCAL-00038" summary="modifying css">
+      <created>1408267695101</created>
+      <updated>1408267695101</updated>
+    </task>
+    <task id="LOCAL-00039" summary="modifying css and js">
+      <created>1408372594103</created>
+      <updated>1408372594103</updated>
+    </task>
+    <task id="LOCAL-00040" summary="modifying css">
+      <created>1408465168116</created>
+      <updated>1408465168116</updated>
+    </task>
+    <task id="LOCAL-00041" summary="rollback to production">
+      <created>1408465232102</created>
+      <updated>1408465232102</updated>
+    </task>
+    <task id="LOCAL-00042" summary="open single page editor">
+      <created>1409065045101</created>
+      <updated>1409065045101</updated>
+    </task>
+    <task id="LOCAL-00043" summary="update connection string">
+      <created>1409065475102</created>
+      <updated>1409065475102</updated>
+    </task>
+    <task id="LOCAL-00044" summary="update connection string">
+      <created>1409065595101</created>
+      <updated>1409065595101</updated>
+    </task>
+    <task id="LOCAL-00045" summary="delete necessary css/js and hide some functions for Friday's review">
+      <created>1409151868103</created>
+      <updated>1409151868103</updated>
+    </task>
+    <task id="LOCAL-00046" summary="add chinese translation">
+      <created>1409732632102</created>
+      <updated>1409732632102</updated>
+    </task>
+    <task id="LOCAL-00047" summary="add page translation and one template">
+      <created>1409758612100</created>
+      <updated>1409758612100</updated>
+    </task>
+    <task id="LOCAL-00048" summary="fix home page scroll issue and add mouse actions to all temples, add 3 more templates">
+      <created>1409905094102</created>
+      <updated>1409905094102</updated>
+    </task>
+    <task id="LOCAL-00049" summary="add cn official demo template and templte list">
+      <created>1409906649102</created>
+      <updated>1409906649102</updated>
+    </task>
+    <task id="LOCAL-00050" summary="https://svn.duapp.com/appidxf29odmj09">
+      <created>1410168861100</created>
+      <updated>1410168861100</updated>
+    </task>
+    <task id="LOCAL-00051" summary="fix responsive layout on your page">
+      <created>1410192212107</created>
+      <updated>1410192212107</updated>
+    </task>
+    <task id="LOCAL-00052" summary="open theme editor">
+      <created>1410261733114</created>
+      <updated>1410261733114</updated>
+    </task>
+    <task id="LOCAL-00053" summary="add translation">
+      <created>1410437808115</created>
+      <updated>1410437808116</updated>
+    </task>
+    <task id="LOCAL-00054" summary="open overview editor link">
+      <created>1412178179103</created>
+      <updated>1412178179103</updated>
+    </task>
+    <task id="LOCAL-00055" summary="add input control for export function">
+      <created>1412436493103</created>
+      <updated>1412436493103</updated>
+    </task>
+    <task id="LOCAL-00056" summary="hide unnecessary button">
+      <created>1412562755102</created>
+      <updated>1412562755102</updated>
+    </task>
+    <task id="LOCAL-00057" summary="hide plezen projects for demo">
+      <created>1413350821103</created>
+      <updated>1413350821103</updated>
+    </task>
+    <task id="LOCAL-00058" summary="hide save/save as menu">
+      <created>1413377529102</created>
+      <updated>1413377529103</updated>
+    </task>
+    <task id="LOCAL-00059" summary="读取数据库幻灯片列表到your页面">
+      <created>1413388545103</created>
+      <updated>1413388545103</updated>
+    </task>
+    <task id="LOCAL-00060" summary="保存正确的email到数据库">
+      <created>1413476009102</created>
+      <updated>1413476009103</updated>
+    </task>
+    <task id="LOCAL-00061" summary="恢复production数据库设定">
+      <created>1413476513101</created>
+      <updated>1413476513102</updated>
+    </task>
+    <task id="LOCAL-00062" summary="增加退出按钮，隐藏价格页面，优化mobile下home page">
+      <created>1413726898103</created>
+      <updated>1413726898104</updated>
+    </task>
+    <task id="LOCAL-00063" summary="增加倒计时临时页面">
+      <created>1414229201103</created>
+      <updated>1414229201103</updated>
+    </task>
+    <task id="LOCAL-00064" summary="minor change">
+      <created>1414244444101</created>
+      <updated>1414244444101</updated>
+    </task>
+    <task id="LOCAL-00065" summary="从数据库读取&#10;http://localhost:18080/preview_export/54420cb4cf817273051575df">
+      <created>1414246678102</created>
+      <updated>1414246678102</updated>
+    </task>
+    <task id="LOCAL-00066" summary="从your页面可以打开保存在数据库中的ppt">
+      <created>1414336606103</created>
+      <updated>1414336606103</updated>
+    </task>
+    <task id="LOCAL-00067" summary="preview bug fix">
+      <created>1414339282102</created>
+      <updated>1414339282102</updated>
+    </task>
+    <task id="LOCAL-00068" summary="bug fix">
+      <created>1414339864101</created>
+      <updated>1414339864102</updated>
+    </task>
+    <task id="LOCAL-00069" summary="bug fix">
+      <created>1414413094103</created>
+      <updated>1414413094103</updated>
+    </task>
+    <task id="LOCAL-00070" summary="add delete function">
+      <created>1414587939103</created>
+      <updated>1414587939103</updated>
+    </task>
+    <task id="LOCAL-00071" summary="修改用户设置页面">
+      <created>1414847925101</created>
+      <updated>1414847925102</updated>
+    </task>
+    <task id="LOCAL-00072" summary="增加share模式">
+      <created>1414859579102</created>
+      <updated>1414859579102</updated>
+    </task>
+    <task id="LOCAL-00073" summary="保存菜单添加判断，如果没有filename, 将显示另存为菜单">
+      <created>1415116105102</created>
+      <updated>1415116105102</updated>
+    </task>
+    <task id="LOCAL-00074" summary="添加另存为菜单">
+      <created>1415116847101</created>
+      <updated>1415116847102</updated>
+    </task>
+    <task id="LOCAL-00075" summary="fix one safari save as issue">
+      <created>1415204557102</created>
+      <updated>1415204557102</updated>
+    </task>
+    <task id="LOCAL-00076" summary="保存之前首先生成并保存preview内容到数据库">
+      <created>1415208257102</created>
+      <updated>1415208257102</updated>
+    </task>
+    <task id="LOCAL-00077" summary="修改用户名和用户profile">
+      <created>1415290301103</created>
+      <updated>1415290301103</updated>
+    </task>
+    <task id="LOCAL-00078" summary="保存ppt">
+      <created>1415293440115</created>
+      <updated>1415293440115</updated>
+    </task>
+    <task id="LOCAL-00079" summary="add template page">
+      <created>1416280939113</created>
+      <updated>1416280939113</updated>
+    </task>
+    <task id="LOCAL-00080" summary="https://svn.duapp.com/appidxf29odmj09">
+      <created>1416297489103</created>
+      <updated>1416297489103</updated>
+    </task>
+    <task id="LOCAL-00081" summary="template bug fix">
+      <created>1416304421116</created>
+      <updated>1416304421116</updated>
+    </task>
+    <task id="LOCAL-00082" summary="密码修改代码">
+      <created>1416324605103</created>
+      <updated>1416324605103</updated>
+    </task>
+    <task id="LOCAL-00083" summary=" 修改七牛账号&#10; jun.g@me.com&#10; www.plezen.com">
+      <created>1416755027102</created>
+      <updated>1416755027103</updated>
+    </task>
+    <task id="LOCAL-00084" summary="修改左边ppt小图样式">
+      <created>1416884946103</created>
+      <updated>1416884946103</updated>
+    </task>
+    <task id="LOCAL-00085" summary="缩略图，需要权限在screenshot目录下创建缩略图">
+      <created>1417090693111</created>
+      <updated>1417090693112</updated>
+    </task>
+    <task id="LOCAL-00086" summary="保存缩略图到数据库">
+      <created>1417169223101</created>
+      <updated>1417169223101</updated>
+    </task>
+    <task id="LOCAL-00087" summary="缩略图bug fix">
+      <created>1417172595102</created>
+      <updated>1417172595103</updated>
+    </task>
+    <task id="LOCAL-00088" summary="缩略图">
+      <created>1417183261102</created>
+      <updated>1417183261102</updated>
+    </task>
+    <task id="LOCAL-00089" summary="缩略图">
+      <created>1417183621101</created>
+      <updated>1417183621101</updated>
+    </task>
+    <task id="LOCAL-00090" summary="缩略图测试">
+      <created>1417184825101</created>
+      <updated>1417184825102</updated>
+    </task>
+    <task id="LOCAL-00091" summary="缩略图测试">
+      <created>1417185199101</created>
+      <updated>1417185199101</updated>
+    </task>
+    <task id="LOCAL-00092" summary="缩略图测试">
+      <created>1417185474102</created>
+      <updated>1417185474102</updated>
+    </task>
+    <task id="LOCAL-00093" summary="缩略图测试">
+      <created>1417185563101</created>
+      <updated>1417185563101</updated>
+    </task>
+    <task id="LOCAL-00094" summary="缩略图">
+      <created>1417192324101</created>
+      <updated>1417192324102</updated>
+    </task>
+    <task id="LOCAL-00095" summary="分享功能">
+      <created>1417274516101</created>
+      <updated>1417274516102</updated>
+    </task>
+    <task id="LOCAL-00096" summary="CSS合并">
+      <created>1417336128101</created>
+      <updated>1417336128102</updated>
+    </task>
+    <task id="LOCAL-00097" summary="下拉框JS，图片大小限制">
+      <created>1417357096101</created>
+      <updated>1417357096101</updated>
+    </task>
+    <task id="LOCAL-00098" summary="add more svg">
+      <created>1417361367101</created>
+      <updated>1417361367101</updated>
+    </task>
+    <task id="LOCAL-00099" summary="重新build compiled-templates.js">
+      <created>1417503937115</created>
+      <updated>1417503937115</updated>
+    </task>
+    <task id="LOCAL-00100" summary="SEO">
+      <created>1417932344119</created>
+      <updated>1417932344119</updated>
+    </task>
+    <task id="LOCAL-00101" summary="css update">
+      <created>1419342017102</created>
+      <updated>1419342017103</updated>
+    </task>
+    <task id="LOCAL-00102" summary="ppt导入">
+      <created>1419612317102</created>
+      <updated>1419612317102</updated>
+    </task>
+    <task id="LOCAL-00103" summary="ppt导入">
+      <created>1419612625100</created>
+      <updated>1419612625101</updated>
+    </task>
+    <task id="LOCAL-00104" summary="ppt导入">
+      <created>1419613063101</created>
+      <updated>1419613063102</updated>
+    </task>
+    <task id="LOCAL-00105" summary="fix connect bug">
+      <created>1419689868102</created>
+      <updated>1419689868102</updated>
+    </task>
+    <task id="LOCAL-00106" summary="ppt导入">
+      <created>1419689920102</created>
+      <updated>1419689920102</updated>
+    </task>
+    <task id="LOCAL-00107" summary="ppt导入">
+      <created>1419779295102</created>
+      <updated>1419779295102</updated>
+    </task>
+    <task id="LOCAL-00108" summary="ppt导入文本框位置">
+      <created>1419844234102</created>
+      <updated>1419844234102</updated>
+    </task>
+    <task id="LOCAL-00109" summary="图片导入，ppt位置fix">
+      <created>1420560784103</created>
+      <updated>1420560784103</updated>
+    </task>
+    <task id="LOCAL-00110" summary="插入搜索图片">
+      <created>1420903916103</created>
+      <updated>1420903916103</updated>
+    </task>
+    <task id="LOCAL-00111" summary="共享">
+      <created>1420987968118</created>
+      <updated>1420987968118</updated>
+    </task>
+    <task id="LOCAL-00112" summary="密码验证共享">
+      <created>1421155175102</created>
+      <updated>1421155175103</updated>
+    </task>
+    <task id="LOCAL-00113" summary="合并js">
+      <created>1421569558117</created>
+      <updated>1421569558118</updated>
+    </task>
+    <task id="LOCAL-00114" summary="合并js">
+      <created>1421571653102</created>
+      <updated>1421571653102</updated>
+    </task>
+    <task id="LOCAL-00115" summary="missing one image">
+      <created>1421939373103</created>
+      <updated>1421939373104</updated>
+    </task>
+    <task id="LOCAL-00116" summary="merge github fix">
+      <created>1422111140103</created>
+      <updated>1422111140104</updated>
+    </task>
+    <task id="LOCAL-00117" summary="rewrite screenshot method">
+      <created>1422191374101</created>
+      <updated>1422191374101</updated>
+    </task>
+    <task id="LOCAL-00118" summary="rewrite screenshot method">
+      <created>1422192572102</created>
+      <updated>1422192572103</updated>
+    </task>
+    <task id="LOCAL-00119" summary="fix issue">
+      <created>1422193014102</created>
+      <updated>1422193014102</updated>
+    </task>
+    <task id="LOCAL-00120" summary="test phantomjs installation issue">
+      <created>1422195513102</created>
+      <updated>1422195513102</updated>
+    </task>
+    <task id="LOCAL-00121" summary="test phantomjs installation issue">
+      <created>1422195976103</created>
+      <updated>1422195976103</updated>
+    </task>
+    <task id="LOCAL-00122" summary="fix regist issue">
+      <created>1422285422102</created>
+      <updated>1422285422102</updated>
+    </task>
+    <task id="LOCAL-00123" summary="fix regist issue">
+      <created>1422285633101</created>
+      <updated>1422285633102</updated>
+    </task>
+    <task id="LOCAL-00124" summary="fix regist issue">
+      <created>1422939933102</created>
+      <updated>1422939933103</updated>
+    </task>
+    <task id="LOCAL-00125" summary="add new plezen button">
+      <created>1423636421103</created>
+      <updated>1423636421104</updated>
+    </task>
+    <task id="LOCAL-00126" summary="fix homepage scroll issue in IE">
+      <created>1424768993111</created>
+      <updated>1424768993112</updated>
+    </task>
+    <task id="LOCAL-00127" summary="fix home page display issue">
+      <created>1424770976102</created>
+      <updated>1424770976103</updated>
+    </task>
+    <task id="LOCAL-00128" summary="1. 将数据库entity改为model&#10;2. 项目分页">
+      <created>1424968017103</created>
+      <updated>1424968017103</updated>
+    </task>
+    <task id="LOCAL-00129" summary="bae  mongod module issue test">
+      <created>1425006035102</created>
+      <updated>1425006035102</updated>
+    </task>
+    <task id="LOCAL-00130" summary="bae  mongod module issue test">
+      <created>1425006243101</created>
+      <updated>1425006243101</updated>
+    </task>
+    <task id="LOCAL-00131" summary="bae  mongod module issue test">
+      <created>1425006370101</created>
+      <updated>1425006370101</updated>
+    </task>
+    <task id="LOCAL-00132" summary="bae  mongod module issue test">
+      <created>1425006473102</created>
+      <updated>1425006473102</updated>
+    </task>
+    <task id="LOCAL-00133" summary="bae  mongod module issue test">
+      <created>1425006591102</created>
+      <updated>1425006591102</updated>
+    </task>
+    <task id="LOCAL-00134" summary="minor bug fix">
+      <created>1425007688101</created>
+      <updated>1425007688101</updated>
+    </task>
+    <task id="LOCAL-00135" summary="1. fix connect.multipart issue&#10;2. 排序功能&#10;3. 分离jquery.js&#10;4. 修改页面js路径">
+      <created>1425100644102</created>
+      <updated>1425100644102</updated>
+    </task>
+    <task id="LOCAL-00136" summary="1. fix connect.multipart issue&#10;2. 排序功能&#10;3. 分离jquery.js&#10;4. 修改页面js路径">
+      <created>1425100723102</created>
+      <updated>1425100723102</updated>
+    </task>
+    <task id="LOCAL-00137" summary="添加注册时间">
+      <created>1425227787101</created>
+      <updated>1425227787101</updated>
+    </task>
+    <task id="LOCAL-00138" summary="添加mindmap">
+      <created>1425662602113</created>
+      <updated>1425662602113</updated>
+    </task>
+    <task id="LOCAL-00139" summary="添加mindmap">
+      <created>1425745147102</created>
+      <updated>1425745147103</updated>
+    </task>
+    <task id="LOCAL-00140" summary="删除niceshot">
+      <created>1425875983117</created>
+      <updated>1425875983117</updated>
+    </task>
+    <task id="LOCAL-00141" summary="从mindmap导入文字">
+      <created>1426434259110</created>
+      <updated>1426434259111</updated>
+    </task>
+    <task id="LOCAL-00142" summary="your页面搜索功能">
+      <created>1427556314102</created>
+      <updated>1427556314103</updated>
+    </task>
+    <task id="LOCAL-00143" summary="调整幻灯片位置">
+      <created>1427730135102</created>
+      <updated>1427730135103</updated>
+    </task>
+    <task id="LOCAL-00144" summary="connect issue">
+      <created>1427731898101</created>
+      <updated>1427731898102</updated>
+    </task>
+    <task id="LOCAL-00145" summary="connect issue">
+      <created>1427799480102</created>
+      <updated>1427799480103</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1440" height="790" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257143" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30571428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21142857" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32168674" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19943622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21445782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28674698" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26746988" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31686747" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31948423" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808024" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3060241" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21203439" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2686747" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25841346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26746988" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31948423" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808024" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32234958" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19943622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26024097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="插入搜索图片" />
+    <MESSAGE value="共享" />
+    <MESSAGE value="密码验证共享" />
+    <MESSAGE value="合并js" />
+    <MESSAGE value="minor change" />
+    <MESSAGE value="missing one image" />
+    <MESSAGE value="merge github fix" />
+    <MESSAGE value="rewrite screenshot method" />
+    <MESSAGE value="fix issue" />
+    <MESSAGE value="test phantomjs installation issue" />
+    <MESSAGE value="fix regist issue" />
+    <MESSAGE value="add new plezen button" />
+    <MESSAGE value="fix homepage scroll issue in IE" />
+    <MESSAGE value="fix home page display issue" />
+    <MESSAGE value="1. 将数据库entity改为model&#10;2. 项目分页" />
+    <MESSAGE value="bae  mongod module issue test" />
+    <MESSAGE value="minor bug fix" />
+    <MESSAGE value="1. fix connect.multipart issue&#10;2. 排序功能&#10;3. 分离jquery.js&#10;4. 修改页面js路径" />
+    <MESSAGE value="添加注册时间" />
+    <MESSAGE value="添加mindmap" />
+    <MESSAGE value="删除niceshot" />
+    <MESSAGE value="从mindmap导入文字" />
+    <MESSAGE value="your页面搜索功能" />
+    <MESSAGE value="调整幻灯片位置" />
+    <MESSAGE value="connect issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect issue" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/scripts/compiled-templates.js</url>
+          <line>1733</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/nodeoffice/lib/node-office.js</url>
+          <line>46</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/controllers/users.js</url>
+          <line>13</line>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/controllers/impress.js</url>
+          <line>392</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/controllers/impress.js</url>
+          <line>389</line>
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="324" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/Storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/FilePicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68204486" vertical-offset="1013" max-vertical-offset="1815">
+          <caret line="104" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/Util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.018703243" vertical-offset="15" max-vertical-offset="3450">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/HelpController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4365">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/Navigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2401" max-vertical-offset="6465">
+          <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/ToolBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3666" max-vertical-offset="4650">
+          <caret line="294" column="22" selection-start-line="294" selection-start-column="22" selection-end-line="294" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/Command.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3846154" vertical-offset="2305" max-vertical-offset="5550">
+          <caret line="163" column="7" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/Action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1651" max-vertical-offset="6315">
+          <caret line="120" column="45" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/MindMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1359" max-vertical-offset="2055">
+          <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/NodeMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="658" max-vertical-offset="1305">
+          <caret line="76" column="31" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/CanvasView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6538463" vertical-offset="6393" max-vertical-offset="14925">
+          <caret line="437" column="25" selection-start-line="437" selection-start-column="13" selection-end-line="437" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/Node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3684" max-vertical-offset="4785">
+          <caret line="255" column="24" selection-start-line="255" selection-start-column="24" selection-end-line="255" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/StaticCanvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5396" max-vertical-offset="5820">
+          <caret line="374" column="17" selection-start-line="374" selection-start-column="17" selection-end-line="374" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/Document.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1104" max-vertical-offset="2535">
+          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="240" max-vertical-offset="2085">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/impress_template/copyright/niceshot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42857143" vertical-offset="0" max-vertical-offset="7380">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27529413" vertical-offset="708" max-vertical-offset="2340">
+          <caret line="55" column="76" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/impress_template/workflow/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="3870">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.529412" vertical-offset="1245" max-vertical-offset="6360">
+          <caret line="268" column="68" selection-start-line="268" selection-start-column="68" selection-end-line="268" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2610">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bundles/app/strut.importer/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36525613" vertical-offset="361" max-vertical-offset="1200">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bundles/common/tantaman.web.widgets/ItemImportModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325688" vertical-offset="2735" max-vertical-offset="5220">
+          <caret line="194" column="16" selection-start-line="194" selection-start-column="16" selection-end-line="194" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/extend/plezen/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13140312" vertical-offset="421" max-vertical-offset="1830">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/impress/import/plezenimport.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6183369" vertical-offset="250" max-vertical-offset="2160">
+          <caret line="36" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/plezen/your.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34633029" vertical-offset="899" max-vertical-offset="1335">
+          <caret line="70" column="77" selection-start-line="70" selection-start-column="77" selection-end-line="70" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bundles/app/strut.exporter.json/View.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4988864" vertical-offset="1291" max-vertical-offset="2970">
+          <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/css/about.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2265">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.071428575" vertical-offset="4095" max-vertical-offset="4845">
+          <caret line="271" column="35" selection-start-line="271" selection-start-column="35" selection-end-line="271" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/plezen/dropdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="431">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/extend/language.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="444">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/extend/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="81.2993" vertical-offset="255" max-vertical-offset="35415">
+          <caret line="2355" column="16" selection-start-line="2355" selection-start-column="16" selection-end-line="2355" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/extend/plezen/your.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="966" max-vertical-offset="4155">
+          <caret line="86" column="50" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/scripts/amd-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="431">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/your.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42469135" vertical-offset="4523" max-vertical-offset="5145">
+          <caret line="313" column="10" selection-start-line="313" selection-start-column="10" selection-end-line="313" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/impress/import/mindmapimport.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1484919" vertical-offset="0" max-vertical-offset="2160">
+          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mindmap/js/ApplicationController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325893" vertical-offset="751" max-vertical-offset="2340">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pptconvert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46578366" vertical-offset="359" max-vertical-offset="3090">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="1320">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bundles/app/strut.transition_editor/view/FreeFormTransitionEditorView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1193" max-vertical-offset="1995">
+          <caret line="106" column="43" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bundles/app/strut.slide_snapshot/TransitionSlideSnapshot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3320965" vertical-offset="91" max-vertical-offset="2325">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6802842" vertical-offset="877" max-vertical-offset="2235">
+          <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7146172" vertical-offset="442" max-vertical-offset="1005">
+          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/impress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.035885166" vertical-offset="6075" max-vertical-offset="6555">
+          <caret line="406" column="16" selection-start-line="406" selection-start-column="16" selection-end-line="406" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="431">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.55282557" vertical-offset="225" max-vertical-offset="765">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Impress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1845">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13392857" vertical-offset="0" max-vertical-offset="672">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

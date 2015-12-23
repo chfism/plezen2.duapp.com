@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{plezen2.duapp.com node_modules}" />
+    <file url="file://$PROJECT_DIR$/app/app.js" libraries="{Node.js Globals, Node.js v0.10.29 Core Modules}" />
+    <file url="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/module.js" libraries="{Node.js Globals}" />
+  </component>
+</project>
+

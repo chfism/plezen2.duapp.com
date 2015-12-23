@@ -1,0 +1,82 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Impress.js 展示</title>
+    <meta name="description" content="本 demo 纯粹用于展示 impress.js，接近翻译，类似教程。"/>
+    <meta name="author" content="Sam Chen"/>
+    <link rel="stylesheet/less" type="text/css" href="css/sam.css" />
+    <script src="js/less.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div class="fallback-message">
+    <p>不幸的是，你的浏览器并不支持 <strong>impress.js</strong> 所需功能，因此你看到的这个展报只是平常的 HTML 文档。</p>
+    <p>请升级到最新版本的 Firefox、Chrome或 Safari 以正常查看本 demo。</p>
+</div>
+<div id="impress">
+    <div id="welcome" class="step slider" data-x="-2000" data-y="-2000">
+        <p>你现在看到的是本展报(presentation)第一屏。</p>
+        <h1>在做这个展报之前，需要明白以下几点：</h1>
+        <ol>
+            <li>如作者所言，you need to be a designer，否则做出来的展报就会如我这份一样</li>
+            <li>you have something to show，假如没有，做出来的展报就会如我这份一样</li>
+            <li>做这个展报最重要的是，设计与内容，代码的实现只是很小的一步，每屏都只是平常的 HTML + CSS，所以假如你有非常棒的内容，接下来该考验你的设计能力，或者，脑补能力。代码？交给我这样的码人去写就好。</li>
+        </ol>
+        <p>本 div 块的 ID 值为 "welcome"，这样在浏览器中查看展报时，url 地址会显示为 xxx.html#/welcome，假如 div 不带 ID，则 impress.js 会自动赋给 url 一个 "step-N" 的值。当然，ID 名要比 "step-N" 有意义多，而且可以针对其做更多样式。另外，本屏所处的位置由 data-x data-y 值决定，参照点为 canvas 的中心原点。</p>
+    </div>
+    <div class="step slider" data-x="-2000" data-y="-1200">
+        <p>第二屏，暂没什么作用。只是看看垂直方向的滑动效果。</p>
+    </div>
+    <div class="step slider" data-x="-1000" data-y="-1200">
+        <p>第三屏，也没什么作用，只是看看水平方向 impress.js 带来的滑动效果。</p>
+    </div>
+    <div class="step" data-x="500" data-y="-1200" data-scale="4"><p>
+        放大。放大的意思是，相对于其他屏的大小。比如本屏设置 data-scale 值为4，则为上面三屏的4倍大小。因此上面三屏视觉上是缩小的。
+    </p>
+    </div>
+    <div class="step" data-x="600" data-y="-500" data-rotate="180" data-scale="0.5">
+        <p>这次是缩小，顺带旋转<b class="rotating">180度</b>。</p>
+    </div>
+    <div class="step" data-x="600" data-y="-300" data-z="-3000">
+        <p>第三纬度，Z。data-z 取值为正的话在立体空间里就是迎面而来，取值为负就是远离我们到屏幕深处去了。</p>
+    </div>
+    <div class="step" data-x="600" data-y="-300" data-z="-6000">
+        <p>第三纬度，Z。data-z 取值为正的话在立体空间里就是迎面而来，取值为负就是远离我们到屏幕深处去了。</p>
+    </div>
+    <div class="step" data-x="600" data-y="-300" data-z="-9000">
+        <p>第三纬度，Z。data-z 取值为正的话在立体空间里就是迎面而来，取值为负就是远离我们到屏幕深处去了。</p>
+    </div>
+    <div class="step" data-x="600" data-y="-300" data-z="-12000">
+        <p>第三纬度，Z。data-z 取值为正的话在立体空间里就是迎面而来，取值为负就是远离我们到屏幕深处去了。</p>
+    </div>
+    <div class="step" data-x="600" data-y="-300" data-z="-15000">
+        <p>第三纬度，Z。data-z 取值为正的话在立体空间里就是迎面而来，取值为负就是远离我们到屏幕深处去了。连续几个的话种迎面而来感非常强烈。</p>
+    </div>
+    <div class="step" data-x="1000" data-y="300" data-rotate="30" data-scale="5">
+        <p>旋转30度。顺时针方向，如果负值就逆时针</p>
+    </div>
+    <div class="step" data-x="1000" data-y="300" data-rotate-x="30" data-rotate-y="-100" data-rotate-z="40" data-scale="5">
+        <p>立体空间里的旋转。考验脑补能力，data-rotate-x，data-rotate-y，data-rotate-z 三个值设置立体空间内三个方向轴上的旋转。</p>
+        <p>接下来一屏是全览图</p>
+    </div>
+    <div id="all" class="step" data-x="-500" data-y="-500" data-scale="5">
+        <p>全览图的意思是，你能看到前面的所有屏。也能看到本行文字，这应该是 impress.js 默认最后一个 step 这个作用，不管其 ID 值是什么。</p>
+    </div>
+
+</div>
+<div class="hint">
+    <p>使用空格键或箭号键来导航</p>
+</div>
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+</script>
+
+<script src="js/impress.js" type="text/javascript"></script>
+<script type="text/javascript">impress().init();</script>
+
+</body>
+</html>

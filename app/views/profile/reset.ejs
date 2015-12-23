@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp,noydir"/>
+    <meta name="description"
+          content="Plezen is a cloud based presentation software that opens up a new world between whiteboards and slides. The zoomable canvas makes it fun to explore ideas and the connections between them. The result: visually captivating presentations that lead your audience down a path of discovery.">
+    <!-- /metadata -->
+    <!--[if lt IE 9]>
+    <script src="../../scripts/extend/html5shiv.js"></script><![endif]-->
+    <title>Reset forgotten password | Plezen</title>
+    <link rel="stylesheet" href="../../styles/extend/main3.css" type="text/css"/>
+    <link rel="stylesheet" href="../../styles/extend/main2.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="../../styles/extend/responsive.css" type="text/css"/>
+</head>
+<body class="lazy">
+<div class="header header-fixed">
+    <div class="container">
+        <a class="branding" href="/">Plezen</a>
+        <ul class="nav-main container" id="navigation">
+            <li class="nav-create">
+                <a href="/your/" data-i18n="commonlang.create"> <span class="pointer"></span>
+                </a>
+            </li>
+            <li class="nav-explore">
+                <a href="/explore/staff-picks/" data-i18n="commonlang.explore"><span class="pointer"></span>
+                </a>
+            </li>
+        </ul>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <% if (!user) { %>
+                <a class="btn btn-primary sign-up" href="/pricing/" data-i18n="commonlang.signup"></a>
+                <a href="/login/" class="btn btn-discreet" data-i18n="commonlang.login"><span class="caret"></span></a>
+                <% } else { %>
+                <a class="btn btn-primary sign-up" href="/pricing/" data-i18n="commonlang.signup"></a>
+                <a href="/logout/" class="btn btn-discreet" data-i18n="commonlang.logout"><span
+                            class="caret"></span></a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content -->
+<div class="content">
+    <div class="container">
+        <h1 data-i18n="resetlang.title"></h1>
+
+        <div class="row">
+            <div class="span8">
+                <p data-i18n="resetlang.description"></p>
+
+                <form class="form " id="loginform" action="/profile/reset/" method="post" accept-charset="utf-8">
+                    <label for="id_username">
+                        <input id="id_username" autocomplete="off" type="email" required
+                               name="email" class="input-large span8" placeholder="E-mail"></label>
+
+                    <div class="form-actions call-action large">
+                        <button type="submit" class="bttn large btn btn-primary btn-large pull-right"
+                                data-i18n="resetlang.reset">
+                        </button>
+                        <a class="message" data-i18n="resetlang.help">
+                        </a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /content --><!-- footer -->
+<div class="footer">
+    <div class="container">
+        <ul class="nav-sub row">
+            <li class="span2">
+                <ul>
+                    <li>
+                        <h4 data-i18n="commonlang.company"></h4>
+                    </li>
+                    <li>
+                        <a href="/about/" data-i18n="commonlang.about"></a> / <a href="/about-team/">Team</a>
+                    </li>
+                    <li>
+                        <a href="/contact/" data-i18n="commonlang.contact"></a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy/">Privacy</a> &amp; <a href="/terms-of-use/">Terms</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="span2">
+                <ul>
+                    <li>
+                        <h4 data-i18n="commonlang.product"></h4>
+                    </li>
+                    <li>
+                        <a href="/pricing/" data-i18n="commonlang.pricing"></a>
+                    </li>
+                    <li>
+                        <a href="/create/" data-i18n="commonlang.create"></a>
+                    </li>
+                    <li><a href="/collaborate/">Collaborate</a></li>
+                </ul>
+            </li>
+            <li class="span2">
+                <ul>
+                    <li><h4 data-i18n="commonlang.customer"></h4></li>
+                    <li><a href="/signup/free" data-i18n="commonlang.free"></a></li>
+                    <li><a href="/signup/basic" data-i18n="commonlang.basic"></a></li>
+                    <li><a href="/signup/advanced" data-i18n="commonlang.advanced"></a></li>
+                </ul>
+            </li>
+            <li class="span2">
+                <ul>
+                    <li><h4 data-i18n="commonlang.support"></h4></li>
+                    <li><a href="/support/">All Support</a></li>
+                    <li><a href="/support/article/steps/">Get Started</a></li>
+                    <li><a href="/support/article/">Manual/FAQ</a></li>
+                </ul>
+            </li>
+        </ul>
+        <hr class="separator">
+        <p class="copyright" data-i18n="commonlang.footer"></p>
+    </div>
+</div>
+<!-- /footer -->
+<script type="text/javascript" src="../../scripts/extend/jquery.js"></script>
+<!--<script type="text/javascript" src="../../scripts/extend/main.js"></script>-->
+<script type="text/javascript" src="../../scripts/extend/i18next-1.7.4.min.js"></script>
+<script type="text/javascript" src="../../scripts/extend/language.js"></script>
+</body>
+</html>

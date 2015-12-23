@@ -1,0 +1,115 @@
+10
+
+dir
+183
+https://svn.duapp.com/appidxf29odmj09/app/bundles/app
+https://svn.duapp.com/appidxf29odmj09
+
+
+
+2015-03-30T15:39:05.586588Z
+181
+13601656357
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1a0beb16-39a9-491a-8432-0dfbb1476d54
+
+strut.config
+dir
+
+strut.deck
+dir
+
+strut.editor
+dir
+
+strut.etch_extension
+dir
+
+strut.exit
+dir
+
+strut.exporter
+dir
+
+strut.exporter.json
+dir
+
+strut.exporter.zip.browser
+dir
+
+strut.exporter.zip.node_webkit
+dir
+
+strut.exporter.zip.remote
+dir
+
+strut.header
+dir
+
+strut.importer
+dir
+
+strut.importer.json
+dir
+
+strut.logo_button
+dir
+
+strut.presentation_generator
+dir
+
+strut.presentation_generator.bespoke
+dir
+
+strut.presentation_generator.handouts
+dir
+
+strut.presentation_generator.impress
+dir
+
+strut.presentation_generator.impress-mobile
+dir
+
+strut.presentation_generator.reveal
+dir
+
+strut.slide_components
+dir
+
+strut.slide_editor
+dir
+
+strut.slide_snapshot
+dir
+
+strut.splash
+dir
+
+strut.startup
+dir
+
+strut.storage
+dir
+
+strut.themes
+dir
+
+strut.transition_editor
+dir
+
+strut.well_context_buttons
+dir
+

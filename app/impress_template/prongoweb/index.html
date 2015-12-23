@@ -1,0 +1,172 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>PongoWeb - Web SEO and Social Media</title>
+
+    <meta name="description" content="PongoWeb creates websites and web applications of all kinds, from the simple to the most complex corporate web site e-commerce web portal." />
+    <meta name="author" content="Fabio Fumis" />
+
+    <!--<script type="text/javascript" src="http://use.typekit.com/mzo4ggx.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
+
+    <link href="prongoweb.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<!--
+    Classe di default se browser non supporta CSS3.
+-->
+
+<body class="impress-not-supported">
+
+<!--
+    Messaggio di default se CSS3 non supportato.
+-->
+
+<div class="fallback-message">
+    <p>This site is optimized for tablets and modern browsers except, of course, Internet Explorer. If you still use it, install Chrome Frame for perfect viewing. <br> Smartphones display text mode accessible.</p>
+</div>
+
+<!-- Wrapper della presentazione -->
+
+<div id="impress">
+
+
+    <!-- STEP START -->
+
+    <div id="start" class="step slide" data-x="0" data-y="-200">
+        <img src="pongoweb.png" width="500" height="300" alt="Web sites - Pongo Web">
+        <h1>Your <strong>web</strong> Takes Shape</h1>
+    </div>
+
+    <div id="software" class="step slide" data-x="1500" data-y="-200" data-rotate="0">
+        <q>We are a <strong>software house</strong> <span>dynamics</span></q>
+    </div>
+
+    <div id="technology" class="step slide" data-x="1500" data-y="800" data-z="0" data-rotate="0" data-scale="1">
+        <q>and we use most modern <span><strong>web</strong> Technologies</span></q>
+    </div>
+
+    <div id="project" class="step slide" data-x="1750" data-y="1300" data-rotate="90" data-z="0">
+        <q>to create your own<span>project</span> <strong>online</strong></q>
+    </div>
+
+    <div id="business" class="step slide" data-x="1300" data-y="1900" data-z="500" data-rotate="90">
+        <q>to give your <span>business</span> <strong>most visibilities</strong></q>
+    </div>
+
+    <!-- STEP WHAT -->
+
+    <div id="what-we-do" class="step slide" data-x="120" data-y="800" data-z="0" data-rotate="0" data-scale="1">
+        <q>what we realize?</q>
+    </div>
+
+    <div id="our-products" class="step slide" data-x="0" data-y="1300" data-z="0" data-rotate="90" data-scale="1">
+        <ul>
+            <li>Blog</li>
+            <li>Web Site</li>
+            <li>Social Apps</li>
+            <li>E-commerce Site</li>
+            <li>SEO Optimization</li>
+            <li>Social Media Marketing</li>
+        </ul>
+    </div>
+
+    <div id="tools" class="step slide" data-x="-1520" data-y="1650" data-z="0" data-rotate="180" data-scale="1">
+        <q>We program</q>
+    </div>
+
+    <div id="coding-tools" class="step slide" data-x="-1370" data-y="1150" data-z="0" data-rotate="270" data-scale="1">
+        <ul>
+            <li>HTML5 - CSS3</li>
+            <li>Laravel Php 5.3</li>
+            <li>jQuery - Node.js</li>
+            <li>MySQL - MongoDB</li>
+            <li>PhoneGap - Lungo.js</li>
+        </ul>
+    </div>
+
+    <div id="contact-now" class="step slide" data-x="-1350" data-y="-20" data-z="0" data-scale="1" data-rotate="90">
+        <q>Contact us Now!</q>
+    </div>
+
+    <div id="contacts" class="step slide" data-x="-1850" data-y="-180" data-z="0" data-rotate="0" data-scale="1">
+        <ul>
+            <li><strong>PongoWeb</strong> <small>software forum</small></li>
+            <li><big>call us on</big></li>
+            <li>+XXX.XXXXXXXX</li>
+            <li>info@example.com</li>
+
+            <li class="social">
+                ...or follow us on
+                <a href="http://www.facebook.com" class="ico fb"></a>
+                <a href="http://twitter.com" class="ico tw"></a>
+            </li>
+            <li>P.I. 01234567890</li>
+        </ul>
+    </div>
+
+
+
+    <!-- <div class="step slide" data-x="200" data-y="800" data-z="3000" data-rotate="0" data-scale="1"></div> -->
+
+</div>
+
+<!--[if IE]>
+<!--
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+
+<script>
+    // You may want to place these lines inside an onload handler
+    CFInstall.check({
+        mode: "overlay",
+        destination: "http://www.pongoweb.it/"
+    });
+</script>
+
+<![endif]-->
+
+<!--
+    Istruzioni di navigazione
+ -->
+
+<div class="hint">
+    <p>Use 'SPACE' or &larr; &uarr; &rarr; &darr; to navigate</p>
+</div>
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tocca a SX o a DX per navigare</p>";
+    }
+</script>
+
+<!--
+    Carica e attiva impress.js
+-->
+
+<script src="impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27176205-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+-->
+</body>
+</html>

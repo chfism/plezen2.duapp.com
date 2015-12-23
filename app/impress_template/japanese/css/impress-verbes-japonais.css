@@ -1,0 +1,47 @@
+/*CSS for impress.js
+* complement of impress-min-prezi.css
+* created byDamien Gauthier
+* on 28.10.2013 */
+
+/*.normal { border: solid black 1px;}
+*/
+
+/* Si le titre de la slide est une image, elle est seule sur sa ligne et centree*/
+img.title { display: block; margin: auto; float: left; top: 30%; height: 600px;}
+
+h1 {color: black;}
+h2 {color:red; font-size: 1.1em;}
+p+p { margin-top: 0.5em; margin-bottom: 0.2em;}
+.very-strong {color: red;}
+
+ul {text-align: left;}
+ul.secondary li {font-size: 0.5em;}
+p+ul {margin-top: 0.5em;}
+.secondary {margin-top: 0em; font-size: smaller;}
+
+/* affichage des conseils avec un peu de transparence*/
+div.hint {
+	position: absolute;
+	z-index:10;
+	width: 90%;
+	height: 1em;
+	padding: 0.05em;
+	margin: auto;
+	background-color: rgb(15,15,15);
+	opacity: 0.5;
+	text-align: center;
+}
+div.hint p { color: whiteSmoke; font-size: 0.4em; line-height: 1.2em; margin: 0em; opacity: 1;}
+
+.secondary-hint {
+	display: none; 
+	padding-top: 0.6em; /*car la lineheight est de 1.2em*/
+}
+
+/* on ne veut pas afficher les conseils sur les slides futures ou passees */
+.past div.hint { display: none;}
+.future div.hint { display: none;}
+
+/* comme la css impress-min-prezi.css a une mise forme speciale pour les liens, 
+il faut un peu tricher pour faire des liens "invisibles" avec l'event onClick */
+.map { cursor : pointer;}

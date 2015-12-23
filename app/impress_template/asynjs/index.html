@@ -1,0 +1,653 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Asynchronous JavaScript | meetjs summit 2012 presentation by
+    Mariusz Nowak @medikoo (made with impress.js presentation tool by
+    Bartek Szopka @bartaz)</title>
+<meta name="description" content="Asynchronous JavaScript">
+<meta name="author" content="Mariusz Nowak" />
+
+<link rel="stylesheet" href="css/font.css" />
+<link rel="stylesheet" href="css/default.css" />
+<link rel="stylesheet" href="css/sunburst.css">
+
+<div id="impress" class="impress-not-supported">
+<div id="fm1" class="fallback-message hidden">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js,
+        so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b> or
+        <b>Safari</b> browser. Firefox 10 (to be released soon)
+        will also handle it.</p>
+</div>
+<div id="fm2" class="fallback-message">
+    <p>If you have fast machine and recent Google Chrome or Safari installed,
+        please check <a href="3d/index.html">a bit more "moving" version of that presentation</a></p>
+    <p style="text-align:center"><big>Otherwise, scroll down to see the slides</big></p>
+</div>
+
+<div id="asynchronous-javascript" class="step">
+    <h1>Asynchronous JavaScript</h1>
+    <p class="footer">
+        <a href="http://summit.meetjs.pl/">meetjs summit</a> ·
+        <span>January 2012</span> ·
+        <span>Poznań, Poland</span>
+    </p>
+</div>
+<div id="why-asynchronous" class="step">
+    <h2>Why asynchronous ?</h2>
+</div>
+
+<div id="client-side" class="step">
+    <h3>Client-side</h3>
+    <p class="substep">One obvious use case:</p>
+    <p class="substep">Talking to remote instances (<b>Ajax</b>)</p>
+    <p class="substep">We're doing it asynchronous as we don't want to block interaction with the page</p>
+    <p class="substep">Programming Ajax doesn't cause much trouble</p>
+</div>
+
+<div id="server-side" class="step">
+    <h3>Server-side</h3>
+    <p class="substep">It may not be obvious but server-side we can benefit from asynchronicity in many more cases</p>
+    <p class="substep">and server-side shows that asynchronous programming can be difficult</p>
+    <p class="substep">So we should be asking ...</p>
+</div>
+
+<div id="why-asynchronous-on-server-side" class="step">
+    <h2>Why asynchronous <span>on server-side</span> ?</h2>
+</div>
+
+<div id="its-about-external-resources" class="step">
+    <h3>It's about querying external resources</h3>
+    <p>Many web applications have code like this:</p>
+    <pre><code>var result = db.query("select * from T");
+        // use result</code></pre>
+    <p class="substep"><b>What is the software doing while it queries the database&nbsp;?</b></p>
+    <p class="substep">In many cases, just waiting for the response</p>
+</div>
+
+<div id="how-much-waiting-can-cost" class="step">
+    <h3>How much waiting can cost ?</h3>
+    <p>I/O latency:</p>
+    <ul>
+        <li>L1: 3 cycles</li>
+        <li>L2: 14 cycles</li>
+        <li>RAM: 250 cycles</li>
+        <li>DISK: 41,000,000 cycles</li>
+        <li>NETWORK: 240,000,000 cycles</li>
+    </ul>
+</div>
+
+<div id="better-software-can-multitask" class="step">
+    <h3>Better software can multitask</h3>
+    <div class="substep">
+        <p>Code like this:</p>
+      <pre><code>var result = db.query("select * from T");
+          // use result</code></pre>
+        <p>blocks entire process</p>
+    </div>
+    <div class="substep">
+        <p style="margin-top:0.9em">But code like this:</p>
+      <pre><code>db.query("select..", function (result) {
+          // use result
+          });</code></pre>
+        <p>Allows the program to return to the
+            event loop immediately.</p>
+    </div>
+</div>
+
+<div id="how-io-should-be-done" class="step">
+    <p>This is how I/O should be done, and this is what was introduced with Node.js</p>
+    <div class="substep">
+        <p>For more details on that see:</p>
+        <p class="p-a"><a href="http://s3.amazonaws.com/four.livejournal/20091117/jsconf.pdf">Node.js introductory JSConf 2009 slides</a></p>
+    </div>
+</div>
+
+<div id="how-to-write-asynchronous-code" class="step">
+    <h3 class="lone">How to write asynchronous code ?</h3>
+</div>
+
+<div id="nodejs-convention" class="step">
+    <p>Node.js introduced the following convention:</p>
+    <pre><code>readFile(filename, function (err, content) {
+        if (err) {
+        // handle error
+        return;
+        }
+        // process file content
+        });</code></pre>
+    <div class="substep">
+        <p>Currently this style has also its recommendation in:</p>
+        <p class="p-a"><a href="https://github.com/scriptlib-cg/api-design-cookbook">
+            W3C Web API Design Cookbook</a></p>
+    </div>
+</div>
+
+<div id="exercise" class="step">
+    <h3>Let's do a simple real world exercise</h3>
+    <p class="substep" data-order="0"><q>Concatenate all js files in given directory to lib.js file</q></p>
+    <div class="substep" data-order="1">
+        <p>Thinking synchronous it may look like this:</p>
+      <pre><code><span class="substep" data-order="6">writeFile(dirname + '/lib.js',</span>
+<span class="substep" data-order="2">  // Read all filenames
+  readdir(dirname) // returns array of filenames</span>
+<span class="substep" data-order="3">  // Filter *.js filenames
+  .filter(function (filename) {
+    return (filename.slice(-3) === '.js')
+      && (filename !== 'lib.js');
+  })</span>
+<span class="substep" data-order="4">  // Read content of each file
+  .map(readFile)</span>
+<span class="substep" data-order="5">  // Concatenate into one string
+  .join("\n")</span>
+          <span class="substep" data-order="6">);</span></code></pre>
+    </div>
+</div>
+
+<div id="exercise-nodejs" class="step">
+    <h3>Let's do it asynchronous in Node.js</h3>
+    <pre style="font-size:0.35em;" class="substep"><code>// Read all filenames in given path
+        readdir(dirname, function (err, filenames) {
+        var result, waiting;
+        if (err) {
+        // Handle eventual error
+        return;
+        }
+        // Filter *.js filenames
+        filenames = files.filter(function (filename) {
+        return (filename.slice(-3) === '.js') && (filename !== 'lib.js');
+        });
+        // Read content of each file
+        waiting = 0;
+        result = [];
+        filenames.forEach(function (filename, index) {
+        ++waiting;
+        readFile(filename, 'utf8', function (err, content) {
+        if (err) {
+        // Handle eventual error
+        return;
+        }
+        result[index] = content;
+        if (!--waiting) {
+        // Got content of all files, concatenate and write into lib.js
+        writeFile(dirname + '/lib.js', result.join("\n"), function (err) {
+        if (err) {
+        // Handle eventual error
+        return;
+        }
+        });
+        }
+        });
+        });
+        });</code></pre>
+</div>
+
+<div id="exercise-node-comment" class="step">
+    <p>Looks definitely more complicated</p>
+    <p class="substep">it's still a simple example, <b>real world cases are usually more complicated than that</b></p>
+    <p class="substep">Many developers have reached this point and as a result we have many solutions that aim to be remedy for asynchronous programming</p>
+</div>
+
+<div id="most-popular-solutions" class="step">
+    <h3>Most popular solutions:</h3>
+    <ul>
+        <li class="substep" data-order="0">Async - <a href="https://github.com/caolan/async">github.com/caolan/async</a></li>
+        <li class="substep" data-order="1">Step - <a href="https://github.com/creationix/step">github.com/creationix/step</a></li>
+        <li class="substep" data-order="2">Q <small>(promises)</small> - <a href="https://github.com/kriskowal/q">github.com/kriskowal/q</a></li>
+        <li class="substep" data-order="3">Seq - <a href="https://github.com/substack/node-seq">github.com/substack/node-seq</a></li>
+        <li class="substep" data-order="4">Futures <small>(promises alike)</small> - <a href="https://github.com/coolaj86/futures">github.com/coolaj86/futures</a></li>
+        <li class="empty substep" data-order="5"><a>...</a></li>
+        <li class="substep" data-order="5">deferred <small>(promises)</small> - <a href="https://github.com/medikoo/deferred">github.com/medikoo/deferred</a></li>
+    </ul>
+</div>
+
+<div id="it-can-be-done-better-than-that" class="step smaller">
+    <p>Most solutions just try to simplify callbacks, but it still forces us into continuation passing style</p>
+    <p class="substep"><b>It can be done better than that</b></p>
+    <p class="substep">Instead of encapsulating <i>waiting</i> state within one function call, we can return such state as an object</p>
+    <p class="substep"><b>With the deferred/promise approach an asynchronous function returns a promise object, which is a promise of a value to be obtained</b></p>
+    <p class="substep">Promise can be processed by many functions.</p>
+    <p class="substep">It can be chained to other promises or nested with further promise values</p>
+    <p class="substep"><b>With promises we receive a much more powerful abstraction of asynchronous programming</b></p>
+</div>
+
+<div id="deferred-promise" class="step">
+    <h2>Deferred / Promise</h2>
+</div>
+
+<div id="what-is-deferred" class="step">
+    <h3 class="lone">What is Deferred ?</h3>
+</div>
+
+<div id="deferred" class="step smaller">
+    <p>Deferred holds both <b>resolver</b> and <b>promise</b> objects</p>
+    <p style="text-align: center"><img src="img/deferred.png" /></p>
+    <p class="substep">Observers interested in value are attached to <b>promise</b> object</p>
+    <p class="substep">With <b>resolver</b> we resolve <b>promise</b> with actual value</p>
+    <p class="small substep">In some other implementations of deferred there is no distinction between deferred and a promise, it's the same object. In <a href="https://github.com/kriskowal/q">Q</a> and <a href="https://github.com/medikoo/deferred">deferred</a> it's different</p>
+    <p class="substep">In common usage <b>promise</b> is returned to the world and <b>resolver</b> is kept internally</p>
+</div>
+
+<div id="deferred-example" class="step smaller">
+    <h3>Example</h3>
+    <p class="substep"><q><code>delay</code> function decorator. Decorates function so its execution is delayed in time</q></p>
+    <pre class="substep"><code style="font-size: 0.75em">var delay = function (fn, timeout) {
+        return function () {
+        <span class="substep">  var <mark>def = deferred()</mark>, self = this, args = arguments;</span>
+
+  <span class="substep">  setTimeout(function () {
+      <mark>def.resolve(fn.apply(self, args))</mark>;
+    }, timeout);</span>
+
+        <span class="substep">    <mark>return def.promise</mark>;</span>
+        };
+        };
+
+<span class="substep">var delayedAdd = delay(function (a, b) {
+    return a + b;
+}, 100);</span>
+
+<span class="substep">var result = delayedAdd(2, 3);
+deferred.isPromise(result); // true</span>
+
+<span class="substep">result.then(function (value) {
+  // Invoked after 100 milliseconds
+  console.log(value); // 5
+});</span></code></pre>
+</div>
+
+<div id="what-is-a-promise" class="step">
+    <h3 class="lone">What is a Promise ?</h3>
+</div>
+
+<div id="promise" class="step">
+    <p style="text-align: center"><img src="img/littlecalculist.promises.png" /></p>
+    <p class="substep" style="text-align: center"><img src="img/kriskowal.promises.png" /></p>
+    <p class="substep">... ok, maybe let's try plain English ;)</p>
+    <p class="substep"><b>Promise is an object that represents eventual value which may already be available or is expected to be available in a future.</b></p>
+    <p class="substep"><b>Promise may succeed (fulfillment) or fail (rejection)</b></p>
+    <p class="substep"><b>Promise can be resolved only once</b></p>
+</div>
+
+<div id="attaching-observers" class="step">
+    <h3>Attaching observers</h3>
+    <pre class="substep"><code>promise.then(onsuccess, onerror);</code></pre>
+    <p class="substep"><b>Both callbacks are optional</b>. You can provide either <code>onsucess</code> or <code>onerror</code></p>
+    <p class="substep"><b>Callbacks are called only once (only either onsuccess or onerror is called)</b></p>
+    <div class="substep">
+        <p>In <a href="https://github.com/medikoo/deferred">deferred</a> implementation <code>promise</code> equals <code>promise.then</code> function, so you may use <code>promise</code> directly:</p>
+      <pre><code>console.log(promise === promise.then); // true
+          promise(onsuccess, onerror);</code></pre>
+    </div>
+</div>
+
+<div id="chaining-promises" class="step">
+    <h3>Chaining promises</h3>
+    <p class="substep">Promises by nature can be chained</p>
+    <div class="substep">
+        <p><b><code>promise</code> function returns another promise</b> which is resolved with a value returned by a callback function:</p>
+      <pre><code>delayedAdd(2, 3).then(function (result) {
+          // result === 5
+          return result*result;
+          })<span class="substep">.then(function (result) {
+  console.log(result); // 25
+});</span></code></pre>
+    </div>
+</div>
+
+<div id="chaining-promises-cont" class="step">
+    <p>If no callback for given flow (success or error) was given, then promise is resolved with input value:</p>
+    <pre><code>delayedAdd(2, 3).then(null, function (err) {
+        // handle eventual error
+        }).then(function (result) {
+        console.log(result); // 5
+        });</code></pre>
+    <div class="substep">
+        <p>In <a href="https://github.com/medikoo/deferred">deferred</a> implementation instead of callbacks <b>you can also pass promise values to promise</b>:</p>
+      <pre><code>promise3 = promise1.then(promise2);
+          // or:
+          promise3 = promise1(promise2);
+          // promise3 is resolved with the value of promise2 ...
+          // ... when both promise1 and promise2 are resolved</code></pre>
+    </div>
+</div>
+
+<div id="nesting-promises" class="step">
+    <h3>Nesting promises</h3>
+    <div class="substep">
+        <p>If a promise is resolved with another promise, it's not really resolved. <b>Promise is resolved only when the final promise is resolved with a real value:</b></p>
+      <pre><code>var def = deferred();
+          def.resolve(delayedAdd(2, 3));
+          def.promise.then(function (result) {
+          console.log(5); // 5;
+          });</code></pre>
+    </div>
+</div>
+
+<div id="error-handling" class="step">
+    <h3>Error handling</h3>
+    <p class="substep"><b>Errors in promises are handled in a separate flow</b></p>
+    <div class="substep">
+        <p><b>A promise resolved with an error (rejected) propagates its error to all promises that depend on this promise</b> (e.g. promises initiated by adding observers)</p>
+      <pre><code style="font-size: 0.8em">var error = new Error("Error");
+          promise.then(function () {
+          // success flow
+          throw error; // caught by promise implementation
+          })<span class="substep">.then(function () {
+  // never called
+})</span><span class="substep">.then(function () {
+  // never called
+}, function (e) {
+  console.log(e === error); // true
+  // handle error
+});</span></code></pre>
+    </div>
+</div>
+
+<div id="end" class="step smaller">
+    <p>Problem with <code>then</code> is that any unhandled errors remain silent</p>
+    <div class="substep">
+        <p>To expose them, be sure to end promise chain with <code>.done()</code>:</p>
+      <pre><code style="font-size: 0.8em">promise(function () {
+          throw new Error("Error"); // caught
+          }).then(function () {
+          // never called
+          }).done(); // Error is thrown</code></pre>
+    </div>
+    <p class="substep"><strong>It's very important to end promise chains with <code>done</code> otherwise eventual errors that were not handled will not be exposed</strong></p>
+    <div class="substep">
+        <p><code>done</code> shares same signature as <code>then</code>, so you can handle errors in callbacks provided to <code>done</code>
+        <p><code>done</code> as it ends the chain, obviously doesn't return any promise</p>
+      <pre><code style="font-size: 0.8em">promise(function () {
+          // ...
+          }).done(null, function(err) {
+          // handle error
+          });</code></pre>
+    </div>
+</div>
+
+<div id="promisify" class="step">
+    <h3>Working with Node.js callback style functions</h3>
+    <p class="substep">It's not convienient to work with both promises and callback style functions</p>
+    <p class="substep">When you decide to build your flow with promises <b>don't mix both concepts just <i>promisify</i> asynchronous functions</b> so they return promises instead.</p>
+    <div class="substep">
+        <p>Do that with <b><code>deferred.promisify</code></b>:</p>
+      <pre><code>var readFile = deferred.promisify(fs.readFile);
+          readFile(filename, 'utf-8').done(function (content) {
+          // process content
+          });</code></pre>
+    </div>
+</div>
+<div id="promisify-cont" class="step">
+    <p><code>deferred.promisify</code> also takes care of input arguments. <b>It makes sure that all arguments that are to be passed to asynchronous function are first resolved</b>.</p>
+    <div class="substep">
+        <p>So we can write constructs like this:</p>
+      <pre><code>var readFile = deferred.promisify(fs.readFile)
+          , writeFile = deferred.promisify(fs.writeFile);
+
+          writeFile(filename + '.copy',
+          readFile(filename, 'utf-8')).done();</code></pre>
+    </div>
+    <p class="small substep"><i>but keep in mind it's not best real world example, don't copy files that way, use <code>fs.createReadStream</code> instead</i></p>
+</div>
+
+<div id="grouping-promises" class="step">
+    <h3>Grouping promises</h3>
+    <p class="substep">Sometimes we're interested in results of more than one promise object</p>
+    <div class="substep">
+        <p>We can help us again with a deferred function:</p>
+      <pre><code>deferred(delayedAdd(2, 3), delayedAdd(3, 5),delayedAdd(1, 7))
+          .done(function (result) {
+          console.log(result); // [5, 8, 8]
+          });</code></pre>
+    </div>
+</div>
+
+<div id="processing-collections" class="step smaller">
+    <h3>Processing collections</h3>
+    <div class="substep">
+        <p>There is promise aware Array's <code>map</code>:</p>
+      <pre><code>deferred.map(filenames, readFile)(function (result) {
+          // result is an array of files content
+          });</code></pre>
+    </div>
+    <p class="substep">If any call of <code>readFile</code> ends with an error, then promise returned by <code>deferred.map</code> is immediately rejected with that error</p>
+    <div class="substep">
+        <p>There's also promise aware Array's <code>reduce</code>:</p>
+      <pre><code>deferred.reduce([delayedAdd(2, 3), delayedAdd(3, 5), delayedAdd(1, 7)],
+          function (a, b) {
+          return delayedAdd(a, b);
+          }).done(function (result) {
+          console.log(result); // 21
+          });</code></pre>
+    </div>
+</div>
+
+<div id="promise-extensions" class="step">
+    <h3>Promise extensions</h3>
+    <p class="substep">In <a href="https://github.com/medikoo/deferred">deferred</a> promises are equipped with some useful extensions:</p>
+    <h4 class="substep"><code>map</code> & <code>reduce</code></h4>
+    <div class="substep">
+        <p>Promise aware Array's methods that would be executed on resolved value</p>
+      <pre><code>readdir(directory).map(readFile).done(function (result) {
+          // result is an array of directory files content
+          });</code></pre>
+    </div>
+</div>
+
+<div id="invoke" class="step">
+    <h4><code>invoke</code></h4>
+    <div class="substep">
+        <p>Invokes function (with pregiven arguments) on resolved value.</p>
+      <pre><code>promise = deferred({ foo: function (arg) { return arg*arg }});
+          promise.invoke('foo', 3).done(function (result) {
+          console.log(result); // 9
+          });</code></pre>
+    </div>
+    <div class="substep">
+        <p>It works also with asynchronous functions:</p>
+      <pre><code>promise = deferred({ foo: function (arg, callback) {
+          setTimeout(function () {
+          callback(null, arg*arg);
+          }, 100);
+          } });
+          promise.invoke('foo', 3).done(function (result) {
+          console.log(result); // 9
+          });</code></pre>
+    </div>
+</div>
+
+<div id="match" class="step">
+    <h4><code>match</code></h4>
+    <div class="substep">
+        <p>Matches resolved list into function arguments</p>
+      <pre><code>var promise = deferred([2, 3]);
+          promise.match(function (a, b) {
+          console.log(a + b); // 5
+          }).done();</code></pre>
+    </div>
+    <p class="substep">For more extensions see documentation at <a href="https://github.com/medikoo/deferred">github.com/medikoo/deferred</a></p>
+    <p class="substep"><b>You can also freely extend <a href="https://github.com/medikoo/deferred">deferred</a> with your own extensions</b></p>
+</div>
+
+<div id="example-promises" class="step">
+    <p>We've been introduced to promises. Let's look back at our Node.js example</p>
+    <div class="abs-box">
+      <pre class="base substep hide-on-notsupported" data-order="0" style="font-size:0.3em;"><code>// Read all filenames in given path
+          readdir(dirname, function (err, filenames) {
+          var result, waiting;
+          if (err) {
+          // Handle eventual error
+          return;
+          }
+          // Filter *.js filenames
+          filenames = files.filter(function (filename) {
+          return (filename.slice(-3) === '.js') && (filename !== 'lib.js');
+          });
+          // Read content of each file
+          waiting = 0;
+          result = [];
+          filenames.forEach(function (filename, index) {
+          ++waiting;
+          readFile(filename, 'utf8', function (err, content) {
+          if (err) {
+          // Handle eventual error
+          return;
+          }
+          result[index] = content;
+          if (!--waiting) {
+          // Got content of all files, concatenate and write into lib.js
+          writeFile(dirname + '/lib.js', result.join("\n"), function (err) {
+          if (err) {
+          // Handle eventual error
+          return;
+          }
+          });
+          }
+          });
+          });
+          });</code></pre>
+        <div class="substep keep" data-order="1">
+            <p>With promises we can write it nearly same way as wrote it initially:</p>
+        <pre><code style="font-size: 0.8em"><span class="substep" data-order="6">writeFile(dirname + '/lib.js',</span>
+<span class="substep" data-order="2">  // Read all filenames in given path
+  readdir(dirname)</span>
+<span class="substep" data-order="3">  // Filter *.js filenames
+  .invoke('filter', function (filename) {
+    return (filename.slice(-3) === '.js')
+      && (filename !== 'lib.js');
+  })</span>
+<span class="substep" data-order="4">  // Read content of each file
+  .map(function (filename) {
+    return readFile(filename, 'utf-8');
+  })</span>
+<span class="substep" data-order="5">  // Concatenate into one string
+  .invoke('join', '\n')</span>
+            <span class="substep" data-order="6">)</span><span class="substep" data-order="7">.done(); // Expose eventual error</span></code></pre>
+        </div>
+    </div>
+</div>
+
+<div id="future" class="step smaller">
+    <h3>What future standards have to offer ?</h3>
+    <p class="substep">Currently there are no plans for promise implementation in Harmony</p>
+    <p class="substep"><b>What's interesting we can find promises in Dart</b></p>
+    <p class="substep">However its API is not as versatile and largly differs form what was introduced here</p>
+    <ul>
+        <li class="substep">Instead of two possible resolution states there are three: completed, cancelled & failed</li>
+        <li class="substep">You need to use three different methods to attach observers</li>
+        <li class="substep">If promise is resolved with another promise, you need to run <code>flatten</code> to get final real value</li>
+        <li class="substep">Different approach to grouping promises (join and waitFor methods)</li>
+    </ul>
+    <p class="substep">See Dart spec for more info on that: <a href="http://api.dartlang.org/dart_core/Promise.html">http://api.dartlang.org/dart_core/Promise.html</a></p>
+    <p class="substep">Let's see what <b>real</b> future has to offer...</p>
+</div>
+
+<div id="coroutines" class="step smaller">
+    <h3>Harmony</h3>
+    <p>There are no promises but is there anything else that can help us with asynchronous programming ?</p>
+    <h3 class="substep">Coroutines</h3>
+    <div class="substep">
+        <p>They would help with callback style, as instead of:</p>
+      <pre><code>readFile(filename, function (err, content) {
+          // ..
+          });</code></pre>
+    </div>
+    <div class="substep">
+        <p>It would be possible to keep flow in current scope:</p>
+      <pre><code>[err, content] = yield readFile(filename);
+          if (err) {
+          // handle error
+          return;
+          }
+          // process content</code></pre>
+    </div>
+    <p class="substep"><b>This however won't work well with promises<br />(what about error path?)</b></p>
+</div>
+
+<div id="proxies" class="step">
+    <h3>Proxies</h3>
+    <p class="substep">Proxies are very powerful</p>
+    <p class="substep"><b>With proxies we can proxy property names onto resolved promise values</b></p>
+    <div class="substep">
+        <p>So instead of:</p>
+        <pre><code>promise.invoke('foo', arg);</code></pre>
+    </div>
+    <div class="substep">
+        <p>We would be able to write:</p>
+        <pre><code>promise.foo(arg);</code></pre>
+    </div>
+    <p class="substep"><b>With internal support from promise implementation this would work</b></p>
+</div>
+
+<div id="example-proxies" class="step">
+    <p>Let's improve our example with proxies.</p>
+    <div class="abs-box">
+        <div class="substep hide-on-notsupported">
+            <p style="margin-top:0; visibility: hidden">It's basically same as our first "synchronous" version:</p>
+        <pre><code>writeFile(dirname + '/lib.js',
+            // Read all filenames in given path
+            readdir(dirname)
+            // Filter *.js filenames
+            .invoke('filter', function (filename) {
+            return (filename.slice(-3) === '.js')
+            && (filename !== 'lib.js');
+            })
+            // Read content of each file
+            .map(function (filename) {
+            return readFile(filename, 'utf-8');
+            })
+            // Concatenate into one string
+            .invoke('join', '\n')
+            ).done(function (err) {
+            // handle eventual error
+            });</code></pre>
+        </div>
+        <div class="substep base">
+            <p>It's basically same as our first "synchronous" version:</p>
+    <pre><code>writeFile(dirname + '/lib.js',
+        // Read all filenames in given path
+        readdir(dirname)
+        // Filter *.js filenames
+        .filter(function (filename) {
+        return (filename.slice(-3) === '.js')
+        && (filename !== 'lib.js');
+        })
+        // Read content of each file
+        .map(<mark>function (filename) {
+            return readFile(filename, 'utf-8');
+            }</mark>)
+        // Concatenate into one string
+        .join('\n')
+        )<mark>.done(); // Expose eventual error</mark>;</code></pre>
+        </div>
+    </div>
+</div>
+
+<div id="questions" class="step">
+    <h2>Questions ?</h2>
+</div>
+
+<div id="thank-you" class="step final">
+    <h2>Thank you !</h2>
+
+    <p class="name">Mariusz Nowak</p>
+    <p class="email"><a href="mailto:mariusz@medikoo.com">mariusz@medikoo.com</a></p>
+    <p class="twitter p-a"><a href="https://twitter.com/medikoo"><img src="img/twitter.png" /> @medikoo</a></p>
+    <p class="github p-a"><a href="https://github.com/medikoo"><img src="img/github.png" /> github.com/medikoo</a></p>
+    <p class="deferred p-a"><a href="https://github.com/medikoo/deferred">github.com/medikoo/deferred</a><br />
+        <b>npm install deferred</b></p>
+
+</div>
+
+<div id="overview" class="step" data-x="3400" data-y="2000" data-scale="10"></div>
+<div class="hint"><p>Use a spacebar or arrow keys to navigate</p></div>
+</div>
+
+<div id="timer"></div>
+
+<script src="js/highlight.pack.js"></script>
+<script src="js/impress.js"></script>
+<script src="js/default.js"></script>
+</body>
+</html>

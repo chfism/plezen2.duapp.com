@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="../scripts/extend/html5shiv.js"></script><![endif]-->
+    <title>
+        Your plezens | Plezen
+    </title>
+    <link rel="stylesheet" href="../styles/extend/main3.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/extend/main2.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/extend/your.css" type="text/css"/>
+    <link rel="stylesheet" href="../styles/extend/responsive.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link href="../styles/extend/pager.css" rel="stylesheet" media="screen"/>
+</head>
+<body class="create  lazy">
+<!--删除的时候需要检查用户名-->
+<input id="user" name="user" type="hidden" value="<%= user.email %>"/>
+
+<div class="header header-fixed">
+    <div class="container"><a class="branding" href="/">Plezen</a>
+        <ul class="nav-main container" id="navigation">
+            <li class="nav-create"><a href="/your/" data-i18n="commonlang.your">
+                    <span class="pointer"></span></a></li>
+            <!--<li class="nav-explore"><a href="/explore/staff-picks/" data-i18n="commonlang.explore">-->
+            <!--<span class="pointer"></span></a></li>-->
+        </ul>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <a class="btn btn-discreet dropdown-toggle username" data-toggle="dropdown" href="#"
+                   title=“<%= user.username %>”><%= user.username %>
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="/settings" data-i18n="commonlang.settings"></a>
+                    </li>
+                    <li>
+                        <a href="/logout/" data-i18n="commonlang.logout"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content -->
+<div class="content">
+<div class="container">
+<section id="yourapp">
+<div class="row" id="sticky-header">
+    <div class="span8"><h1 class="title"><span id="all-plezen-name" data-i18n="yourlang.all"></span></h1>
+    </div>
+</div>
+<div class="row">
+<div class="span8" id="search_container">
+    <form action="" id="search_form" class="prezi-search">
+        <label class="input-append">
+            <input id="q" name="q" type="search" class="span8"
+                   data-i18n="[placeholder]yourlang.placeholdersearch" autocomplete="off">
+        </label>
+    </form>
+</div>
+<div id="folders-header" class="span4">
+    <div class="btn-group pull-right" id="allprezis-selector">
+        <button id="sort" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-settings"></i>
+            <span id="sortoption"></span>
+            <span class="caret lpad-5"></span></button>
+        <ul class="dropdown-menu" id="sortdropdown">
+            <li><a href="#" s="n"><i data-i18n="yourlang.orderbyname"></i></a></li>
+            <li><a href="#" s="n2"><i data-i18n="yourlang.orderbyname2"></i></a></li>
+            <li><a href="#" s="u"><i data-i18n="yourlang.orderbyupdate"></i></a></li>
+            <li><a href="#" s="u2"><i data-i18n="yourlang.orderbyupdate2"></i></a></li>
+            <li><a href="#" s="i"><i data-i18n="yourlang.orderbycreate"></i></a></li>
+            <li><a href="#" s="i2"><i data-i18n="yourlang.orderbycreate2"></i></a></li>
+        </ul>
+    </div>
+</div>
+<div class="span12" id="prezilist-container">
+<div class="tpl" style="display: none;">
+    <div class="row">
+        <div class="span12" id="prezilist-container">
+            <ul id="presentations" class="plezen-list thumbnails">
+                <li id="blank-plezen" class="new-plezen span4">
+                    <a href="/mindmap">
+                        <div class="plezen-list-item new-plezen-item">
+                            <div class="absolute-center">
+                                <div class="new-plezen-card-text" style="border: none;"
+                                     data-i18n="yourlang.blankplezen">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!--循环输出模版项目-->
+                <% templatelist.forEach(function(tpl){ %>
+                <li class="span4 prezicard-li-item ui-draggable">
+                    <div class="plezen-list-item thumbnail">
+                        <a href="/impress/tpl/<%= tpl._id %>"
+                           style="background: url(data:image/png;base64,<%= tpl.thumbnail %>) 50% 50%"
+                           class="link_to_landing_page" target="_blank">
+                            .
+                        </a>
+
+                        <div class="caption" data-copyright="1">
+                            <div class="caption-inner">
+                                <h3 class="title">
+                                    <a href="/impress/tpl/<%= tpl._id %>" target="_blank">
+                                        <i class="icon icon-reusable"></i><span><%= tpl.name.substring(0, 18) %>
+                                            <% if (tpl.name.length > 20) { %>
+                                            ...
+                                            <% } %>
+                                        </span></a>
+                                </h3>
+
+                                <p class="meta"> Created by <%= tpl.email %> </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+    <div class="pager">
+        <ul>
+            <li id="pager_previous"><a class="btn btn-discreet" href="javascript:;">&lt;</a></li>
+            <li class="page" data-page="0"><a class="btn btn-discreet" href="javascript:;">1</a>
+            </li>
+            <li id="pager_next"><a class="btn btn-discreet" href="javascript:;">&gt;</a></li>
+        </ul>
+    </div>
+</div>
+<div class="sharepanel" style="display: none">
+    <div class="privacymodal privacy-permissions-modal">
+        <div class="modal-body">
+            <div class="container-popup privacy">
+                <div id="permission-popup-container">
+                    <h4 id="modal-privacy-heading" data-i18n="yourlang.set"></h4>
+
+                    <div class="permission-modal-separator privacy-sep"></div>
+                    <div id="slider-container">
+                        <div class="span8 row slider">
+                            <input id="permselect" type="range" min="0" max="2" step="1" value="2"></div>
+                    </div>
+                    <div id="slider-icons-container">
+                        <!--<ul class="states span8 disabled">-->
+                        <ul class="states span8">
+                            <li class="active" data-type="private"><a href="#" class="icon"><i
+                                            class="icon-lock medium"></i><strong
+                                            data-i18n="yourlang.private"></strong></a>
+                            </li>
+                            <li class="active" data-type="hidden"><a href="#" class="icon"><i
+                                            class="icon-link medium"></i><strong
+                                            data-i18n="yourlang.hidden"></strong></a>
+                            </li>
+                            <li class="last-child active" data-type="public"><a href="#" class="icon"><i
+                                            class="icon-globe medium"></i><strong
+                                            data-i18n="yourlang.public"></strong></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div id="description-container">
+                        <div id="description">
+                            <div data-i18n="yourlang.publicdescription"></div>
+                            <div class="plezen-link-view">
+                                <a href="#" class="btn prezi-link-copy-btn zeroclipboard-is-hover" id="openlink"
+                                   target="_blank" data-i18n="yourlang.openlink"></a>
+                                <input class="prezi-link-text shareable-data-container" id="sharelink" type="text"
+                                       spellcheck="false"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="share-modify-permissions" style="display:none">
+                        <h4 id="modal-permission-heading" data-i18n="yourlang.addpeople"></h4>
+
+                        <div id="add-panel">
+                            <input id="add-fld" class="pull-left" type="email"
+                                   data-i18n="[placeholder]yourlang.addbyemail"
+                                   style="width: 312px;">
+
+                            <div id="add-controls" style="display: block;">
+                                <div id="add-options" class="btn-group pull-left">
+                                    <button class="btn dropdown-toggle" id="btn-add-perm-dropdown"
+                                            data-toggle="dropdown">
+                                        <span id="active-selection">
+                                            <i class="icon-edit" id="selected-permission"></i>
+                                            <i data-i18n="yourlang.editor"></i>
+                                        </span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu share-dropdown-menu" id="permdropdown">
+                                        <li><a href="#" id="add-editor"><i class="icon-edit"></i> <i
+                                                        data-i18n="yourlang.editor"></i></a>
+                                        </li>
+                                        <li><a href="#" id="add-viewer"><i class="icon-eye"></i> <i
+                                                        data-i18n="yourlang.viewer"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button id="add-btn" class="btn btn-primary" type="button"
+                                        data-i18n="yourlang.add"></button>
+                            </div>
+                        </div>
+                        <ul id="collablist" class="media-list">
+                            <li class="media userlist-entry-container" data-id="86534492">
+                                <div class="media-body user-list-entry" style="cursor: auto;">
+                                    <div class="pull-left avatar-image">
+                                        <img src="">
+                                    </div>
+                                    <div class="pull-left contact-name"><p>You</p></div>
+                                    <div class="pull-left contact-email-container contact-hide">
+                                        <small class="contact-email">
+                                            <%= user.email %>
+                                        </small>
+                                    </div>
+                                    <div class="pull-right btn-group permission-icon-container"></div>
+                                    <div class="pull-right permission-icon-container">
+                                        <span class="pull-left">
+                                            <i class="icon-owner permission-icon" title="Owner"></i>
+                                            <span class="contact-permission-detail contact-hide">Owner</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- /collablist --></div>
+                    <div id="share-modify-code" style="display:none">
+                        <h4 id="modal-permission-heading" data-i18n="yourlang.addcode"></h4>
+
+                        <div id="add-panel">
+                            <input id="set-code" class="pull-left"
+                                   data-i18n="[placeholder]yourlang.code" style="width: 312px;">
+
+                            <button id="set-code-btn" class="btn btn-primary" type="button"
+                                    data-i18n="yourlang.set"></button>
+                        </div>
+                    </div>
+                    <div id="share-modify-public" style="display:block">
+                        <h4 id="modal-permission-heading" data-i18n="yourlang.public"></h4>
+
+                        <div id="add-panel">
+                            <button id="set-public-btn" class="btn btn-primary" type="button"
+                                    data-i18n="yourlang.set"></button>
+                        </div>
+                    </div>
+                    <div class="permission-modal-separator"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--创建新Plezen-->
+<ul id="presentations" class="plezen-list thumbnails">
+    <li id="new-plezen" class="new-plezen span4">
+        <!--<a href="/impress">-->
+        <div class="plezen-list-item new-plezen-item">
+            <div class="absolute-center">
+                <!--<span class="new-plezen-card-button iconfont-new_prezi_32x32"></span>-->
+                <div class="new-plezen-card-text" style="border: none;"
+                     data-i18n="yourlang.newplezen">
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <!--循环输出用户的项目-->
+    <% projectlist.forEach(function(project){ %>
+    <li class="span4 prezicard-li-item ui-draggable">
+        <div class="plezen-list-item thumbnail">
+            <a href="/share/<%= project._id %>"
+               style="background: url(<% if(project.thumbnail == "") { %>'./img/extend/notavailable.png'<% } else { %>data:image/gif;base64,<%= project.thumbnail %> <% } %>) 50% 50%"
+               class="link_to_landing_page" target="_blank">
+                .
+            </a>
+
+            <div class="toolbar-quickedit">
+                <a class="pull-left btn edit" href="/impress/import/<%= project._id %>">
+                    <i class="icon-edit"></i> <span data-i18n="yourlang.edit"/>
+                </a>
+                <a class="pull-left btn btn-margin share"
+                   link=/share/<%= project._id %> code="<%= project.shareto[0]._doc.token %>">
+                    <i class="icon-share"></i> <span data-i18n="yourlang.share"/>
+                </a>
+                <a class="pull-right btn quick-delete" id="del" name="<%= project._id %>">
+                    <i class="icon-delete"></i>
+                </a>
+            </div>
+
+            <div class="caption" data-copyright="1">
+                <div class="caption-inner">
+                    <h3 class="title">
+                        <a href="/share/<%= project._id %>" target="_blank">
+                            <i class="icon icon-reusable"></i><span><%= project.name.substring(0, 18) %>
+                                <% if (project.name.length > 20) { %>
+                                ...
+                                <% } %>
+                            </span></a>
+                    </h3>
+
+                    <p class="meta"> Last Updated on <%= project.updated.toDateString() %> </p>
+                </div>
+            </div>
+        </div>
+    </li>
+    <% }) %>
+</ul>
+</div>
+</div>
+
+</section>
+</div>
+</div>
+<div id="page1" pageCount="<%= page.pageCount %>" pageNum="<%= page.num %>" pageSize="<%= page.size %>"
+     pageLimit="<%= page.limit %>" numberOfPages="<%= page.numberOf %>"></div>
+
+
+<!--<ul>-->
+<!--<li id="pager_previous"><a class="btn btn-discreet" href="javascript:;">&lt;</a></li>-->
+<!--<li class="page" data-page="0"><a class="btn btn-discreet" href="javascript:;">1</a></li>-->
+<!--<li id="pager_next"><a class="btn btn-discreet" href="javascript:;">&gt;</a></li>-->
+<!--</ul>-->
+</div>
+<script type="text/javascript" src="../scripts/extend/jquery.js"></script>
+<script type="text/javascript" src="../scripts/plezen/dropdown.js"></script>
+<script type="text/javascript" src="../scripts/extend/layer/layer.min.js"></script>
+<script src="../scripts/extend/i18next-1.7.4.min.js"></script>
+<script src="../scripts/extend/language.js"></script>
+<!--<script type="text/javascript" src="../scripts/extend/plezen/your.js"></script>-->
+<script type="text/javascript" src="../scripts/plezen/your.js"></script>
+<script type="text/javascript" src="../scripts/extend/bootstrap.min.js"></script>
+<script type="text/javascript" src="../scripts/extend/bootstrap-paginator.min.js"></script>
+</body>
+</html>

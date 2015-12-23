@@ -1,0 +1,283 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Faster HTML5 Apps</title>
+
+    <meta name="description" content="Faster HTML5 Apps" />
+    <meta name="author" content="IndrekV" />
+
+    <link href="http://fonts.useso.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/html5.css" rel="stylesheet" />
+
+    <!--<link rel="shortcut icon" href="favicon.png" />-->
+    <!--<link rel="apple-touch-icon" href="apple-touch-icon.png" />-->
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+<div id="loading" class="step" data-x="0" data-y="0">
+    <img class="loader" src="img/loading10.gif" alt="Loading"/>
+</div>
+
+<div id="title" class="step" data-x="0" data-y="0">
+    <img class="title-img" src="img/fast.jpg" alt="Fast"/>
+    <q class="title-text"><b>Faster HTML5 Apps</b></q>
+    <p class="author">Indrek Vändrik</p>
+</div>
+
+<div id="topics" class="step" data-x="-1000" data-y="1500">
+    <div class="css-style">CSS</div>
+    <div class="js-style">Javascript</div>
+    <div class="css-text">CSS is simple yo!</div>
+    <div class="js-text">I know Javascript I use jQuery all the time</div>
+</div>
+
+<div id="css-selectors1" class="step css" data-x="-1500" data-y="3000" data-scale="3">
+    <q><b class="heading">Effective css selectors</b></q>
+        <pre class="code">
+            #content > li { font-color: blue;}
+            #content a { font-size: 20px; }
+        </pre>
+</div>
+
+<div id="css-selectors2" class="step css" data-x="-2000" data-y="5500" data-z="4000" data-scale="3" data-rotate="180">
+    <q><b class="heading">Effective css selectors</b></q>
+    <ul>
+        <li>*Avoid universal selectors <span class="highlight">#foo > *</span></li>
+        <li>*Dont qualify selectors <br>
+            <span class="highlight">div#item {}</span> <br>
+            <span class="highlight">#item {}</span>
+        </li>
+        <li>*avoid tag-child selectors <br>
+            <span class="highlight">#main > ul</span> <br>
+            <span class="highlight">.main-ul</span>
+        </li>
+        <li>*don't rewrite use inheritance where possible</li>
+    </ul>
+</div>
+<div id="display-visibility" class="step" data-x="1500" data-y="7000" data-z="8000" data-scale="3">
+    <q><b class="heading">display: none VS visibility: hidden</b></q>
+    </br>
+    <q class="display">Sample list</q>
+    <ul class="list">
+        <li class="list-li">Home</li>
+        <li class="list-li">News</li>
+        <li class="list-li">Blog</li>
+        <li class="list-li">About</li>
+    </ul>
+    <q class="display">display:none</q>
+    <ul class="list">
+        <li class="list-li">Home</li>
+        <li class="list-li" style="display:none;">News</li>
+        <li class="list-li">Blog</li>
+        <li class="list-li">About</li>
+    </ul>
+    <q class="display">visibility:hidden</q>
+    <ul class="list">
+        <li class="list-li">Home</li>
+        <li class="list-li" style="visibility:hidden;">News</li>
+        <li class="list-li">Blog</li>
+        <li class="list-li">About</li>
+    </ul>
+</div>
+
+<div id="position" class="step" data-x="1500" data-y="10000" data-rotate="180" data-z="12000" data-scale="3">
+    <q><b class="heading">Positioning</b></q>
+        <pre class="code">
+           position: absolute !important;
+           top: -9999px !important;
+           left: -9999px !important;
+        </pre>
+    <q class="display">Use absolute positioning everywhere?</q>
+</div>
+
+<div id="caution" class="step" data-x="1500" data-y="12000" data-z="16000" data-scale="3">
+    <q><b class="heading">Use CSS3 tricks with caution</b></q>
+        <pre class="code">
+            box-shadow
+            -webkit-transform: translateZ(0);
+            -webkit-transition
+        </pre>
+</div>
+
+<div id="js" class="step" data-x="6000" data-y="8500" data-z="-1000" data-rotate="200" data-scale="5">
+    <img class="img" src="img/keanu_meme.jpg" alt="Keanu & Javascript"/>
+</div>
+
+<div id="js-dom-manipulation1" class="step" data-x="10000" data-y="12000" data-z="-1000" data-rotate="200" data-scale="3">
+    <q><b class="heading">Adding many elements to the DOM</b></q>
+        <pre class="code">
+ for (var i = 0; i < 10000; i++) {
+    $("#for-loop-one").append('&lt;tr&gt;&lt;td&gt;' + i + '&lt;/td&gt;&lt;/tr&gt;');
+ }
+        </pre>
+    <p>4189.548ms, 230001 calls</p>
+</div>
+
+<div id="js-dom-manipulation2" class="step" data-x="12000" data-y="10000" data-z="-1000" data-scale="3">
+    <q><b class="heading">Adding many elements to the DOM</b></q>
+        <pre class="code">
+            var html = '';
+            for (var i = 0; i < 10000; i++) {
+                html += '&lt;tr&gt;&lt;td&gt;' + i + '&lt;/td&gt;&lt;/tr&gt;';
+            }
+            $("#for-loop-two").append(html);
+        </pre>
+    <p>930.206ms, 30014 calls</p>
+</div>
+
+<div id="js-dom-manipulation3" class="step" data-x="12000" data-y="7500" data-z="-1000" data-rotate="200" data-scale="3">
+    <q><b class="heading">Adding many elements to the DOM</b></q>
+        <pre class="code">
+            var html = [];
+            for (var i = 0; i < 10000; i++) {
+                html.push('&lt;tr&gt;&lt;td&gt;' + i + '&lt;/td&gt;&lt;/tr&gt;');
+            }
+            $("#for-loop-three").append(html.join(''));
+        </pre>
+    <p>923.314ms, 30014 calls</p>
+</div>
+
+<div id="js-dom-manipulation4" class="step" data-x="7000" data-y="5000" data-z="-1000" data-rotate="200" data-scale="5">
+    <q><b class="heading">Adding many elements to the DOM</b></q>
+        <pre class="code">
+           var out = [], o = -1;
+            out[++o] = '&lt;table&gt;&lt;tbody&gt;';
+            for (var i = 0; i < 10000; i++) {
+                out[++o] = '&lt;tr&gt;&lt;td&gt;';
+                out[++o] = i;
+                out[++o] = '&lt;/td&gt;&lt;/tr&gt;';
+            }
+            out[++o] = '&lt;/tbody&gt;&lt;/table&gt;';
+            $('#for-loop-four').html( out.join('') );
+        </pre>
+    <p>69.018ms, 9 calls</p>
+</div>
+
+<div id="js-dom-manipulation-summary" class="step" data-x="13500" data-y="1000" data-z="-1000" data-rotate="200" data-scale="5">
+    <q><b class="heading">Adding many elements to the DOM</b></q>
+    <img class="img" src="img/dom_profile.png" alt="DOM manipulation profile"/>
+</div>
+
+<div id="js-dom-manipulation-summary-number" class="step" data-x="13500" data-y="1000" data-z="-1000" data-rotate="200" data-scale="5">
+    <p class="big round text-shadow"><b>~61x</b></p>
+</div>
+
+<div id="js-caching-elements1" class="step" data-x="9000" data-y="-1000" data-z="-1000" data-rotate="200" data-scale="3">
+    <q><b class="heading">Using selectors in jQuery</b></q>
+        <pre>
+            &lt;div id="main"&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;0&lt;/li&gt;
+                    &lt;li&gt;1&lt;/li&gt;
+                    ... [1000]
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        </pre>
+    <p>First instinct</p>
+        <pre class="code">
+            $('#main');
+            $('#main ul');
+            $('#main li:eq(10)');
+            <span>(3.914ms, 49 calls)</span>
+        </pre>
+    <p class="small-data">(3.914ms, 49 calls)</p>
+</div>
+
+<div id="js-caching-elements2" class="step" data-x="4500" data-y="-3000" data-z="-1000" data-scale="4">
+    <q><b class="heading">Using selectors in jQuery</b></q>
+    <p>If you use it more than once cache it!</p>
+        <pre class="code">
+            var second = $('#main');
+            second.find('ul');
+            second.find('li:eq(100)');
+        </pre>
+    <p class="small-data">(1.081ms, 44 calls)</p>
+
+</div>
+
+<div id="js-caching-elements3" class="step" data-x="-500" data-y="-5000" data-z="1000" data-rotate="200" data-scale="4">
+    <img src="img/cache.png" class="round" alt="Cache your cache"/>
+</div>
+
+<div id="js-caching-elements4" class="step" data-x="-5500" data-y="-7000" data-z="-1000" data-rotate="200" data-scale="5">
+    <q><b class="heading">Using selectors in jQuery</b></q>
+    <p>Let's cache some more!</p>
+        <pre class="code">
+            var third = $('#main');
+            var third_ul = second.find('ul');
+            third_u.find('li:eq(100)');
+        </pre>
+    <p class="small-data">(0.313ms, 14 calls)</p>
+</div>
+
+<div id="js-caching-elements5" class="step" data-x="-6000" data-y="-2000" data-z="-1000" data-rotate="100" data-scale="5">
+    <q><b class="heading">Using selectors in jQuery</b></q>
+    <p>Can we do even better?</p>
+        <pre class="code">
+            var fourth = $(document.getElementById('main'));
+            var fourth_ul = second.find('ul');
+            fourth_ul.find('li:eq(100)');
+        </pre>
+    <p class="small-data">(0.19ms, 14 calls)</p>
+    <p class="small-data"><b>Note: When using the document.getElementById some object parameters are lost</b></p>
+</div>
+
+<div id="js-caching-elements-summary" class="step" data-x="-8500" data-y="2000" data-z="-1000" data-rotate="200" data-scale="5">
+    <q><b class="heading">Using selectors in jQuery</b></q>
+    <p>From 3.914ms</p>
+    <p>..</p>
+    <p>..</p>
+    <p>To 0.19ms</p>
+</div>
+
+<div id="summary" class="step" data-x="-7000" data-y="6000" data-rotate="180" data-scale="5">
+    <p class="heading">What you should remember</p>
+    <ul class="small-data">
+        <li><q class="small-data">*Check where's your CSS selectors at</q></li>
+        <li><q class="small-data">*Render only ONCE!</q></li>
+        <li><q class="small-data">*Be careful with the awesome CSS3 features</q></li>
+        <li><q class="small-data">*Manipulate DOM as little as possible</a></q></li>
+        <li><q class="small-data">*Cache DOM elements as much as possible</q></li>
+    </ul>
+</div>
+
+<div id="conclusion" class="step" data-x="-7000" data-y="9000" data-rotate="180" data-scale="5">
+    <p class="heading">Thank you</p>
+    <ul class="small-data">
+        <li><q class="small-data">All the slides and demos will be available at <a href="http://indrekv.github.com" class="highlight">http://indrekv.github.com</a></q></li>
+        <li><q class="small-data">Presentation created with impress.js <a href="http://bartaz.github.com/impress.js" class="highlight">http://bartaz.github.com/impress.js</a></q></li>
+    </ul>
+</div>
+
+<div id="overview" class="step" data-x="2000" data-y="1500" data-scale="30">
+</div>
+
+</div>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+<!--<script type="text/javascript">-->
+    <!--var _gaq = _gaq || [];-->
+    <!--_gaq.push(['_setAccount', 'UA-36988802-1']);-->
+    <!--_gaq.push(['_trackPageview']);-->
+
+    <!--(function() {-->
+        <!--var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;-->
+        <!--ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';-->
+        <!--var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);-->
+    <!--})();-->
+<!--</script>-->
+</body>
+</html>

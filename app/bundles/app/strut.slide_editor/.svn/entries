@@ -1,0 +1,71 @@
+10
+
+dir
+183
+https://svn.duapp.com/appidxf29odmj09/app/bundles/app/strut.slide_editor
+https://svn.duapp.com/appidxf29odmj09
+
+
+
+2014-11-25T03:07:20.272019Z
+112
+13601656357
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+1a0beb16-39a9-491a-8432-0dfbb1476d54
+
+main.js
+file
+
+
+
+
+2015-01-24T14:51:18.000000Z
+c33bc61751027e5cb728999ebaab6cbf
+2014-07-28T07:29:04.071306Z
+2
+13601656357
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1940
+
+model
+dir
+
+templates
+dir
+
+view
+dir
+

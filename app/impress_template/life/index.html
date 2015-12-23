@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Yuen King Ho" />
+    <link href="http://fonts.useso.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/rollercoaster.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+
+    <div id="first" class="step" data-x="0" data-y="0" data-rotate-y="-40">
+        <span>Life is like a</span>
+        <h2>Rollercoaster</h2>
+    </div>
+
+    <div id="up" class="step" data-x="1500" data-y="-400" data-rotate-y="-60">
+        <span>there are times when you are <strong class="up">up</strong></span>
+    </div>
+
+    <div id="down" class="step" data-x="3000" data-y="500" data-rotate-y="-90">
+        <span>and times when you are <strong class="down">down</strong></span>
+    </div>
+
+
+    <div id="fast" class="step" data-x="4200" data-y="800" data-z="-2000">
+        <span>there are times when things are so <strong class="fast">fast</strong></span>
+    </div>
+
+    <div id="updown" class="step" data-x="3000" data-y="500" data-z="-2500" data-rotate-y="90" data-rotate-z="-180">
+        <span>that they turn you <span class="rotate">upside down</span></span>
+    </div>
+
+    <div class="step" data-x="1500" data-y="250" data-z="-2500" data-rotate-y="90">
+        <span>and there are times...</span>
+    </div>
+
+    <div id="slow" class="step" data-x="1500" data-y="125" data-z="-2500" data-rotate-y="180">
+        <span>when it's so <span class="slow">slow...</span></span>
+    </div>
+
+    <div class="step" data-x="1500" data-y="0" data-z="-2500" data-rotate-y="270">
+        <span>that you seem to be going...</span>
+    </div>
+
+    <div id="circle" class="step" data-x="1500" data-y="125" data-z="-2500" data-rotate-y="360">
+        <span>backwards in a<br><span class="circle">circle...</span></span>
+    </div>
+
+    <div id="sunset" class="step" data-x="3000" data-y="125" data-z="-3800" data-rotate-y="270">
+        <span>You thought you knew what's coming</span>
+    </div>
+
+    <div id="right" class="step" data-x="4000" data-y="0" data-z="-2000" data-rotate-y="180">
+        <span>but nothing ever turns out <span class="rotateR">right</span></span>
+    </div>
+
+    <div class="step" data-x="3000" data-y="250" data-z="-1000" data-rotate-y="90">
+        <span>if you have been paying attention</span>
+    </div>
+
+    <div id="ending" class="step" data-x="1500" data-y="500" data-z="-1000" data-rotate-y="90" data-scale="0.2">
+        <span>you know there'll only be one <span class="ending">ending</span></span>
+    </div>
+
+    <div id="despair" class="step" data-x="1250" data-y="500" data-z="-1250" data-rotate-y="0" data-scale="0.2">
+        <span>but don't <span class="despair">despair</span></span>
+    </div>
+
+    <div id="back" class="step" data-x="1400" data-y="500" data-z="-1600" data-rotate-y="-20" data-rotate-z="-15" data-scale="0.2">
+        <span>when you <span class="back">look back</span> at your past</span>
+    </div>
+
+    <div id="beautiful" class="step" data-x="1500" data-y="750" data-z="-2200" data-rotate-y="-40" data-rotate-z="-30" data-scale="0.2">
+        <span>you can appreciate all the <span class="beautiful">beautiful things</span> that have taken place...</span>
+    </div>
+
+    <div id="smile" class="step" data-x="2000" data-y="900" data-z="-2500" data-rotate-y="-40" data-rotate-z="-30" data-scale="0.2">
+        <span>and <span class="smile">smile &#x263A</span></span>
+    </div>
+
+    <div id="overview" class="step" data-x="2000" data-y="0" data-scale="4">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+</script>
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>

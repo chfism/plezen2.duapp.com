@@ -1,0 +1,190 @@
+.well {
+    border: 1px solid #e3e3e3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 15px
+}
+
+.call-action:last-child {
+    font-size: 14px
+}
+
+.quota-usage {
+    display: none
+}
+
+.recommend .alert {
+    margin-bottom: 0
+}
+
+.avatar {
+    margin: 0
+}
+
+.avatar img {
+    width: 110px;
+    padding: 10px;
+    border: 1px solid #eee
+}
+
+.settings-panel {
+    font-size: 16px;
+    margin-bottom: 25px
+}
+
+.settings-panel .social-panel {
+    margin: 0;
+    font-size: 14px
+}
+
+.settings-panel .social-panel .facebook-panel, .settings-panel .social-panel .linkedin-panel {
+    margin: 0
+}
+
+.settings-panel .social-panel .facebook-panel input, .settings-panel .social-panel .linkedin-panel input {
+    font-size: 14px
+}
+
+.settings-panel form {
+    margin: 0
+}
+
+.settings-panel h2 {
+    margin-bottom: 10px
+}
+
+.settings-panel h3 {
+    margin-bottom: 15px
+}
+
+.settings-panel:last-child {
+    margin-bottom: 0
+}
+
+.settings-panel:last-child .call-action {
+    margin-top: 0
+}
+
+.settings-panel label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333
+}
+
+.settings-panel .media {
+    margin-bottom: 0;
+    margin-right: 15px
+}
+
+.settings-panel .call-action {
+    margin-top: 25px;
+    font-size: 14px
+}
+
+.settings-panel .call-action .message {
+    margin: 0
+}
+
+.settings-panel .call-action.with-buttons {
+    display: none
+}
+
+.settings-panel .call-action.with-buttons .btn:last-child {
+    margin-right: 10px
+}
+
+.settings-panel .span3 {
+    width: 210px
+}
+
+.settings-panel .span5 {
+    width: 340px
+}
+
+.settings-panel .span6 > .indent {
+    margin-left: 20px
+}
+
+.settings-panel .span6 p {
+    margin-top: 5px
+}
+
+.settings-panel textarea.span8, .settings-panel input.span8 {
+    width: 578px
+}
+
+.settings-panel + .separator {
+    margin-top: -25px
+}
+
+.settings-panel .group-payments {
+    margin-top: 10px;
+    padding: 0 20px
+}
+
+.settings-panel .banner hr {
+    border-top: 1px solid #ccc;
+    margin: 15px 0
+}
+
+.settings-panel .banner > p {
+    margin: 0;
+    padding: 0 20px
+}
+
+.settings-panel .banner > p:first-child {
+    font-size: 20px
+}
+
+.settings-panel .banner .subscription-text {
+    float: left;
+    width: 80%
+}
+
+.settings-panel .banner .subscription-price {
+    float: right;
+    width: 15%
+}
+
+.settings-panel .banner .subscription-price .license-price {
+    padding-top: 5px;
+    font-size: 30px
+}
+
+.settings-panel .banner .subscription-price .license-price .license-currency {
+    font-size: 20px
+}
+
+.settings-panel .banner .subscription-divider {
+    clear: both
+}
+
+.settings-panel .banner .license-type {
+    color: #318bff;
+    text-transform: uppercase
+}
+
+.settings-panel .banner .license-space-used {
+    color: #f00
+}
+
+.settings-panel .banner .purchases {
+    line-height: 22px
+}
+
+.settings-panel .banner .purchases span {
+    padding: 0 1em 0 0
+}
+
+.settings-panel .banner .transactions {
+    font-size: 20px;
+    padding-bottom: .5em
+}
+
+.modal {
+    margin-top: -200px
+}

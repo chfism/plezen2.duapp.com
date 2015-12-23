@@ -1,0 +1,7 @@
+<button class="btn btn-success act"><i class="icon-play icon-white"/><span class="chosen">
+{{#if chosen.shortname}}
+	{{chosen.shortname}}
+{{else}}
+	{{chosen.displayName}}
+{{/if}}
+</span></button>
